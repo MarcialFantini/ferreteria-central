@@ -115,14 +115,14 @@ export default function GraficoBarras({ data }: GraficoBarrasProps) {
     <div
       role="img"
       aria-label={ariaLabel}
-      className="w-full rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-2 sm:p-3"
+      className="w-full rounded-md border border-[var(--color-line-2)] bg-[var(--color-surface)]/40 p-2 sm:p-3"
       style={{ height: chartHeight }}
     >
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}
           layout="vertical"
-          margin={{ top: 8, right: 24, left: 8, bottom: 4 }}
+          margin={{ top: 4, right: 20, left: 4, bottom: 0 }}
           barCategoryGap={6}
         >
           <CartesianGrid stroke="var(--color-line)" strokeDasharray="3 3" horizontal={false} />
@@ -149,7 +149,7 @@ export default function GraficoBarras({ data }: GraficoBarrasProps) {
           />
           <Bar
             dataKey="ingresoTotal"
-            radius={[4, 4, 4, 4]}
+            radius={[3, 3, 3, 3]}
             isAnimationActive={true}
             animationDuration={400}
             // Cell por entrada: aplica color por categoría
@@ -169,8 +169,8 @@ export default function GraficoBarras({ data }: GraficoBarrasProps) {
                   y={y}
                   width={width}
                   height={height}
-                  rx={4}
-                  ry={4}
+                  rx={3}
+                  ry={3}
                   fill={color}
                 />
               );

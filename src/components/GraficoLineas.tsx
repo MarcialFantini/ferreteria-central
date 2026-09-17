@@ -82,10 +82,10 @@ export default function GraficoLineas({ data }: GraficoLineasProps) {
     <div
       role="img"
       aria-label={ariaLabel}
-      className="h-72 w-full rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-2 sm:h-80 sm:p-3"
+      className="h-72 w-full rounded-md border border-[var(--color-line-2)] bg-[var(--color-surface)]/40 p-2 sm:h-80 sm:p-3"
     >
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 12, right: 16, left: 8, bottom: 4 }}>
+        <LineChart data={data} margin={{ top: 8, right: 12, left: 4, bottom: 0 }}>
           <CartesianGrid stroke="var(--color-line)" strokeDasharray="3 3" vertical={false} />
           <XAxis
             dataKey="mes"
@@ -101,7 +101,7 @@ export default function GraficoLineas({ data }: GraficoLineasProps) {
             tickLine={false}
             axisLine={false}
             tickFormatter={formatARSCompact}
-            width={60}
+            width={56}
           />
           <Tooltip
             cursor={{ stroke: 'var(--color-accent)', strokeOpacity: 0.4, strokeWidth: 1 }}

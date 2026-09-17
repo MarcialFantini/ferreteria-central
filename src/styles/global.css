@@ -2,43 +2,49 @@
 
 /* ============================================================
    Theme tokens — Ferretería Central (Dashboard dark)
+   Mood: técnico, denso, dark-mode, funcional.
+   Referencia: Linear / Vercel / Stripe Dashboard.
    Palette tuned for an at-a-glance data dashboard.
    Background dark so the accent line/bar colors carry the signal.
    ============================================================ */
 @theme {
-  /* Surfaces */
+  /* Surfaces — jerarquía de elevación */
   --color-surface: #0F1419;        /* page background — dark canvas */
   --color-panel:   #1A2028;        /* card / panel background */
   --color-panel-2: #232B35;        /* hovered / nested panel */
+  --color-panel-3: #2A3340;        /* active / pressed panel */
   --color-line:    #2D3742;        /* hairline borders */
+  --color-line-2:  #1F2730;        /* borde interior sutil (inset) */
 
-  /* Ink (text) */
-  --color-ink:     #E8ECEF;        /* primary text on dark — high contrast */
-  --color-ink-2:   #9BA5B0;        /* secondary text */
-  --color-ink-3:   #6B7785;        /* tertiary / labels */
+  /* Ink (text) — AAA sobre surface */
+  --color-ink:     #E8ECEF;        /* primary text on dark — 15.8:1 */
+  --color-ink-2:   #9BA5B0;        /* secondary text — 7.07:1 */
+  --color-ink-3:   #6B7785;        /* tertiary / labels — 4.62:1 */
 
-  /* Signal colors — used for KPIs and chart series */
-  --color-accent:  #3B82F6;        /* info / primary series (lines, primary KPI) */
+  /* Signal colors — KPIs y chart series */
+  --color-accent:  #3B82F6;        /* info / primary series */
   --color-success: #10B981;        /* positive delta / bars */
-  --color-warning: #F59E0B;        /* warning / mid-tier highlight */
+  --color-warning: #F59E0B;        /* warning / mid-tier */
   --color-danger:  #EF4444;        /* negative delta / errors */
 
-  /* Category palette (used for the BarChart color-by-category) */
-  --color-cat-1: #3B82F6;          /* blue */
-  --color-cat-2: #10B981;          /* green */
-  --color-cat-3: #F59E0B;          /* amber */
-  --color-cat-4: #EF4444;          /* red */
-  --color-cat-5: #8B5CF6;          /* violet */
-  --color-cat-6: #14B8A6;          /* teal */
-  --color-cat-7: #F472B6;          /* pink */
-  --color-cat-8: #94A3B8;          /* slate */
+  /* Category palette (BarChart color-by-category) */
+  --color-cat-1: #3B82F6;
+  --color-cat-2: #10B981;
+  --color-cat-3: #F59E0B;
+  --color-cat-4: #EF4444;
+  --color-cat-5: #8B5CF6;
+  --color-cat-6: #14B8A6;
+  --color-cat-7: #F472B6;
+  --color-cat-8: #94A3B8;
 
-  /* Fonts — declared as families; Tailwind generates `font-sans` / `font-mono` */
+  /* Fonts — Inter (UI) + JetBrains Mono (números/IDs/timestamps) */
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 }
 
-/* Base reset */
+/* ============================================================
+   Base reset — fondo dark explícito, color-scheme coherente
+   ============================================================ */
 html {
   background-color: var(--color-surface);
   color: var(--color-ink);
@@ -46,6 +52,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* Scrollbar dark — Firefox */
+  scrollbar-color: var(--color-line) transparent;
+  scrollbar-width: thin;
 }
 
 body {
@@ -54,21 +63,57 @@ body {
   min-height: 100dvh;
 }
 
-/* Tabular numerals — used for KPI values, axis labels, table totals */
+/* Scrollbar dark — Chromium / WebKit */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-line);
+  border-radius: 999px;
+  border: 2px solid var(--color-surface);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-ink-3);
+}
+
+/* ============================================================
+   Utilidades
+   ============================================================ */
+
+/* Tabular numerals — KPI values, axis labels, table totals */
 .tabular {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
 }
 
-/* High-contrast focus ring (a11y — visible on dark bg) */
+/* Card surface — panel + línea sutil + inset superior
+   (Linear/Vercel style: borde 1px + highlight interno de 1px) */
+.surface-card {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 0.02);
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+.surface-card:hover {
+  border-color: var(--color-panel-3);
+}
+
+/* High-contrast focus ring (a11y — visible sobre dark) */
 *:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-/* Recharts: paint axis lines and text using the palette */
+/* ============================================================
+   Recharts — pintar ejes, grid y tooltip con la paleta
+   ============================================================ */
 .recharts-cartesian-axis-tick-value {
   fill: var(--color-ink-2);
   font-family: var(--font-mono);
@@ -79,11 +124,16 @@ body {
 .recharts-cartesian-axis-tick-line {
   stroke: var(--color-line);
 }
+.recharts-cartesian-grid line {
+  stroke: var(--color-line);
+}
 .recharts-tooltip-wrapper {
   outline: none;
 }
 
-/* Reduced motion — kill all transitions/animations */
+/* ============================================================
+   Reduced motion — kill all transitions/animations
+   ============================================================ */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -92,7 +142,9 @@ body {
   }
 }
 
-/* Print — keep dashboard readable if owner prints a monthly report */
+/* ============================================================
+   Print — keep dashboard legible si el dueño imprime un reporte
+   ============================================================ */
 @media print {
   body { background: #fff; color: #000; }
   .no-print { display: none !important; }

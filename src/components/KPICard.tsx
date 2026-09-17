@@ -57,10 +57,9 @@ export interface KPICardProps {
 /**
  * Tarjeta de KPI individual.
  *
- * - Etiqueta visible y value legible (no depende solo del color — T10.17).
- * - Badge de variación incluye un símbolo ("+", "−") además del color.
- * - El valor se renderiza con tipografía mono (tabular) para que las cifras
- *   no salten al cambiar de período.
+ * - Valor grande en mono (tabular) — no depende solo del color (T10.17).
+ * - Badge de variación con símbolo ("+", "−") + triángulo, además del color.
+ * - Hover sutil: la línea externa se intensifica ligeramente.
  */
 export default function KPICard({
   label,
@@ -95,39 +94,39 @@ export default function KPICard({
 
   return (
     <article
-      className="flex flex-col gap-3 rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-4 sm:p-5"
+      className="surface-card group flex flex-col gap-4 p-4 sm:p-5"
       aria-label={`${label}: ${formattedValue}. ${variacionAria}`}
     >
       <header className="flex items-start justify-between gap-3">
-        <span className="text-xs font-medium uppercase tracking-wide text-[var(--color-ink-2)]">
+        <span className="text-[11px] font-medium uppercase tracking-wider text-[var(--color-ink-2)]">
           {label}
         </span>
         <span
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[var(--color-accent)]/10 text-[var(--color-accent)]"
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--color-accent)]/10 text-[var(--color-accent)] ring-1 ring-inset ring-[var(--color-accent)]/20"
           aria-hidden="true"
         >
-          <Icon name={icono} />
+          <Icon name={icono} className="h-4 w-4" />
         </span>
       </header>
 
-      <div className="tabular text-2xl font-semibold text-[var(--color-ink)] sm:text-3xl">
+      <div className="tabular text-3xl font-semibold tracking-tight text-[var(--color-ink)] sm:text-4xl">
         {formattedValue}
       </div>
 
       <span
-        className={`inline-flex w-fit items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium ${variacionClases}`}
+        className={`inline-flex w-fit items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-medium tabular ${variacionClases}`}
         aria-label={variacionAria}
       >
         {variacionPorcentual > 0 ? (
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3" aria-hidden="true">
             <path d="M5 15l7-7 7 7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         ) : variacionPorcentual < 0 ? (
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3" aria-hidden="true">
             <path d="M5 9l7 7 7-7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         ) : (
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3" aria-hidden="true">
             <path d="M5 12h14" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         )}

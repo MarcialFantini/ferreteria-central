@@ -44,14 +44,14 @@ export default function Dashboard() {
   }, [periodo]);
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-4 sm:gap-5">
       {/* Fila de control: Período activo */}
       <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:items-center">
         <PeriodoSelector value={periodo} onChange={setPeriodo} />
         <p className="text-xs text-[var(--color-ink-2)] tabular">
           Mostrando <span className="font-semibold text-[var(--color-ink)]">{ventasRango.length}</span>{' '}
           {ventasRango.length === 1 ? 'mes' : 'meses'}
-          {' · '}
+          <span className="mx-2 text-[var(--color-line)]">·</span>
           {PERIODO_LABELS[periodo]}
         </p>
       </div>
@@ -94,20 +94,20 @@ export default function Dashboard() {
       {/* Gráfico de líneas */}
       <section
         aria-label="Tendencia de ventas"
-        className="rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-4 sm:p-5"
+        className="surface-card p-4 sm:p-5"
       >
-        <header className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <h2 className="text-base font-semibold text-[var(--color-ink)]">
+        <header className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <div className="flex flex-col gap-0.5">
+            <h2 className="text-sm font-semibold tracking-tight text-[var(--color-ink)]">
               Ventas por mes
             </h2>
             <p className="text-xs text-[var(--color-ink-2)]">
-              Facturación total mensual en ARS · {ventasRango.length}{' '}
+              Facturación total mensual en ARS <span className="text-[var(--color-line)]">·</span> {ventasRango.length}{' '}
               {ventasRango.length === 1 ? 'mes' : 'meses'}
             </p>
           </div>
-          <span className="text-xs text-[var(--color-ink-3)] tabular">
-            {rango.desde} → {rango.hasta}
+          <span className="text-[11px] uppercase tracking-wider text-[var(--color-ink-3)] tabular">
+            {rango.desde} <span className="text-[var(--color-line)]">→</span> {rango.hasta}
           </span>
         </header>
         <GraficoLineas data={ventasRango} />
@@ -118,21 +118,21 @@ export default function Dashboard() {
         aria-label="Top productos por ingreso"
         className="grid grid-cols-1 gap-4 lg:grid-cols-5"
       >
-        <div className="rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-4 sm:p-5 lg:col-span-3">
-          <header className="mb-3 flex flex-col gap-1">
-            <h2 className="text-base font-semibold text-[var(--color-ink)]">
+        <div className="surface-card p-4 sm:p-5 lg:col-span-3">
+          <header className="mb-4 flex flex-col gap-0.5">
+            <h2 className="text-sm font-semibold tracking-tight text-[var(--color-ink)]">
               Top {TOP_N_PRODUCTOS} productos por ingreso
             </h2>
             <p className="text-xs text-[var(--color-ink-2)]">
-              Ranking acumulado · Color por categoría
+              Ranking acumulado <span className="text-[var(--color-line)]">·</span> Color por categoría
             </p>
           </header>
           <GraficoBarras data={topProductos} />
         </div>
 
-        <div className="rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-4 sm:p-5 lg:col-span-2">
-          <header className="mb-3">
-            <h2 className="text-base font-semibold text-[var(--color-ink)]">
+        <div className="surface-card p-4 sm:p-5 lg:col-span-2">
+          <header className="mb-4">
+            <h2 className="text-sm font-semibold tracking-tight text-[var(--color-ink)]">
               Detalle de productos
             </h2>
             <p className="text-xs text-[var(--color-ink-2)]">
@@ -141,7 +141,7 @@ export default function Dashboard() {
           </header>
           <div className="-mx-4 overflow-x-auto sm:-mx-5">
             <table className="min-w-full text-left text-sm">
-              <thead className="text-[10px] uppercase tracking-wide text-[var(--color-ink-3)]">
+              <thead className="text-[10px] uppercase tracking-wider text-[var(--color-ink-3)]">
                 <tr>
                   <th scope="col" className="px-4 py-2 sm:px-5">
                     Producto
@@ -159,10 +159,10 @@ export default function Dashboard() {
               </thead>
               <tbody className="divide-y divide-[var(--color-line)] text-[var(--color-ink)]">
                 {topProductos.map((p) => (
-                  <tr key={p.id} className="hover:bg-[var(--color-panel-2)]/50">
+                  <tr key={p.id} className="transition-colors hover:bg-[var(--color-panel-2)]/40">
                     <td className="px-4 py-2 sm:px-5">
                       <div className="font-medium">{p.nombre}</div>
-                      <div className="text-[10px] uppercase tracking-wide text-[var(--color-ink-3)]">
+                      <div className="text-[10px] uppercase tracking-wider text-[var(--color-ink-3)]">
                         {CATEGORIA_LABELS[p.categoria]}
                       </div>
                     </td>
