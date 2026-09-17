@@ -1,0 +1,138 @@
+import { formatARS, formatNumber } from '../lib/datos';
+
+/**
+ * Iconos inline. El spec del proyecto pide SVGs inline y prohíbe
+ * dependencias de Phosphor / lucide / similares.
+ *
+ * `iconName` se pasa como prop a KPICard; el componente resuelve el nombre
+ * contra este registro y renderiza el SVG correspondiente.
+ */
+
+type IconName = 'money' | 'cart' | 'ticket' | 'trend-up' | 'box';
+
+const ICON_PATHS: Record<IconName, string> = {
+  money: 'M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6',
+  cart: 'M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z',
+  ticket: 'M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V9zM9 7v10',
+  'trend-up': 'M3 17l6-6 4 4 8-8M14 7h7v7',
+  box: 'M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96 12 12.01l8.73-5.05M12 22.08V12',
+};
+
+function Icon({ name, className }: { name: IconName; className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className ?? 'h-5 w-5'}
+      aria-hidden="true"
+    >
+      <path d={ICON_PATHS[name]} />
+    </svg>
+  );
+}
+
+/* ============================================================
+   KPICard
+   ============================================================ */
+
+export type KPIFormat = 'currency' | 'number' | 'percent';
+
+export interface KPICardProps {
+  /** Etiqueta corta del KPI (ej. "Ventas totales"). */
+  label: string;
+  /** Valor numérico a mostrar. Se formatea según `formato`. */
+  value: number;
+  /** Variación porcentual (signed). Verde >0, rojo <0, gris =0. */
+  variacionPorcentual: number;
+  /** Nombre del icono a renderizar. */
+  icono: IconName;
+  /** Cómo formatear `value`. */
+  formato: KPIFormat;
+}
+
+/**
+ * Tarjeta de KPI individual.
+ *
+ * - Etiqueta visible y value legible (no depende solo del color — T10.17).
+ * - Badge de variación incluye un símbolo ("+", "−") además del color.
+ * - El valor se renderiza con tipografía mono (tabular) para que las cifras
+ *   no salten al cambiar de período.
+ */
+export default function KPICard({
+  label,
+  value,
+  variacionPorcentual,
+  icono,
+  formato,
+}: KPICardProps) {
+  const formattedValue =
+    formato === 'currency'
+      ? formatARS(value)
+      : formato === 'percent'
+        ? `${value.toFixed(1)}%`
+        : formatNumber(value);
+
+  // Badge color: success >0, danger <0, neutral =0
+  const variacionClases =
+    variacionPorcentual > 0
+      ? 'bg-[var(--color-success)]/10 text-[var(--color-success)] border-[var(--color-success)]/30'
+      : variacionPorcentual < 0
+        ? 'bg-[var(--color-danger)]/10 text-[var(--color-danger)] border-[var(--color-danger)]/30'
+        : 'bg-[var(--color-surface)] text-[var(--color-ink-3)] border-[var(--color-line)]';
+
+  const variacionPrefijo = variacionPorcentual > 0 ? '+' : '';
+  const variacionTexto = `${variacionPrefijo}${variacionPorcentual.toFixed(1)}%`;
+  const variacionAria =
+    variacionPorcentual > 0
+      ? `Variación positiva ${variacionPorcentual.toFixed(1)} por ciento`
+      : variacionPorcentual < 0
+        ? `Variación negativa ${Math.abs(variacionPorcentual).toFixed(1)} por ciento`
+        : 'Sin variación respecto al período anterior';
+
+  return (
+    <article
+      className="flex flex-col gap-3 rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-4 sm:p-5"
+      aria-label={`${label}: ${formattedValue}. ${variacionAria}`}
+    >
+      <header className="flex items-start justify-between gap-3">
+        <span className="text-xs font-medium uppercase tracking-wide text-[var(--color-ink-2)]">
+          {label}
+        </span>
+        <span
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[var(--color-accent)]/10 text-[var(--color-accent)]"
+          aria-hidden="true"
+        >
+          <Icon name={icono} />
+        </span>
+      </header>
+
+      <div className="tabular text-2xl font-semibold text-[var(--color-ink)] sm:text-3xl">
+        {formattedValue}
+      </div>
+
+      <span
+        className={`inline-flex w-fit items-center gap-1 rounded-md border px-2 py-0.5 text-xs font-medium ${variacionClases}`}
+        aria-label={variacionAria}
+      >
+        {variacionPorcentual > 0 ? (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3" aria-hidden="true">
+            <path d="M5 15l7-7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ) : variacionPorcentual < 0 ? (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3" aria-hidden="true">
+            <path d="M5 9l7 7 7-7" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3" aria-hidden="true">
+            <path d="M5 12h14" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        )}
+        {variacionTexto}
+      </span>
+    </article>
+  );
+}
