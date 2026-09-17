@@ -7,9 +7,12 @@ import { CATEGORIA_LABELS } from '../types/producto';
 import {
   formatARS,
   formatNumber,
+  getIngresoPorCategoria,
   getKPIs,
+  getMargenPromedioPonderado,
   getPeriodRange,
   getTopProductos,
+  getTotalUnidadesVendidas,
   getVentasPorPeriodo,
   TOTAL_PRODUCTOS,
 } from '../lib/datos';
@@ -17,6 +20,7 @@ import {
 import KPICard from './KPICard';
 import GraficoLineas from './GraficoLineas';
 import GraficoBarras from './GraficoBarras';
+import GraficoCategorias from './GraficoCategorias';
 import PeriodoSelector from './PeriodoSelector';
 
 /* ============================================================
@@ -35,12 +39,31 @@ export default function Dashboard() {
   const [periodo, setPeriodo] = useState<Periodo>('ultimo_anio');
 
   // Derivados memoizados — cambian solo cuando cambia el período.
-  const { rango, ventasRango, kpis, topProductos } = useMemo(() => {
+  const {
+    rango,
+    ventasRango,
+    kpis,
+    topProductos,
+    ingresoPorCategoria,
+    margenPromedio,
+    totalUnidades,
+  } = useMemo(() => {
     const rango = getPeriodRange(periodo);
     const ventasRango = getVentasPorPeriodo(rango.desde, rango.hasta);
     const kpis = getKPIs(periodo);
     const topProductos = getTopProductos(TOP_N_PRODUCTOS);
-    return { rango, ventasRango, kpis, topProductos };
+    const ingresoPorCategoria = getIngresoPorCategoria();
+    const margenPromedio = getMargenPromedioPonderado();
+    const totalUnidades = getTotalUnidadesVendidas();
+    return {
+      rango,
+      ventasRango,
+      kpis,
+      topProductos,
+      ingresoPorCategoria,
+      margenPromedio,
+      totalUnidades,
+    };
   }, [periodo]);
 
   return (
@@ -59,7 +82,7 @@ export default function Dashboard() {
       {/* Grid de KPIs */}
       <section
         aria-label="Indicadores clave del período"
-        className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4"
+        className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4"
       >
         <KPICard
           label="Ventas totales"
@@ -81,6 +104,20 @@ export default function Dashboard() {
           variacionPorcentual={kpis.variacionTicket}
           icono="ticket"
           formato="currency"
+        />
+        <KPICard
+          label="Margen promedio"
+          value={margenPromedio}
+          variacionPorcentual={0}
+          icono="trend-up"
+          formato="percent"
+        />
+        <KPICard
+          label="Unidades vendidas"
+          value={totalUnidades}
+          variacionPorcentual={0}
+          icono="box"
+          formato="number"
         />
         <KPICard
           label="Variación anual"
@@ -111,6 +148,27 @@ export default function Dashboard() {
           </span>
         </header>
         <GraficoLineas data={ventasRango} />
+      </section>
+
+      {/* Distribución por categoría (donut) */}
+      <section
+        aria-label="Ingresos por categoría"
+        className="surface-card p-4 sm:p-5"
+      >
+        <header className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <div className="flex flex-col gap-0.5">
+            <h2 className="text-sm font-semibold tracking-tight text-dash-ink">
+              Mix por categoría
+            </h2>
+            <p className="text-xs text-dash-ink-2">
+              Distribución del ingreso acumulado por línea de producto
+            </p>
+          </div>
+          <span className="text-[11px] uppercase tracking-wider text-dash-ink-3 tabular">
+            {ingresoPorCategoria.length} categorías
+          </span>
+        </header>
+        <GraficoCategorias data={ingresoPorCategoria} />
       </section>
 
       {/* Gráfico de barras + Tabla top productos */}

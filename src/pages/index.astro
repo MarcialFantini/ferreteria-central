@@ -25,4 +25,76 @@ const description = 'Dashboard de ventas para Ferretería Central: facturación 
       Se monta con `client:visible` para no afectar el LCP del hero
       (T10.18 — Performance). */}
   <Dashboard client:visible />
+
+  {/* Notas y definiciones — sin islar, es contenido estático. */}
+  <section
+    class="mt-6 surface-card p-4 sm:p-5 sm:mt-8"
+    aria-labelledby="notas-heading"
+  >
+    <h2
+      id="notas-heading"
+      class="text-sm font-semibold tracking-tight text-dash-ink"
+    >
+      Cómo se calcula cada métrica
+    </h2>
+    <dl class="mt-4 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <dt class="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
+          Ventas totales
+        </dt>
+        <dd class="mt-1 text-[13px] leading-relaxed text-dash-ink-2">
+          Suma de la facturación del rango activo. Coincide con la suma de los
+          puntos del gráfico de líneas (consistencia KPI ↔ chart).
+        </dd>
+      </div>
+      <div>
+        <dt class="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
+          Ticket promedio
+        </dt>
+        <dd class="mt-1 text-[13px] leading-relaxed text-dash-ink-2">
+          Ventas totales dividido la cantidad de pedidos del rango. Redondeado
+          a pesos.
+        </dd>
+      </div>
+      <div>
+        <dt class="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
+          Margen promedio
+        </dt>
+        <dd class="mt-1 text-[13px] leading-relaxed text-dash-ink-2">
+          Promedio ponderado por ingreso del margen por producto. Refleja
+          cuánto pesa cada producto en la facturación total.
+        </dd>
+      </div>
+      <div>
+        <dt class="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
+          Variación anual
+        </dt>
+        <dd class="mt-1 text-[13px] leading-relaxed text-dash-ink-2">
+          Variación porcentual entre el primer y el último mes del rango.
+          Positivo = crecimiento, negativo = caída.
+        </dd>
+      </div>
+      <div>
+        <dt class="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
+          Mix por categoría
+        </dt>
+        <dd class="mt-1 text-[13px] leading-relaxed text-dash-ink-2">
+          Distribución porcentual del ingreso acumulado por línea de producto.
+          Permite ver dónde se concentra la facturación.
+        </dd>
+      </div>
+      <div>
+        <dt class="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
+          Top productos
+        </dt>
+        <dd class="mt-1 text-[13px] leading-relaxed text-dash-ink-2">
+          Los 10 SKUs con mayor ingreso total acumulado. El color del
+          gráfico de barras coincide con el del donut de categorías.
+        </dd>
+      </div>
+    </dl>
+    <p class="mt-5 border-t border-dash-line pt-4 text-[11px] uppercase tracking-wider text-dash-ink-3">
+      Demo con datos simulados · Recharts + React · Sin backend
+    </p>
+  </section>
 </Layout>

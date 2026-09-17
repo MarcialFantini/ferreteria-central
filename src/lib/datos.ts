@@ -80,6 +80,68 @@ export function getTopProductos(n: number): Producto[] {
 }
 
 /**
+ * Una fila de la agregación de ingresos por categoría.
+ * Sirve para el GraficoCategorias (donut) y para la leyenda.
+ */
+export interface IngresoPorCategoria {
+  categoria: import('../types/producto').CategoriaProducto;
+  ingreso: number;
+  unidades: number;
+  participacion: number;
+}
+
+/**
+ * Agrupa los productos del catálogo por categoría y devuelve el ingreso,
+ * las unidades vendidas y la participación porcentual sobre el total.
+ *
+ * La participación se calcula sobre el ingreso total (no sobre las unidades)
+ * porque para una ferretería el ingreso es el indicador de mix relevante.
+ */
+export function getIngresoPorCategoria(): IngresoPorCategoria[] {
+  const totalIngreso = PRODUCTOS.reduce((acc, p) => acc + p.ingresoTotal, 0);
+  const porCategoria = new Map<import('../types/producto').CategoriaProducto, { ingreso: number; unidades: number }>();
+  for (const p of PRODUCTOS) {
+    const current = porCategoria.get(p.categoria) ?? { ingreso: 0, unidades: 0 };
+    porCategoria.set(p.categoria, {
+      ingreso: current.ingreso + p.ingresoTotal,
+      unidades: current.unidades + p.unidadesVendidas,
+    });
+  }
+  return Array.from(porCategoria.entries())
+    .map(([categoria, { ingreso, unidades }]) => ({
+      categoria,
+      ingreso,
+      unidades,
+      participacion: totalIngreso > 0 ? (ingreso / totalIngreso) * 100 : 0,
+    }))
+    .sort((a, b) => b.ingreso - a.ingreso);
+}
+
+/**
+ * Calcula el margen promedio ponderado por ingreso del catálogo entero.
+ *
+ * El promedio simple de los márgenes por producto penaliza productos de
+ * alto volumen con margen bajo. La ponderación por ingreso refleja cuánto
+ * pesa cada producto en la facturación total.
+ */
+export function getMargenPromedioPonderado(): number {
+  const totalIngreso = PRODUCTOS.reduce((acc, p) => acc + p.ingresoTotal, 0);
+  if (totalIngreso === 0) return 0;
+  const aporte = PRODUCTOS.reduce(
+    (acc, p) => acc + (p.margen * p.ingresoTotal) / 100,
+    0,
+  );
+  return Math.round((aporte / totalIngreso) * 10) / 10;
+}
+
+/**
+ * Suma de unidades vendidas en el catálogo.
+ */
+export function getTotalUnidadesVendidas(): number {
+  return PRODUCTOS.reduce((acc, p) => acc + p.unidadesVendidas, 0);
+}
+
+/**
  * Calcula los KPIs agregados para el período solicitado.
  *
  * `ventasTotal` se calcula como la suma de los puntos que devolvería
