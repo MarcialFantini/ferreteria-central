@@ -66,11 +66,11 @@ const ogImageURL = new URL(ogImage, siteUrl).toString();
     <meta name="twitter:image" content={ogImageURL} />
   </head>
 
-  <body class="min-h-dvh bg-[var(--color-surface)] text-[var(--color-ink)]">
+  <body class="min-h-dvh bg-dash-surface text-dash-ink">
     {/* Skip link — visible solo al recibir foco por teclado (T10.17) */}
     <a
       href="#dashboard"
-      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[var(--color-accent)] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-dash-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
     >
       Saltar al dashboard
     </a>

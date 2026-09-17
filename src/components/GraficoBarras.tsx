@@ -94,7 +94,7 @@ export default function GraficoBarras({ data }: GraficoBarrasProps) {
   if (data.length === 0) {
     return (
       <div
-        className="flex h-72 items-center justify-center rounded-lg border border-dashed border-[var(--color-line)] bg-[var(--color-panel)] text-sm text-[var(--color-ink-2)]"
+        className="flex h-72 items-center justify-center rounded-lg border border-dashed border-dash-line bg-dash-panel text-sm text-dash-ink-2"
         role="img"
         aria-label="Gráfico de barras sin datos para el período seleccionado"
       >
@@ -115,7 +115,7 @@ export default function GraficoBarras({ data }: GraficoBarrasProps) {
     <div
       role="img"
       aria-label={ariaLabel}
-      className="w-full rounded-md border border-[var(--color-line-2)] bg-[var(--color-surface)]/40 p-2 sm:p-3"
+      className="w-full rounded-md border border-dash-line bg-dash-surface/40 p-2 sm:p-3"
       style={{ height: chartHeight }}
     >
       <ResponsiveContainer width="100%" height="100%">

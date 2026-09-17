@@ -27,9 +27,9 @@ export default function PeriodoSelector({ value, onChange }: PeriodoSelectorProp
     <div
       role="group"
       aria-label="Período del reporte"
-      className="inline-flex flex-wrap items-center gap-1 rounded-lg border border-[var(--color-line)] bg-[var(--color-panel)] p-1"
+      className="inline-flex flex-wrap items-center gap-1 rounded-lg border border-dash-line bg-dash-panel p-1"
     >
-      <span className="px-2 text-[11px] uppercase tracking-wider text-[var(--color-ink-3)] tabular" aria-hidden="true">
+      <span className="px-2 text-[11px] uppercase tracking-wider text-dash-ink-3 tabular" aria-hidden="true">
         Período
       </span>
       {PERIODOS.map((p) => {
@@ -42,8 +42,8 @@ export default function PeriodoSelector({ value, onChange }: PeriodoSelectorProp
             onClick={() => onChange(p)}
             className={
               isActive
-                ? 'rounded-md bg-[var(--color-accent)] px-3 py-1.5 text-xs font-semibold text-white shadow-[0_0_0_1px_var(--color-accent)] transition-colors'
-                : 'rounded-md px-3 py-1.5 text-xs font-medium text-[var(--color-ink-2)] transition-colors hover:bg-[var(--color-panel-2)] hover:text-[var(--color-ink)]'
+                ? 'rounded-md bg-dash-accent px-3 py-1.5 text-xs font-semibold text-white ring-1 ring-dash-accent transition-colors'
+                : 'rounded-md px-3 py-1.5 text-xs font-medium text-dash-ink-2 transition-colors hover:bg-dash-panel-2 hover:text-dash-ink'
             }
           >
             {PERIODO_LABELS[p]}

@@ -78,10 +78,10 @@ export default function KPICard({
   // Badge color: success >0, danger <0, neutral =0
   const variacionClases =
     variacionPorcentual > 0
-      ? 'bg-[var(--color-success)]/10 text-[var(--color-success)] border-[var(--color-success)]/30'
+      ? 'bg-dash-success/10 text-dash-success border-dash-success/30'
       : variacionPorcentual < 0
-        ? 'bg-[var(--color-danger)]/10 text-[var(--color-danger)] border-[var(--color-danger)]/30'
-        : 'bg-[var(--color-surface)] text-[var(--color-ink-3)] border-[var(--color-line)]';
+        ? 'bg-dash-danger/10 text-dash-danger border-dash-danger/30'
+        : 'bg-dash-surface text-dash-ink-3 border-dash-line';
 
   const variacionPrefijo = variacionPorcentual > 0 ? '+' : '';
   const variacionTexto = `${variacionPrefijo}${variacionPorcentual.toFixed(1)}%`;
@@ -98,18 +98,18 @@ export default function KPICard({
       aria-label={`${label}: ${formattedValue}. ${variacionAria}`}
     >
       <header className="flex items-start justify-between gap-3">
-        <span className="text-[11px] font-medium uppercase tracking-wider text-[var(--color-ink-2)]">
+        <span className="text-[11px] font-medium uppercase tracking-wider text-dash-ink-2">
           {label}
         </span>
         <span
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--color-accent)]/10 text-[var(--color-accent)] ring-1 ring-inset ring-[var(--color-accent)]/20"
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-dash-accent/10 text-dash-accent ring-1 ring-inset ring-dash-accent/20"
           aria-hidden="true"
         >
           <Icon name={icono} className="h-4 w-4" />
         </span>
       </header>
 
-      <div className="tabular text-3xl font-semibold tracking-tight text-[var(--color-ink)] sm:text-4xl">
+      <div className="text-4xl font-semibold tabular-nums text-dash-ink">
         {formattedValue}
       </div>
 

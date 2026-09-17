@@ -65,7 +65,7 @@ export default function GraficoLineas({ data }: GraficoLineasProps) {
   if (data.length === 0) {
     return (
       <div
-        className="flex h-72 items-center justify-center rounded-lg border border-dashed border-[var(--color-line)] bg-[var(--color-panel)] text-sm text-[var(--color-ink-2)]"
+        className="flex h-72 items-center justify-center rounded-lg border border-dashed border-dash-line bg-dash-panel text-sm text-dash-ink-2"
         role="img"
         aria-label="Gráfico de líneas sin datos para el período seleccionado"
       >
@@ -82,7 +82,7 @@ export default function GraficoLineas({ data }: GraficoLineasProps) {
     <div
       role="img"
       aria-label={ariaLabel}
-      className="h-72 w-full rounded-md border border-[var(--color-line-2)] bg-[var(--color-surface)]/40 p-2 sm:h-80 sm:p-3"
+      className="h-72 w-full rounded-md border border-dash-line bg-dash-surface/40 p-2 sm:h-80 sm:p-3"
     >
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 12, left: 4, bottom: 0 }}>
