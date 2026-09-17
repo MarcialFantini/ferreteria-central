@@ -36,9 +36,15 @@ export const TOTAL_PRODUCTOS: number = PRODUCTOS.length;
  * Resuelve un período del UI al rango concreto (desde/hasta) sobre el dataset.
  *
  * @param periodo - Período seleccionado por el usuario.
+ * @param customRange - Rango explícito (YYYY-MM) requerido cuando `periodo`
+ *                     es `'personalizado'`. Si no se provee, cae al dataset
+ *                     completo.
  * @returns El rango (inclusive) que el UI debe mostrar.
  */
-export function getPeriodRange(periodo: Periodo): RangoVentas {
+export function getPeriodRange(
+  periodo: Periodo,
+  customRange?: RangoVentas,
+): RangoVentas {
   if (TOTAL_MESES === 0) {
     return { desde: '', hasta: '' };
   }
@@ -53,6 +59,16 @@ export function getPeriodRange(periodo: Periodo): RangoVentas {
     }
     case 'todo': {
       return { desde: PRIMER_MES, hasta: ULTIMO_MES };
+    }
+    case 'personalizado': {
+      // Default al rango completo si el padre no pasó customRange
+      // (p.ej. justo después de seleccionar la opción antes de tipear).
+      const desde = customRange?.desde || PRIMER_MES;
+      const hasta = customRange?.hasta || ULTIMO_MES;
+      // Si el usuario invirtió el rango, lo devolvemos igualado al dataset
+      // para no producir listas vacías silenciosas.
+      if (desde > hasta) return { desde: PRIMER_MES, hasta: ULTIMO_MES };
+      return { desde, hasta };
     }
   }
 }
@@ -153,9 +169,10 @@ export function getTotalUnidadesVendidas(): number {
  * Cuando hay menos de 2 meses en el rango, devuelve 0.
  *
  * @param periodo - Período seleccionado por el usuario.
+ * @param customRange - Rango explícito cuando `periodo === 'personalizado'`.
  */
-export function getKPIs(periodo: Periodo): KPIs {
-  const { desde, hasta } = getPeriodRange(periodo);
+export function getKPIs(periodo: Periodo, customRange?: RangoVentas): KPIs {
+  const { desde, hasta } = getPeriodRange(periodo, customRange);
   const filas = getVentasPorPeriodo(desde, hasta);
 
   const ventasTotal = filas.reduce((acc, v) => acc + v.ventasTotal, 0);
@@ -194,6 +211,47 @@ export function getKPIs(periodo: Periodo): KPIs {
     variacionPedidos,
     variacionTicket,
   };
+}
+
+/**
+ * Estima los días de inventario promedio del catálogo a la velocidad de
+ * venta actual. Fórmula: `(unidadesVendidas / días) * factor de cobertura`
+ * (factor por defecto = 30 días). Es una métrica sintética — no hay stock
+ * real en el dataset — pero traduce la rotación de unidades en una lectura
+ * operativa fácil de mostrar como "X días".
+ *
+ * @param totalUnidades - Unidades vendidas en el período.
+ * @param diasEnPeriodo - Días del rango (meses × 30, aproximación).
+ * @param factorCobertura - Días objetivo de cobertura (default: 30).
+ */
+export function getDiasInventarioPromedio(
+  totalUnidades: number,
+  diasEnPeriodo: number,
+  factorCobertura = 30,
+): number {
+  if (diasEnPeriodo <= 0) return 0;
+  return Math.round((totalUnidades / diasEnPeriodo) * factorCobertura);
+}
+
+/**
+ * Devuelve la categoría con mayor ingreso acumulado del catálogo, junto
+ * con su monto. Es la primera fila de `getIngresoPorCategoria()`.
+ */
+export function getTopCategoriaPorIngreso(): IngresoPorCategoria | null {
+  const rows = getIngresoPorCategoria();
+  return rows.length > 0 ? rows[0] : null;
+}
+
+/**
+ * Devuelve el producto con mayor `unidadesVendidas` (no ingreso).
+ * Útil para distinguir al líder de facturación del líder de volumen.
+ */
+export function getProductoMasVendido(): Producto | null {
+  let top: Producto | null = null;
+  for (const p of PRODUCTOS) {
+    if (!top || p.unidadesVendidas > top.unidadesVendidas) top = p;
+  }
+  return top;
 }
 
 /**

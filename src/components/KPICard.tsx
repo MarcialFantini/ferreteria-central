@@ -8,7 +8,7 @@ import { formatARS, formatNumber } from '../lib/datos';
  * contra este registro y renderiza el SVG correspondiente.
  */
 
-type IconName = 'money' | 'cart' | 'ticket' | 'trend-up' | 'box';
+type IconName = 'money' | 'cart' | 'ticket' | 'trend-up' | 'box' | 'package' | 'tag' | 'star';
 
 const ICON_PATHS: Record<IconName, string> = {
   money: 'M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6',
@@ -16,6 +16,9 @@ const ICON_PATHS: Record<IconName, string> = {
   ticket: 'M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V9zM9 7v10',
   'trend-up': 'M3 17l6-6 4 4 8-8M14 7h7v7',
   box: 'M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96 12 12.01l8.73-5.05M12 22.08V12',
+  package: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4',
+  tag: 'M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7h.01',
+  star: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z',
 };
 
 function Icon({ name, className }: { name: IconName; className?: string }) {
@@ -52,6 +55,8 @@ export interface KPICardProps {
   icono: IconName;
   /** Cómo formatear `value`. */
   formato: KPIFormat;
+  /** Sufijo textual al lado del valor (ej. "días", "u."). Opcional. */
+  suffix?: string;
 }
 
 /**
@@ -67,6 +72,7 @@ export default function KPICard({
   variacionPorcentual,
   icono,
   formato,
+  suffix,
 }: KPICardProps) {
   const formattedValue =
     formato === 'currency'
@@ -111,6 +117,11 @@ export default function KPICard({
 
       <div className="text-4xl font-semibold tabular-nums text-dash-ink">
         {formattedValue}
+        {suffix && (
+          <span className="ml-1.5 text-base font-medium text-dash-ink-2">
+            {suffix}
+          </span>
+        )}
       </div>
 
       <span

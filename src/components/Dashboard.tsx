@@ -1,44 +1,65 @@
 import { useMemo, useState } from 'react';
 
-import type { Periodo } from '../types/venta';
+import type { Periodo, RangoVentas } from '../types/venta';
 import { PERIODO_LABELS } from '../types/venta';
 import { CATEGORIA_LABELS } from '../types/producto';
 
 import {
   formatARS,
   formatNumber,
+  getDiasInventarioPromedio,
   getIngresoPorCategoria,
   getKPIs,
   getMargenPromedioPonderado,
   getPeriodRange,
+  getProductoMasVendido,
+  getTopCategoriaPorIngreso,
   getTopProductos,
   getTotalUnidadesVendidas,
   getVentasPorPeriodo,
+  PRIMER_MES,
   TOTAL_PRODUCTOS,
+  ULTIMO_MES,
 } from '../lib/datos';
 
 import KPICard from './KPICard';
+import KPICardText from './KPICardText';
 import GraficoLineas from './GraficoLineas';
 import GraficoBarras from './GraficoBarras';
 import GraficoCategorias from './GraficoCategorias';
 import PeriodoSelector from './PeriodoSelector';
+import ExportarCSVButton from './ExportarCSVButton';
 
 /* ============================================================
    Dashboard
    ============================================================ */
 
 const TOP_N_PRODUCTOS = 10;
+const DIAS_POR_MES = 30;
+
+/** Sufijo del archivo CSV — siempre en minúsculas y ASCII-safe. */
+const PERIODO_FILENAME: Record<Periodo, string> = {
+  ultimos_6: 'ultimos-6',
+  ultimo_anio: 'ultimo-anio',
+  todo: 'todo',
+  personalizado: 'personalizado',
+};
 
 /**
- * Orquesta el estado del selector de período y re-deriva todos los datos
- * derivados del rango activo. Garantiza que `kpis.ventasTotal` sea igual
- * a la suma de los puntos del LineChart en el mismo rango (T10.16) porque
- * `getKPIs` consume el mismo `getVentasPorPeriodo` que el gráfico.
+ * Orquesta el estado del selector de período (incluido el rango
+ * personalizado) y re-deriva todos los datos derivados del rango activo.
+ * Garantiza que `kpis.ventasTotal` sea igual a la suma de los puntos del
+ * LineChart en el mismo rango (T10.16) porque `getKPIs` consume el mismo
+ * `getVentasPorPeriodo` que el gráfico.
  */
 export default function Dashboard() {
   const [periodo, setPeriodo] = useState<Periodo>('ultimo_anio');
+  const [customRange, setCustomRange] = useState<RangoVentas>({
+    desde: PRIMER_MES,
+    hasta: ULTIMO_MES,
+  });
 
-  // Derivados memoizados — cambian solo cuando cambia el período.
+  // Derivados memoizados — cambian solo cuando cambia el período o el rango.
   const {
     rango,
     ventasRango,
@@ -47,14 +68,23 @@ export default function Dashboard() {
     ingresoPorCategoria,
     margenPromedio,
     totalUnidades,
+    diasInventario,
+    topCategoria,
+    productoMasVendido,
   } = useMemo(() => {
-    const rango = getPeriodRange(periodo);
+    const rango = getPeriodRange(periodo, customRange);
     const ventasRango = getVentasPorPeriodo(rango.desde, rango.hasta);
-    const kpis = getKPIs(periodo);
+    const kpis = getKPIs(periodo, customRange);
     const topProductos = getTopProductos(TOP_N_PRODUCTOS);
     const ingresoPorCategoria = getIngresoPorCategoria();
     const margenPromedio = getMargenPromedioPonderado();
     const totalUnidades = getTotalUnidadesVendidas();
+    const diasInventario = getDiasInventarioPromedio(
+      totalUnidades,
+      ventasRango.length * DIAS_POR_MES,
+    );
+    const topCategoria = getTopCategoriaPorIngreso();
+    const productoMasVendido = getProductoMasVendido();
     return {
       rango,
       ventasRango,
@@ -63,14 +93,24 @@ export default function Dashboard() {
       ingresoPorCategoria,
       margenPromedio,
       totalUnidades,
+      diasInventario,
+      topCategoria,
+      productoMasVendido,
     };
-  }, [periodo]);
+  }, [periodo, customRange]);
+
+  const periodoFile = PERIODO_FILENAME[periodo];
 
   return (
     <div className="flex flex-col gap-4 sm:gap-5">
       {/* Fila de control: Período activo */}
       <div className="flex flex-col items-stretch justify-between gap-3 sm:flex-row sm:items-center">
-        <PeriodoSelector value={periodo} onChange={setPeriodo} />
+        <PeriodoSelector
+          value={periodo}
+          onChange={setPeriodo}
+          customRange={customRange}
+          onCustomRangeChange={setCustomRange}
+        />
         <p className="text-xs text-dash-ink-2 tabular">
           Mostrando <span className="font-semibold text-dash-ink">{ventasRango.length}</span>{' '}
           {ventasRango.length === 1 ? 'mes' : 'meses'}
@@ -79,7 +119,7 @@ export default function Dashboard() {
         </p>
       </div>
 
-      {/* Grid de KPIs */}
+      {/* Grid de KPIs (9 tarjetas: 6 originales + 3 nuevos operacionales) */}
       <section
         aria-label="Indicadores clave del período"
         className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4"
@@ -126,6 +166,47 @@ export default function Dashboard() {
           icono="trend-up"
           formato="percent"
         />
+        {/* Operacionales nuevos */}
+        <KPICard
+          label="Días de inventario"
+          value={diasInventario}
+          variacionPorcentual={0}
+          icono="package"
+          formato="number"
+          suffix="días"
+        />
+        {topCategoria ? (
+          <KPICardText
+            label="Top categoría por ingreso"
+            texto={CATEGORIA_LABELS[topCategoria.categoria]}
+            detalle={`${formatARS(topCategoria.ingreso)} · ${topCategoria.participacion.toFixed(1)}% del mix`}
+            icono="tag"
+          />
+        ) : (
+          <KPICard
+            label="Top categoría por ingreso"
+            value={0}
+            variacionPorcentual={0}
+            icono="tag"
+            formato="currency"
+          />
+        )}
+        {productoMasVendido ? (
+          <KPICardText
+            label="Producto más vendido"
+            texto={productoMasVendido.nombre}
+            detalle={`${formatNumber(productoMasVendido.unidadesVendidas)} u. · ${CATEGORIA_LABELS[productoMasVendido.categoria]}`}
+            icono="star"
+          />
+        ) : (
+          <KPICard
+            label="Producto más vendido"
+            value={0}
+            variacionPorcentual={0}
+            icono="star"
+            formato="number"
+          />
+        )}
       </section>
 
       {/* Gráfico de líneas */}
@@ -133,7 +214,7 @@ export default function Dashboard() {
         aria-label="Tendencia de ventas"
         className="surface-card p-4 sm:p-5"
       >
-        <header className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+        <header className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex flex-col gap-0.5">
             <h2 className="text-sm font-semibold tracking-tight text-dash-ink">
               Ventas por mes
@@ -143,9 +224,23 @@ export default function Dashboard() {
               {ventasRango.length === 1 ? 'mes' : 'meses'}
             </p>
           </div>
-          <span className="text-[11px] uppercase tracking-wider text-dash-ink-3 tabular">
-            {rango.desde} <span className="text-dash-line">→</span> {rango.hasta}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] uppercase tracking-wider text-dash-ink-3 tabular">
+              {rango.desde} <span className="text-dash-line">→</span> {rango.hasta}
+            </span>
+            <ExportarCSVButton
+              data={ventasRango}
+              filename="ventas"
+              periodo={periodoFile}
+              columns={[
+                { header: 'Mes', accessor: 'mes' },
+                { header: 'Ventas totales (ARS)', accessor: 'ventasTotal' },
+                { header: 'Cantidad de pedidos', accessor: 'cantidadPedidos' },
+                { header: 'Ticket promedio (ARS)', accessor: 'ticketPromedio' },
+                { header: 'Variación mensual (%)', accessor: 'variacion' },
+              ]}
+            />
+          </div>
         </header>
         <GraficoLineas data={ventasRango} />
       </section>
@@ -155,7 +250,7 @@ export default function Dashboard() {
         aria-label="Ingresos por categoría"
         className="surface-card p-4 sm:p-5"
       >
-        <header className="mb-4 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+        <header className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex flex-col gap-0.5">
             <h2 className="text-sm font-semibold tracking-tight text-dash-ink">
               Mix por categoría
@@ -164,9 +259,25 @@ export default function Dashboard() {
               Distribución del ingreso acumulado por línea de producto
             </p>
           </div>
-          <span className="text-[11px] uppercase tracking-wider text-dash-ink-3 tabular">
-            {ingresoPorCategoria.length} categorías
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] uppercase tracking-wider text-dash-ink-3 tabular">
+              {ingresoPorCategoria.length} categorías
+            </span>
+            <ExportarCSVButton
+              data={ingresoPorCategoria}
+              filename="categorias"
+              periodo={periodoFile}
+              columns={[
+                {
+                  header: 'Categoría',
+                  accessor: (row) => CATEGORIA_LABELS[row.categoria],
+                },
+                { header: 'Ingreso (ARS)', accessor: 'ingreso' },
+                { header: 'Unidades', accessor: 'unidades' },
+                { header: 'Participación (%)', accessor: 'participacion' },
+              ]}
+            />
+          </div>
         </header>
         <GraficoCategorias data={ingresoPorCategoria} />
       </section>
@@ -177,13 +288,31 @@ export default function Dashboard() {
         className="grid grid-cols-1 gap-4 lg:grid-cols-5"
       >
         <div className="surface-card p-4 sm:p-5 lg:col-span-3">
-          <header className="mb-4 flex flex-col gap-0.5">
-            <h2 className="text-sm font-semibold tracking-tight text-dash-ink">
-              Top {TOP_N_PRODUCTOS} productos por ingreso
-            </h2>
-            <p className="text-xs text-dash-ink-2">
-              Ranking acumulado <span className="text-dash-line">·</span> Color por categoría
-            </p>
+          <header className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-0.5">
+              <h2 className="text-sm font-semibold tracking-tight text-dash-ink">
+                Top {TOP_N_PRODUCTOS} productos por ingreso
+              </h2>
+              <p className="text-xs text-dash-ink-2">
+                Ranking acumulado <span className="text-dash-line">·</span> Color por categoría
+              </p>
+            </div>
+            <ExportarCSVButton
+              data={topProductos}
+              filename="productos"
+              periodo={periodoFile}
+              columns={[
+                { header: 'ID', accessor: 'id' },
+                { header: 'Producto', accessor: 'nombre' },
+                {
+                  header: 'Categoría',
+                  accessor: (row) => CATEGORIA_LABELS[row.categoria],
+                },
+                { header: 'Unidades vendidas', accessor: 'unidadesVendidas' },
+                { header: 'Ingreso total (ARS)', accessor: 'ingresoTotal' },
+                { header: 'Margen (%)', accessor: 'margen' },
+              ]}
+            />
           </header>
           <GraficoBarras data={topProductos} />
         </div>

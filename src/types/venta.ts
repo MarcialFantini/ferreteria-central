@@ -33,13 +33,14 @@ export interface VentaMensual {
 }
 
 /** Períodos disponibles para el selector. */
-export type Periodo = 'ultimos_6' | 'ultimo_anio' | 'todo';
+export type Periodo = 'ultimos_6' | 'ultimo_anio' | 'todo' | 'personalizado';
 
 /** Etiqueta humana de cada período. */
 export const PERIODO_LABELS: Record<Periodo, string> = {
   ultimos_6: 'Últimos 6 meses',
   ultimo_anio: 'Último año',
   todo: 'Todo',
+  personalizado: 'Personalizado',
 };
 
 /** Rango temporal concreto, devuelto por getVentasPorPeriodo. */
