@@ -3,160 +3,288 @@
     "id": "P-001",
     "nombre": "Martillo galponero 25cm",
     "categoria": "herramientas_manuales",
-    "unidadesVendidas": 412,
-    "ingresoTotal": 2884000,
-    "margen": 35
+    "precioUnitario": 7000,
+    "margen": 35,
+    "unidadesVendidas": 9280,
+    "ingresoTotal": 65012957
   },
   {
     "id": "P-002",
-    "nombre": "Destornillador Phillips PH2",
+    "nombre": "Destornillador Phillips PH2 x3",
     "categoria": "herramientas_manuales",
-    "unidadesVendidas": 980,
-    "ingresoTotal": 1372000,
-    "margen": 45
+    "precioUnitario": 1400,
+    "margen": 45,
+    "unidadesVendidas": 9833,
+    "ingresoTotal": 13766829
   },
   {
     "id": "P-003",
     "nombre": "Llave francesa 12\"",
     "categoria": "herramientas_manuales",
-    "unidadesVendidas": 285,
-    "ingresoTotal": 1710000,
-    "margen": 38
+    "precioUnitario": 6000,
+    "margen": 38,
+    "unidadesVendidas": 8294,
+    "ingresoTotal": 49772072
   },
   {
     "id": "P-004",
     "nombre": "Alicate diagonal 6\"",
     "categoria": "herramientas_manuales",
-    "unidadesVendidas": 340,
-    "ingresoTotal": 1224000,
-    "margen": 42
+    "precioUnitario": 3600,
+    "margen": 42,
+    "unidadesVendidas": 8550,
+    "ingresoTotal": 30751558
   },
   {
     "id": "P-005",
-    "nombre": "Taladro percutor 1/2\" 600W",
-    "categoria": "herramientas_electricas",
-    "unidadesVendidas": 142,
-    "ingresoTotal": 5680000,
-    "margen": 25
+    "nombre": "Set llaves combinadas x12",
+    "categoria": "herramientas_manuales",
+    "precioUnitario": 18500,
+    "margen": 33,
+    "unidadesVendidas": 7947,
+    "ingresoTotal": 146950383
   },
   {
     "id": "P-006",
-    "nombre": "Lijadora orbital 320W",
-    "categoria": "herramientas_electricas",
-    "unidadesVendidas": 78,
-    "ingresoTotal": 2496000,
-    "margen": 28
+    "nombre": "Cinta métrica 5m",
+    "categoria": "herramientas_manuales",
+    "precioUnitario": 2400,
+    "margen": 50,
+    "unidadesVendidas": 9374,
+    "ingresoTotal": 22498441
   },
   {
     "id": "P-007",
-    "nombre": "Sierra caladora 500W",
+    "nombre": "Taladro percutor 1/2\" 600W",
     "categoria": "herramientas_electricas",
-    "unidadesVendidas": 64,
-    "ingresoTotal": 2304000,
-    "margen": 26
+    "precioUnitario": 40000,
+    "margen": 25,
+    "unidadesVendidas": 6943,
+    "ingresoTotal": 277728894
   },
   {
     "id": "P-008",
-    "nombre": "Caja tornillos autoperforantes x200",
-    "categoria": "fijaciones",
-    "unidadesVendidas": 1540,
-    "ingresoTotal": 1232000,
-    "margen": 48
+    "nombre": "Lijadora orbital 320W",
+    "categoria": "herramientas_electricas",
+    "precioUnitario": 32000,
+    "margen": 28,
+    "unidadesVendidas": 5741,
+    "ingresoTotal": 183724734
   },
   {
     "id": "P-009",
-    "nombre": "Caja clavos 2\" x1kg",
-    "categoria": "fijaciones",
-    "unidadesVendidas": 1820,
-    "ingresoTotal": 1092000,
-    "margen": 50
+    "nombre": "Sierra caladora 500W",
+    "categoria": "herramientas_electricas",
+    "precioUnitario": 36000,
+    "margen": 26,
+    "unidadesVendidas": 5352,
+    "ingresoTotal": 192784925
   },
   {
     "id": "P-010",
-    "nombre": "Bulones 1/4\" x10",
-    "categoria": "fijaciones",
-    "unidadesVendidas": 760,
-    "ingresoTotal": 912000,
-    "margen": 45
+    "nombre": "Amoladora angular 7\"",
+    "categoria": "herramientas_electricas",
+    "precioUnitario": 48000,
+    "margen": 24,
+    "unidadesVendidas": 6099,
+    "ingresoTotal": 292488928
   },
   {
     "id": "P-011",
-    "nombre": "Tarugos plásticos x50",
-    "categoria": "fijaciones",
-    "unidadesVendidas": 1240,
-    "ingresoTotal": 620000,
-    "margen": 52
+    "nombre": "Soldador inverter 200A",
+    "categoria": "herramientas_electricas",
+    "precioUnitario": 85000,
+    "margen": 22,
+    "unidadesVendidas": 4236,
+    "ingresoTotal": 360433869
   },
   {
     "id": "P-012",
-    "nombre": "Canilla monocomando cocina",
-    "categoria": "plomeria",
-    "unidadesVendidas": 96,
-    "ingresoTotal": 2880000,
-    "margen": 30
+    "nombre": "Caja tornillos autoperforantes x200",
+    "categoria": "fijaciones",
+    "precioUnitario": 800,
+    "margen": 48,
+    "unidadesVendidas": 23114,
+    "ingresoTotal": 18487755
   },
   {
     "id": "P-013",
-    "nombre": "Caño PVC 110mm x4m",
-    "categoria": "plomeria",
-    "unidadesVendidas": 215,
-    "ingresoTotal": 2150000,
-    "margen": 32
+    "nombre": "Caja clavos 2\" x1kg",
+    "categoria": "fijaciones",
+    "precioUnitario": 600,
+    "margen": 50,
+    "unidadesVendidas": 23342,
+    "ingresoTotal": 14005865
   },
   {
     "id": "P-014",
-    "nombre": "Sellador siliconas transparente",
-    "categoria": "plomeria",
-    "unidadesVendidas": 380,
-    "ingresoTotal": 1520000,
-    "margen": 40
+    "nombre": "Bulones 1/4\" x10",
+    "categoria": "fijaciones",
+    "precioUnitario": 1200,
+    "margen": 45,
+    "unidadesVendidas": 19239,
+    "ingresoTotal": 23078825
   },
   {
     "id": "P-015",
-    "nombre": "Cable unipolar 2.5mm x100m",
-    "categoria": "electricidad",
-    "unidadesVendidas": 168,
-    "ingresoTotal": 2016000,
-    "margen": 35
+    "nombre": "Tarugos plásticos x50",
+    "categoria": "fijaciones",
+    "precioUnitario": 500,
+    "margen": 52,
+    "unidadesVendidas": 21253,
+    "ingresoTotal": 10621779
   },
   {
     "id": "P-016",
-    "nombre": "Llave de luz armada",
-    "categoria": "electricidad",
-    "unidadesVendidas": 540,
-    "ingresoTotal": 1080000,
-    "margen": 44
+    "nombre": "Tuercas y arandelas surtidas x100",
+    "categoria": "fijaciones",
+    "precioUnitario": 1800,
+    "margen": 47,
+    "unidadesVendidas": 17402,
+    "ingresoTotal": 31343996
   },
   {
     "id": "P-017",
-    "nombre": "Ficha macho 10A",
-    "categoria": "electricidad",
-    "unidadesVendidas": 820,
-    "ingresoTotal": 902000,
-    "margen": 46
+    "nombre": "Canilla monocomando cocina",
+    "categoria": "plomeria",
+    "precioUnitario": 30000,
+    "margen": 30,
+    "unidadesVendidas": 6356,
+    "ingresoTotal": 190440905
   },
   {
     "id": "P-018",
-    "nombre": "Pincel cerda natural 2\"",
-    "categoria": "pintureria",
-    "unidadesVendidas": 320,
-    "ingresoTotal": 960000,
-    "margen": 42
+    "nombre": "Caño PVC 110mm x4m",
+    "categoria": "plomeria",
+    "precioUnitario": 10000,
+    "margen": 32,
+    "unidadesVendidas": 6915,
+    "ingresoTotal": 69202482
   },
   {
     "id": "P-019",
-    "nombre": "Rodillo poliuretano 23cm",
-    "categoria": "pintureria",
-    "unidadesVendidas": 285,
-    "ingresoTotal": 855000,
-    "margen": 44
+    "nombre": "Sellador siliconas transparente",
+    "categoria": "plomeria",
+    "precioUnitario": 4000,
+    "margen": 40,
+    "unidadesVendidas": 8683,
+    "ingresoTotal": 34737177
   },
   {
     "id": "P-020",
+    "nombre": "Pipa flexible 40cm",
+    "categoria": "plomeria",
+    "precioUnitario": 8500,
+    "margen": 35,
+    "unidadesVendidas": 5918,
+    "ingresoTotal": 50292956
+  },
+  {
+    "id": "P-021",
+    "nombre": "Llave de paso 1/2\"",
+    "categoria": "plomeria",
+    "precioUnitario": 5500,
+    "margen": 38,
+    "unidadesVendidas": 6772,
+    "ingresoTotal": 37230278
+  },
+  {
+    "id": "P-022",
+    "nombre": "Cable unipolar 2.5mm x100m",
+    "categoria": "electricidad",
+    "precioUnitario": 12000,
+    "margen": 35,
+    "unidadesVendidas": 7462,
+    "ingresoTotal": 89589765
+  },
+  {
+    "id": "P-023",
+    "nombre": "Llave de luz armada",
+    "categoria": "electricidad",
+    "precioUnitario": 2000,
+    "margen": 44,
+    "unidadesVendidas": 9075,
+    "ingresoTotal": 18152187
+  },
+  {
+    "id": "P-024",
+    "nombre": "Ficha macho 10A",
+    "categoria": "electricidad",
+    "precioUnitario": 1100,
+    "margen": 46,
+    "unidadesVendidas": 9376,
+    "ingresoTotal": 10310624
+  },
+  {
+    "id": "P-025",
+    "nombre": "Térmica bipolar 25A",
+    "categoria": "electricidad",
+    "precioUnitario": 6800,
+    "margen": 36,
+    "unidadesVendidas": 5974,
+    "ingresoTotal": 40648722
+  },
+  {
+    "id": "P-026",
+    "nombre": "Caño corrugado 3/4\" x10m",
+    "categoria": "electricidad",
+    "precioUnitario": 3200,
+    "margen": 42,
+    "unidadesVendidas": 7132,
+    "ingresoTotal": 22828577
+  },
+  {
+    "id": "P-027",
+    "nombre": "Pintura látex interior 20L",
+    "categoria": "pintureria",
+    "precioUnitario": 45000,
+    "margen": 28,
+    "unidadesVendidas": 7731,
+    "ingresoTotal": 347882729
+  },
+  {
+    "id": "P-028",
+    "nombre": "Pincel cerda natural 2\"",
+    "categoria": "pintureria",
+    "precioUnitario": 3000,
+    "margen": 42,
+    "unidadesVendidas": 8543,
+    "ingresoTotal": 25610784
+  },
+  {
+    "id": "P-029",
+    "nombre": "Rodillo poliuretano 23cm",
+    "categoria": "pintureria",
+    "precioUnitario": 3000,
+    "margen": 44,
+    "unidadesVendidas": 8248,
+    "ingresoTotal": 24737295
+  },
+  {
+    "id": "P-030",
     "nombre": "Cinta de papel 48mm x50m",
     "categoria": "pintureria",
-    "unidadesVendidas": 460,
-    "ingresoTotal": 690000,
-    "margen": 50
+    "precioUnitario": 1500,
+    "margen": 50,
+    "unidadesVendidas": 8681,
+    "ingresoTotal": 13025641
+  },
+  {
+    "id": "P-031",
+    "nombre": "Enduido interior x4kg",
+    "categoria": "pintureria",
+    "precioUnitario": 6200,
+    "margen": 38,
+    "unidadesVendidas": 5824,
+    "ingresoTotal": 36094710
+  },
+  {
+    "id": "P-032",
+    "nombre": "Lija al agua x6",
+    "categoria": "pintureria",
+    "precioUnitario": 1800,
+    "margen": 46,
+    "unidadesVendidas": 7587,
+    "ingresoTotal": 13664672
   }
 ]

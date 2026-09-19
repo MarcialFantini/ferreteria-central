@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Page from '../components/Page';
+import VistaVentas from '../components/vistas/VistaVentas';
+
+const title = 'Listado de ventas — Ferretería Central';
+const description = 'Detalle de pedidos y facturación por mes para el período seleccionado. Filtros por tipo de cliente, método de pago y canal.';
+---
+<Layout title={title} description={description}>
+  <Page
+    activeKey="ventas"
+    title="Listado de ventas"
+    description="Detalle de pedidos individuales y la facturación mensual del rango activo. Filtr— por tipo de cliente, método de pago o canal; export— a CSV cuando quieras."
+  >
+    <VistaVentas />
+  </Page>
+</Layout>

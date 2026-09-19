@@ -1,0 +1,32 @@
+[
+  {
+    "key": "herramientas_manuales",
+    "label": "Herramientas manuales",
+    "color": "#3B82F6"
+  },
+  {
+    "key": "herramientas_electricas",
+    "label": "Herramientas eléctricas",
+    "color": "#10B981"
+  },
+  {
+    "key": "fijaciones",
+    "label": "Fijaciones",
+    "color": "#F59E0B"
+  },
+  {
+    "key": "plomeria",
+    "label": "Plomería",
+    "color": "#EF4444"
+  },
+  {
+    "key": "electricidad",
+    "label": "Electricidad",
+    "color": "#8B5CF6"
+  },
+  {
+    "key": "pintureria",
+    "label": "Pinturería",
+    "color": "#14B8A6"
+  }
+]

@@ -1,0 +1,7312 @@
+[
+  {
+    "fecha": "2024-01-01",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 1,
+    "diaSemana": 1,
+    "ventasTotal": 291580,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-01-02",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 2,
+    "diaSemana": 2,
+    "ventasTotal": 326728,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-01-03",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 3,
+    "diaSemana": 3,
+    "ventasTotal": 226790,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2024-01-04",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 4,
+    "diaSemana": 4,
+    "ventasTotal": 258687,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-01-05",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 5,
+    "diaSemana": 5,
+    "ventasTotal": 362405,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-01-06",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 6,
+    "diaSemana": 6,
+    "ventasTotal": 359711,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-01-07",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 7,
+    "diaSemana": 0,
+    "ventasTotal": 154409,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-01-08",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 8,
+    "diaSemana": 1,
+    "ventasTotal": 281178,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-01-09",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 9,
+    "diaSemana": 2,
+    "ventasTotal": 231604,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-01-10",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 10,
+    "diaSemana": 3,
+    "ventasTotal": 288536,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-01-11",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 11,
+    "diaSemana": 4,
+    "ventasTotal": 226436,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2024-01-12",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 12,
+    "diaSemana": 5,
+    "ventasTotal": 296898,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-01-13",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 13,
+    "diaSemana": 6,
+    "ventasTotal": 461207,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2024-01-14",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 14,
+    "diaSemana": 0,
+    "ventasTotal": 128469,
+    "cantidadPedidos": 9
+  },
+  {
+    "fecha": "2024-01-15",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 15,
+    "diaSemana": 1,
+    "ventasTotal": 230177,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-01-16",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 16,
+    "diaSemana": 2,
+    "ventasTotal": 346977,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-01-17",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 17,
+    "diaSemana": 3,
+    "ventasTotal": 306608,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-01-18",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 18,
+    "diaSemana": 4,
+    "ventasTotal": 327627,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-01-19",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 19,
+    "diaSemana": 5,
+    "ventasTotal": 369139,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-01-20",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 20,
+    "diaSemana": 6,
+    "ventasTotal": 344537,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-01-21",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 21,
+    "diaSemana": 0,
+    "ventasTotal": 172481,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-01-22",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 22,
+    "diaSemana": 1,
+    "ventasTotal": 333499,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-01-23",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 23,
+    "diaSemana": 2,
+    "ventasTotal": 281731,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-01-24",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 24,
+    "diaSemana": 3,
+    "ventasTotal": 289540,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-01-25",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 25,
+    "diaSemana": 4,
+    "ventasTotal": 290410,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-01-26",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 26,
+    "diaSemana": 5,
+    "ventasTotal": 328537,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-01-27",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 27,
+    "diaSemana": 6,
+    "ventasTotal": 374019,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-01-28",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 28,
+    "diaSemana": 0,
+    "ventasTotal": 147045,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-01-29",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 29,
+    "diaSemana": 1,
+    "ventasTotal": 342250,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-01-30",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 30,
+    "diaSemana": 2,
+    "ventasTotal": 249634,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-01-31",
+    "mes": "2024-01",
+    "anio": 2024,
+    "mesNum": 1,
+    "dia": 31,
+    "diaSemana": 3,
+    "ventasTotal": 265567,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-02-01",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 1,
+    "diaSemana": 4,
+    "ventasTotal": 241234,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-02-02",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 2,
+    "diaSemana": 5,
+    "ventasTotal": 407702,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-02-03",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 3,
+    "diaSemana": 6,
+    "ventasTotal": 396492,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-02-04",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 4,
+    "diaSemana": 0,
+    "ventasTotal": 140938,
+    "cantidadPedidos": 10
+  },
+  {
+    "fecha": "2024-02-05",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 5,
+    "diaSemana": 1,
+    "ventasTotal": 249530,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-02-06",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 6,
+    "diaSemana": 2,
+    "ventasTotal": 276263,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-02-07",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 7,
+    "diaSemana": 3,
+    "ventasTotal": 260461,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-02-08",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 8,
+    "diaSemana": 4,
+    "ventasTotal": 360132,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-02-09",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 9,
+    "diaSemana": 5,
+    "ventasTotal": 378610,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-02-10",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 10,
+    "diaSemana": 6,
+    "ventasTotal": 393976,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-02-11",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 11,
+    "diaSemana": 0,
+    "ventasTotal": 152270,
+    "cantidadPedidos": 10
+  },
+  {
+    "fecha": "2024-02-12",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 12,
+    "diaSemana": 1,
+    "ventasTotal": 249909,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-02-13",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 13,
+    "diaSemana": 2,
+    "ventasTotal": 267509,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-02-14",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 14,
+    "diaSemana": 3,
+    "ventasTotal": 244841,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-02-15",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 15,
+    "diaSemana": 4,
+    "ventasTotal": 309343,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-02-16",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 16,
+    "diaSemana": 5,
+    "ventasTotal": 386757,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-02-17",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 17,
+    "diaSemana": 6,
+    "ventasTotal": 391862,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-02-18",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 18,
+    "diaSemana": 0,
+    "ventasTotal": 171517,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-02-19",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 19,
+    "diaSemana": 1,
+    "ventasTotal": 301432,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-02-20",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 20,
+    "diaSemana": 2,
+    "ventasTotal": 337143,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-02-21",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 21,
+    "diaSemana": 3,
+    "ventasTotal": 299929,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-02-22",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 22,
+    "diaSemana": 4,
+    "ventasTotal": 282453,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-02-23",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 23,
+    "diaSemana": 5,
+    "ventasTotal": 412048,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2024-02-24",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 24,
+    "diaSemana": 6,
+    "ventasTotal": 470153,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2024-02-25",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 25,
+    "diaSemana": 0,
+    "ventasTotal": 174629,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-02-26",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 26,
+    "diaSemana": 1,
+    "ventasTotal": 251028,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-02-27",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 27,
+    "diaSemana": 2,
+    "ventasTotal": 269603,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-02-28",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 28,
+    "diaSemana": 3,
+    "ventasTotal": 298906,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-02-29",
+    "mes": "2024-02",
+    "anio": 2024,
+    "mesNum": 2,
+    "dia": 29,
+    "diaSemana": 4,
+    "ventasTotal": 270374,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-01",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 1,
+    "diaSemana": 5,
+    "ventasTotal": 290153,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-03-02",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 2,
+    "diaSemana": 6,
+    "ventasTotal": 342829,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-03-03",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 3,
+    "diaSemana": 0,
+    "ventasTotal": 112617,
+    "cantidadPedidos": 8
+  },
+  {
+    "fecha": "2024-03-04",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 4,
+    "diaSemana": 1,
+    "ventasTotal": 253964,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-05",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 5,
+    "diaSemana": 2,
+    "ventasTotal": 244559,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-03-06",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 6,
+    "diaSemana": 3,
+    "ventasTotal": 271374,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-03-07",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 7,
+    "diaSemana": 4,
+    "ventasTotal": 291437,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-03-08",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 8,
+    "diaSemana": 5,
+    "ventasTotal": 238738,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-03-09",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 9,
+    "diaSemana": 6,
+    "ventasTotal": 379083,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-03-10",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 10,
+    "diaSemana": 0,
+    "ventasTotal": 183699,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2024-03-11",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 11,
+    "diaSemana": 1,
+    "ventasTotal": 252597,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-12",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 12,
+    "diaSemana": 2,
+    "ventasTotal": 289974,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-03-13",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 13,
+    "diaSemana": 3,
+    "ventasTotal": 236654,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-03-14",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 14,
+    "diaSemana": 4,
+    "ventasTotal": 223242,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2024-03-15",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 15,
+    "diaSemana": 5,
+    "ventasTotal": 246592,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-16",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 16,
+    "diaSemana": 6,
+    "ventasTotal": 376335,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-03-17",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 17,
+    "diaSemana": 0,
+    "ventasTotal": 117660,
+    "cantidadPedidos": 8
+  },
+  {
+    "fecha": "2024-03-18",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 18,
+    "diaSemana": 1,
+    "ventasTotal": 274137,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-03-19",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 19,
+    "diaSemana": 2,
+    "ventasTotal": 233526,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-03-20",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 20,
+    "diaSemana": 3,
+    "ventasTotal": 251663,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-03-21",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 21,
+    "diaSemana": 4,
+    "ventasTotal": 236320,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-22",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 22,
+    "diaSemana": 5,
+    "ventasTotal": 337533,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-03-23",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 23,
+    "diaSemana": 6,
+    "ventasTotal": 337908,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-03-24",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 24,
+    "diaSemana": 0,
+    "ventasTotal": 129048,
+    "cantidadPedidos": 9
+  },
+  {
+    "fecha": "2024-03-25",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 25,
+    "diaSemana": 1,
+    "ventasTotal": 271052,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-03-26",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 26,
+    "diaSemana": 2,
+    "ventasTotal": 258277,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-27",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 27,
+    "diaSemana": 3,
+    "ventasTotal": 247728,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-28",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 28,
+    "diaSemana": 4,
+    "ventasTotal": 254611,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-03-29",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 29,
+    "diaSemana": 5,
+    "ventasTotal": 261054,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-03-30",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 30,
+    "diaSemana": 6,
+    "ventasTotal": 301848,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-03-31",
+    "mes": "2024-03",
+    "anio": 2024,
+    "mesNum": 3,
+    "dia": 31,
+    "diaSemana": 0,
+    "ventasTotal": 128621,
+    "cantidadPedidos": 9
+  },
+  {
+    "fecha": "2024-04-01",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 1,
+    "diaSemana": 1,
+    "ventasTotal": 303679,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-04-02",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 2,
+    "diaSemana": 2,
+    "ventasTotal": 293718,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-04-03",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 3,
+    "diaSemana": 3,
+    "ventasTotal": 206773,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2024-04-04",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 4,
+    "diaSemana": 4,
+    "ventasTotal": 356705,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-04-05",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 5,
+    "diaSemana": 5,
+    "ventasTotal": 359148,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-04-06",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 6,
+    "diaSemana": 6,
+    "ventasTotal": 406993,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2024-04-07",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 7,
+    "diaSemana": 0,
+    "ventasTotal": 152237,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-04-08",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 8,
+    "diaSemana": 1,
+    "ventasTotal": 331430,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-04-09",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 9,
+    "diaSemana": 2,
+    "ventasTotal": 383570,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-04-10",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 10,
+    "diaSemana": 3,
+    "ventasTotal": 334738,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-04-11",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 11,
+    "diaSemana": 4,
+    "ventasTotal": 298835,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-04-12",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 12,
+    "diaSemana": 5,
+    "ventasTotal": 307294,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-04-13",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 13,
+    "diaSemana": 6,
+    "ventasTotal": 393927,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2024-04-14",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 14,
+    "diaSemana": 0,
+    "ventasTotal": 175122,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-04-15",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 15,
+    "diaSemana": 1,
+    "ventasTotal": 355126,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-04-16",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 16,
+    "diaSemana": 2,
+    "ventasTotal": 341157,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-04-17",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 17,
+    "diaSemana": 3,
+    "ventasTotal": 321981,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-04-18",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 18,
+    "diaSemana": 4,
+    "ventasTotal": 283334,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-04-19",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 19,
+    "diaSemana": 5,
+    "ventasTotal": 334793,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-04-20",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 20,
+    "diaSemana": 6,
+    "ventasTotal": 417659,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-04-21",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 21,
+    "diaSemana": 0,
+    "ventasTotal": 140517,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-04-22",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 22,
+    "diaSemana": 1,
+    "ventasTotal": 273270,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-04-23",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 23,
+    "diaSemana": 2,
+    "ventasTotal": 259020,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-04-24",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 24,
+    "diaSemana": 3,
+    "ventasTotal": 375083,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-04-25",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 25,
+    "diaSemana": 4,
+    "ventasTotal": 357920,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-04-26",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 26,
+    "diaSemana": 5,
+    "ventasTotal": 329016,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-04-27",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 27,
+    "diaSemana": 6,
+    "ventasTotal": 369805,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-04-28",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 28,
+    "diaSemana": 0,
+    "ventasTotal": 169351,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-04-29",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 29,
+    "diaSemana": 1,
+    "ventasTotal": 366620,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-04-30",
+    "mes": "2024-04",
+    "anio": 2024,
+    "mesNum": 4,
+    "dia": 30,
+    "diaSemana": 2,
+    "ventasTotal": 276579,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-05-01",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 1,
+    "diaSemana": 3,
+    "ventasTotal": 358412,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-05-02",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 2,
+    "diaSemana": 4,
+    "ventasTotal": 353697,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-05-03",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 3,
+    "diaSemana": 5,
+    "ventasTotal": 255258,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-05-04",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 4,
+    "diaSemana": 6,
+    "ventasTotal": 506035,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2024-05-05",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 5,
+    "diaSemana": 0,
+    "ventasTotal": 155049,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-05-06",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 6,
+    "diaSemana": 1,
+    "ventasTotal": 380601,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-05-07",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 7,
+    "diaSemana": 2,
+    "ventasTotal": 360989,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-05-08",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 8,
+    "diaSemana": 3,
+    "ventasTotal": 329357,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-05-09",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 9,
+    "diaSemana": 4,
+    "ventasTotal": 231935,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-05-10",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 10,
+    "diaSemana": 5,
+    "ventasTotal": 397488,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-05-11",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 11,
+    "diaSemana": 6,
+    "ventasTotal": 455564,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2024-05-12",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 12,
+    "diaSemana": 0,
+    "ventasTotal": 186704,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-05-13",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 13,
+    "diaSemana": 1,
+    "ventasTotal": 348080,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-05-14",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 14,
+    "diaSemana": 2,
+    "ventasTotal": 298226,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-05-15",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 15,
+    "diaSemana": 3,
+    "ventasTotal": 360372,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-05-16",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 16,
+    "diaSemana": 4,
+    "ventasTotal": 288186,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-05-17",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 17,
+    "diaSemana": 5,
+    "ventasTotal": 338307,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-05-18",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 18,
+    "diaSemana": 6,
+    "ventasTotal": 322433,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-05-19",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 19,
+    "diaSemana": 0,
+    "ventasTotal": 196557,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2024-05-20",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 20,
+    "diaSemana": 1,
+    "ventasTotal": 255542,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-05-21",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 21,
+    "diaSemana": 2,
+    "ventasTotal": 345966,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-05-22",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 22,
+    "diaSemana": 3,
+    "ventasTotal": 315755,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-05-23",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 23,
+    "diaSemana": 4,
+    "ventasTotal": 340946,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-05-24",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 24,
+    "diaSemana": 5,
+    "ventasTotal": 374653,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-05-25",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 25,
+    "diaSemana": 6,
+    "ventasTotal": 504636,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2024-05-26",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 26,
+    "diaSemana": 0,
+    "ventasTotal": 162096,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-05-27",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 27,
+    "diaSemana": 1,
+    "ventasTotal": 223466,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-05-28",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 28,
+    "diaSemana": 2,
+    "ventasTotal": 296535,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-05-29",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 29,
+    "diaSemana": 3,
+    "ventasTotal": 322752,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-05-30",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 30,
+    "diaSemana": 4,
+    "ventasTotal": 303771,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-05-31",
+    "mes": "2024-05",
+    "anio": 2024,
+    "mesNum": 5,
+    "dia": 31,
+    "diaSemana": 5,
+    "ventasTotal": 325379,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-01",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 1,
+    "diaSemana": 6,
+    "ventasTotal": 379504,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-06-02",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 2,
+    "diaSemana": 0,
+    "ventasTotal": 150145,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-06-03",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 3,
+    "diaSemana": 1,
+    "ventasTotal": 321586,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-06-04",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 4,
+    "diaSemana": 2,
+    "ventasTotal": 320246,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-05",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 5,
+    "diaSemana": 3,
+    "ventasTotal": 344338,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-06-06",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 6,
+    "diaSemana": 4,
+    "ventasTotal": 300767,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-06-07",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 7,
+    "diaSemana": 5,
+    "ventasTotal": 407184,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-06-08",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 8,
+    "diaSemana": 6,
+    "ventasTotal": 530173,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2024-06-09",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 9,
+    "diaSemana": 0,
+    "ventasTotal": 214693,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2024-06-10",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 10,
+    "diaSemana": 1,
+    "ventasTotal": 343572,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-06-11",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 11,
+    "diaSemana": 2,
+    "ventasTotal": 330102,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-12",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 12,
+    "diaSemana": 3,
+    "ventasTotal": 324606,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-06-13",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 13,
+    "diaSemana": 4,
+    "ventasTotal": 354449,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-06-14",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 14,
+    "diaSemana": 5,
+    "ventasTotal": 372257,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-06-15",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 15,
+    "diaSemana": 6,
+    "ventasTotal": 498084,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2024-06-16",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 16,
+    "diaSemana": 0,
+    "ventasTotal": 175991,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-06-17",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 17,
+    "diaSemana": 1,
+    "ventasTotal": 320030,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-06-18",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 18,
+    "diaSemana": 2,
+    "ventasTotal": 340547,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-19",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 19,
+    "diaSemana": 3,
+    "ventasTotal": 331512,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-20",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 20,
+    "diaSemana": 4,
+    "ventasTotal": 315059,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-06-21",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 21,
+    "diaSemana": 5,
+    "ventasTotal": 382207,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-06-22",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 22,
+    "diaSemana": 6,
+    "ventasTotal": 503780,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2024-06-23",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 23,
+    "diaSemana": 0,
+    "ventasTotal": 225347,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2024-06-24",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 24,
+    "diaSemana": 1,
+    "ventasTotal": 311191,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-25",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 25,
+    "diaSemana": 2,
+    "ventasTotal": 332694,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-06-26",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 26,
+    "diaSemana": 3,
+    "ventasTotal": 404692,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-06-27",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 27,
+    "diaSemana": 4,
+    "ventasTotal": 308683,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-06-28",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 28,
+    "diaSemana": 5,
+    "ventasTotal": 317382,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-06-29",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 29,
+    "diaSemana": 6,
+    "ventasTotal": 518882,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-06-30",
+    "mes": "2024-06",
+    "anio": 2024,
+    "mesNum": 6,
+    "dia": 30,
+    "diaSemana": 0,
+    "ventasTotal": 205874,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2024-07-01",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 1,
+    "diaSemana": 1,
+    "ventasTotal": 438171,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-07-02",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 2,
+    "diaSemana": 2,
+    "ventasTotal": 360264,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-07-03",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 3,
+    "diaSemana": 3,
+    "ventasTotal": 341984,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-07-04",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 4,
+    "diaSemana": 4,
+    "ventasTotal": 348146,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-07-05",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 5,
+    "diaSemana": 5,
+    "ventasTotal": 431974,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2024-07-06",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 6,
+    "diaSemana": 6,
+    "ventasTotal": 444202,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-07-07",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 7,
+    "diaSemana": 0,
+    "ventasTotal": 189990,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-07-08",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 8,
+    "diaSemana": 1,
+    "ventasTotal": 325056,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-07-09",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 9,
+    "diaSemana": 2,
+    "ventasTotal": 340906,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-07-10",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 10,
+    "diaSemana": 3,
+    "ventasTotal": 310586,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-07-11",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 11,
+    "diaSemana": 4,
+    "ventasTotal": 328704,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-07-12",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 12,
+    "diaSemana": 5,
+    "ventasTotal": 295185,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-07-13",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 13,
+    "diaSemana": 6,
+    "ventasTotal": 494653,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2024-07-14",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 14,
+    "diaSemana": 0,
+    "ventasTotal": 187705,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2024-07-15",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 15,
+    "diaSemana": 1,
+    "ventasTotal": 266029,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-07-16",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 16,
+    "diaSemana": 2,
+    "ventasTotal": 326730,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-07-17",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 17,
+    "diaSemana": 3,
+    "ventasTotal": 369494,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-07-18",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 18,
+    "diaSemana": 4,
+    "ventasTotal": 318663,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-07-19",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 19,
+    "diaSemana": 5,
+    "ventasTotal": 374082,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-07-20",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 20,
+    "diaSemana": 6,
+    "ventasTotal": 329604,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-07-21",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 21,
+    "diaSemana": 0,
+    "ventasTotal": 173215,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-07-22",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 22,
+    "diaSemana": 1,
+    "ventasTotal": 348850,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-07-23",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 23,
+    "diaSemana": 2,
+    "ventasTotal": 369593,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-07-24",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 24,
+    "diaSemana": 3,
+    "ventasTotal": 260848,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2024-07-25",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 25,
+    "diaSemana": 4,
+    "ventasTotal": 334928,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-07-26",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 26,
+    "diaSemana": 5,
+    "ventasTotal": 310942,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-07-27",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 27,
+    "diaSemana": 6,
+    "ventasTotal": 537638,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-07-28",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 28,
+    "diaSemana": 0,
+    "ventasTotal": 211104,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2024-07-29",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 29,
+    "diaSemana": 1,
+    "ventasTotal": 347268,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-07-30",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 30,
+    "diaSemana": 2,
+    "ventasTotal": 383217,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-07-31",
+    "mes": "2024-07",
+    "anio": 2024,
+    "mesNum": 7,
+    "dia": 31,
+    "diaSemana": 3,
+    "ventasTotal": 334529,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-01",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 1,
+    "diaSemana": 4,
+    "ventasTotal": 197721,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2024-08-02",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 2,
+    "diaSemana": 5,
+    "ventasTotal": 387749,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-08-03",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 3,
+    "diaSemana": 6,
+    "ventasTotal": 397846,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-08-04",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 4,
+    "diaSemana": 0,
+    "ventasTotal": 165775,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-08-05",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 5,
+    "diaSemana": 1,
+    "ventasTotal": 408978,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-08-06",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 6,
+    "diaSemana": 2,
+    "ventasTotal": 375509,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-08-07",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 7,
+    "diaSemana": 3,
+    "ventasTotal": 277494,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-08-08",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 8,
+    "diaSemana": 4,
+    "ventasTotal": 340078,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-09",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 9,
+    "diaSemana": 5,
+    "ventasTotal": 323212,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-08-10",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 10,
+    "diaSemana": 6,
+    "ventasTotal": 447021,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-08-11",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 11,
+    "diaSemana": 0,
+    "ventasTotal": 182758,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-08-12",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 12,
+    "diaSemana": 1,
+    "ventasTotal": 338832,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-13",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 13,
+    "diaSemana": 2,
+    "ventasTotal": 461107,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2024-08-14",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 14,
+    "diaSemana": 3,
+    "ventasTotal": 290758,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-08-15",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 15,
+    "diaSemana": 4,
+    "ventasTotal": 333749,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-16",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 16,
+    "diaSemana": 5,
+    "ventasTotal": 404416,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-08-17",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 17,
+    "diaSemana": 6,
+    "ventasTotal": 486379,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-08-18",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 18,
+    "diaSemana": 0,
+    "ventasTotal": 160723,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-08-19",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 19,
+    "diaSemana": 1,
+    "ventasTotal": 361021,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-08-20",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 20,
+    "diaSemana": 2,
+    "ventasTotal": 319579,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-21",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 21,
+    "diaSemana": 3,
+    "ventasTotal": 349498,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-08-22",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 22,
+    "diaSemana": 4,
+    "ventasTotal": 340980,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-23",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 23,
+    "diaSemana": 5,
+    "ventasTotal": 413644,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-08-24",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 24,
+    "diaSemana": 6,
+    "ventasTotal": 528772,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-08-25",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 25,
+    "diaSemana": 0,
+    "ventasTotal": 202049,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2024-08-26",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 26,
+    "diaSemana": 1,
+    "ventasTotal": 333109,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-27",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 27,
+    "diaSemana": 2,
+    "ventasTotal": 370264,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-08-28",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 28,
+    "diaSemana": 3,
+    "ventasTotal": 316281,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-08-29",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 29,
+    "diaSemana": 4,
+    "ventasTotal": 327696,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-30",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 30,
+    "diaSemana": 5,
+    "ventasTotal": 336162,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-08-31",
+    "mes": "2024-08",
+    "anio": 2024,
+    "mesNum": 8,
+    "dia": 31,
+    "diaSemana": 6,
+    "ventasTotal": 482629,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2024-09-01",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 1,
+    "diaSemana": 0,
+    "ventasTotal": 184785,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-09-02",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 2,
+    "diaSemana": 1,
+    "ventasTotal": 337573,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-09-03",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 3,
+    "diaSemana": 2,
+    "ventasTotal": 320230,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-09-04",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 4,
+    "diaSemana": 3,
+    "ventasTotal": 310783,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-09-05",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 5,
+    "diaSemana": 4,
+    "ventasTotal": 343097,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-09-06",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 6,
+    "diaSemana": 5,
+    "ventasTotal": 424801,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-09-07",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 7,
+    "diaSemana": 6,
+    "ventasTotal": 484417,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-09-08",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 8,
+    "diaSemana": 0,
+    "ventasTotal": 168065,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-09-09",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 9,
+    "diaSemana": 1,
+    "ventasTotal": 337928,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-09-10",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 10,
+    "diaSemana": 2,
+    "ventasTotal": 346443,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-09-11",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 11,
+    "diaSemana": 3,
+    "ventasTotal": 384985,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-09-12",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 12,
+    "diaSemana": 4,
+    "ventasTotal": 313868,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-09-13",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 13,
+    "diaSemana": 5,
+    "ventasTotal": 425294,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-09-14",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 14,
+    "diaSemana": 6,
+    "ventasTotal": 437827,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2024-09-15",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 15,
+    "diaSemana": 0,
+    "ventasTotal": 166534,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-09-16",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 16,
+    "diaSemana": 1,
+    "ventasTotal": 294099,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-09-17",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 17,
+    "diaSemana": 2,
+    "ventasTotal": 341175,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-09-18",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 18,
+    "diaSemana": 3,
+    "ventasTotal": 371953,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-09-19",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 19,
+    "diaSemana": 4,
+    "ventasTotal": 285382,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-09-20",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 20,
+    "diaSemana": 5,
+    "ventasTotal": 367931,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-09-21",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 21,
+    "diaSemana": 6,
+    "ventasTotal": 450420,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2024-09-22",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 22,
+    "diaSemana": 0,
+    "ventasTotal": 165208,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-09-23",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 23,
+    "diaSemana": 1,
+    "ventasTotal": 348882,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-09-24",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 24,
+    "diaSemana": 2,
+    "ventasTotal": 333688,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-09-25",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 25,
+    "diaSemana": 3,
+    "ventasTotal": 377087,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-09-26",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 26,
+    "diaSemana": 4,
+    "ventasTotal": 343561,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-09-27",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 27,
+    "diaSemana": 5,
+    "ventasTotal": 419540,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2024-09-28",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 28,
+    "diaSemana": 6,
+    "ventasTotal": 543725,
+    "cantidadPedidos": 42
+  },
+  {
+    "fecha": "2024-09-29",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 29,
+    "diaSemana": 0,
+    "ventasTotal": 166378,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-09-30",
+    "mes": "2024-09",
+    "anio": 2024,
+    "mesNum": 9,
+    "dia": 30,
+    "diaSemana": 1,
+    "ventasTotal": 329484,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-10-01",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 1,
+    "diaSemana": 2,
+    "ventasTotal": 377211,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-10-02",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 2,
+    "diaSemana": 3,
+    "ventasTotal": 330672,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-10-03",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 3,
+    "diaSemana": 4,
+    "ventasTotal": 370445,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-10-04",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 4,
+    "diaSemana": 5,
+    "ventasTotal": 350081,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-10-05",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 5,
+    "diaSemana": 6,
+    "ventasTotal": 486608,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-10-06",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 6,
+    "diaSemana": 0,
+    "ventasTotal": 198963,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2024-10-07",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 7,
+    "diaSemana": 1,
+    "ventasTotal": 320363,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-10-08",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 8,
+    "diaSemana": 2,
+    "ventasTotal": 342602,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-10-09",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 9,
+    "diaSemana": 3,
+    "ventasTotal": 319471,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-10-10",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 10,
+    "diaSemana": 4,
+    "ventasTotal": 363744,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-10-11",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 11,
+    "diaSemana": 5,
+    "ventasTotal": 420677,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2024-10-12",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 12,
+    "diaSemana": 6,
+    "ventasTotal": 429066,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-10-13",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 13,
+    "diaSemana": 0,
+    "ventasTotal": 168890,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-10-14",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 14,
+    "diaSemana": 1,
+    "ventasTotal": 379318,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-10-15",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 15,
+    "diaSemana": 2,
+    "ventasTotal": 384176,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-10-16",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 16,
+    "diaSemana": 3,
+    "ventasTotal": 341030,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-10-17",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 17,
+    "diaSemana": 4,
+    "ventasTotal": 364923,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-10-18",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 18,
+    "diaSemana": 5,
+    "ventasTotal": 528302,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2024-10-19",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 19,
+    "diaSemana": 6,
+    "ventasTotal": 486693,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2024-10-20",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 20,
+    "diaSemana": 0,
+    "ventasTotal": 180031,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-10-21",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 21,
+    "diaSemana": 1,
+    "ventasTotal": 379958,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-10-22",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 22,
+    "diaSemana": 2,
+    "ventasTotal": 336747,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-10-23",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 23,
+    "diaSemana": 3,
+    "ventasTotal": 391641,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-10-24",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 24,
+    "diaSemana": 4,
+    "ventasTotal": 393029,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-10-25",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 25,
+    "diaSemana": 5,
+    "ventasTotal": 370791,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-10-26",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 26,
+    "diaSemana": 6,
+    "ventasTotal": 507473,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2024-10-27",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 27,
+    "diaSemana": 0,
+    "ventasTotal": 208825,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2024-10-28",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 28,
+    "diaSemana": 1,
+    "ventasTotal": 319221,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-10-29",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 29,
+    "diaSemana": 2,
+    "ventasTotal": 289434,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-10-30",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 30,
+    "diaSemana": 3,
+    "ventasTotal": 316967,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-10-31",
+    "mes": "2024-10",
+    "anio": 2024,
+    "mesNum": 10,
+    "dia": 31,
+    "diaSemana": 4,
+    "ventasTotal": 482405,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2024-11-01",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 1,
+    "diaSemana": 5,
+    "ventasTotal": 338861,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-11-02",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 2,
+    "diaSemana": 6,
+    "ventasTotal": 435137,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2024-11-03",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 3,
+    "diaSemana": 0,
+    "ventasTotal": 169344,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-11-04",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 4,
+    "diaSemana": 1,
+    "ventasTotal": 351008,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-11-05",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 5,
+    "diaSemana": 2,
+    "ventasTotal": 289100,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-11-06",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 6,
+    "diaSemana": 3,
+    "ventasTotal": 283059,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-11-07",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 7,
+    "diaSemana": 4,
+    "ventasTotal": 394385,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-11-08",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 8,
+    "diaSemana": 5,
+    "ventasTotal": 391510,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-11-09",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 9,
+    "diaSemana": 6,
+    "ventasTotal": 422686,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2024-11-10",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 10,
+    "diaSemana": 0,
+    "ventasTotal": 131538,
+    "cantidadPedidos": 9
+  },
+  {
+    "fecha": "2024-11-11",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 11,
+    "diaSemana": 1,
+    "ventasTotal": 310001,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-11-12",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 12,
+    "diaSemana": 2,
+    "ventasTotal": 323680,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-11-13",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 13,
+    "diaSemana": 3,
+    "ventasTotal": 360873,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-11-14",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 14,
+    "diaSemana": 4,
+    "ventasTotal": 331495,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-11-15",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 15,
+    "diaSemana": 5,
+    "ventasTotal": 402792,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-11-16",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 16,
+    "diaSemana": 6,
+    "ventasTotal": 365405,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-11-17",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 17,
+    "diaSemana": 0,
+    "ventasTotal": 163970,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-11-18",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 18,
+    "diaSemana": 1,
+    "ventasTotal": 300496,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-11-19",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 19,
+    "diaSemana": 2,
+    "ventasTotal": 344032,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-11-20",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 20,
+    "diaSemana": 3,
+    "ventasTotal": 348542,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-11-21",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 21,
+    "diaSemana": 4,
+    "ventasTotal": 297310,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-11-22",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 22,
+    "diaSemana": 5,
+    "ventasTotal": 371979,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-11-23",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 23,
+    "diaSemana": 6,
+    "ventasTotal": 420826,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-11-24",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 24,
+    "diaSemana": 0,
+    "ventasTotal": 132134,
+    "cantidadPedidos": 9
+  },
+  {
+    "fecha": "2024-11-25",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 25,
+    "diaSemana": 1,
+    "ventasTotal": 369760,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-11-26",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 26,
+    "diaSemana": 2,
+    "ventasTotal": 337449,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-11-27",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 27,
+    "diaSemana": 3,
+    "ventasTotal": 270669,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-11-28",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 28,
+    "diaSemana": 4,
+    "ventasTotal": 287880,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-11-29",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 29,
+    "diaSemana": 5,
+    "ventasTotal": 418070,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-11-30",
+    "mes": "2024-11",
+    "anio": 2024,
+    "mesNum": 11,
+    "dia": 30,
+    "diaSemana": 6,
+    "ventasTotal": 318770,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-12-01",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 1,
+    "diaSemana": 0,
+    "ventasTotal": 148849,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-12-02",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 2,
+    "diaSemana": 1,
+    "ventasTotal": 305463,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-12-03",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 3,
+    "diaSemana": 2,
+    "ventasTotal": 322080,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-12-04",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 4,
+    "diaSemana": 3,
+    "ventasTotal": 283188,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-12-05",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 5,
+    "diaSemana": 4,
+    "ventasTotal": 227558,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-12-06",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 6,
+    "diaSemana": 5,
+    "ventasTotal": 345517,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2024-12-07",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 7,
+    "diaSemana": 6,
+    "ventasTotal": 492792,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2024-12-08",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 8,
+    "diaSemana": 0,
+    "ventasTotal": 137947,
+    "cantidadPedidos": 10
+  },
+  {
+    "fecha": "2024-12-09",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 9,
+    "diaSemana": 1,
+    "ventasTotal": 381541,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2024-12-10",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 10,
+    "diaSemana": 2,
+    "ventasTotal": 281141,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-12-11",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 11,
+    "diaSemana": 3,
+    "ventasTotal": 319079,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-12-12",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 12,
+    "diaSemana": 4,
+    "ventasTotal": 304729,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2024-12-13",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 13,
+    "diaSemana": 5,
+    "ventasTotal": 407429,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2024-12-14",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 14,
+    "diaSemana": 6,
+    "ventasTotal": 419112,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2024-12-15",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 15,
+    "diaSemana": 0,
+    "ventasTotal": 160047,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2024-12-16",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 16,
+    "diaSemana": 1,
+    "ventasTotal": 331782,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-12-17",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 17,
+    "diaSemana": 2,
+    "ventasTotal": 327850,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2024-12-18",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 18,
+    "diaSemana": 3,
+    "ventasTotal": 283006,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2024-12-19",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 19,
+    "diaSemana": 4,
+    "ventasTotal": 249819,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2024-12-20",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 20,
+    "diaSemana": 5,
+    "ventasTotal": 342632,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-12-21",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 21,
+    "diaSemana": 6,
+    "ventasTotal": 463216,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2024-12-22",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 22,
+    "diaSemana": 0,
+    "ventasTotal": 138800,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2024-12-23",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 23,
+    "diaSemana": 1,
+    "ventasTotal": 293434,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-12-24",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 24,
+    "diaSemana": 2,
+    "ventasTotal": 318104,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2024-12-25",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 25,
+    "diaSemana": 3,
+    "ventasTotal": 231551,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2024-12-26",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 26,
+    "diaSemana": 4,
+    "ventasTotal": 282336,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2024-12-27",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 27,
+    "diaSemana": 5,
+    "ventasTotal": 374922,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2024-12-28",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 28,
+    "diaSemana": 6,
+    "ventasTotal": 354693,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2024-12-29",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 29,
+    "diaSemana": 0,
+    "ventasTotal": 177836,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2024-12-30",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 30,
+    "diaSemana": 1,
+    "ventasTotal": 267290,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2024-12-31",
+    "mes": "2024-12",
+    "anio": 2024,
+    "mesNum": 12,
+    "dia": 31,
+    "diaSemana": 2,
+    "ventasTotal": 352608,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-01-01",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 1,
+    "diaSemana": 3,
+    "ventasTotal": 263158,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-01-02",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 2,
+    "diaSemana": 4,
+    "ventasTotal": 244143,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2025-01-03",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 3,
+    "diaSemana": 5,
+    "ventasTotal": 285719,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-01-04",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 4,
+    "diaSemana": 6,
+    "ventasTotal": 371789,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-01-05",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 5,
+    "diaSemana": 0,
+    "ventasTotal": 155910,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-01-06",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 6,
+    "diaSemana": 1,
+    "ventasTotal": 273892,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-01-07",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 7,
+    "diaSemana": 2,
+    "ventasTotal": 278549,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-01-08",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 8,
+    "diaSemana": 3,
+    "ventasTotal": 245753,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2025-01-09",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 9,
+    "diaSemana": 4,
+    "ventasTotal": 302511,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-01-10",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 10,
+    "diaSemana": 5,
+    "ventasTotal": 275674,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-01-11",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 11,
+    "diaSemana": 6,
+    "ventasTotal": 327245,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-01-12",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 12,
+    "diaSemana": 0,
+    "ventasTotal": 140913,
+    "cantidadPedidos": 10
+  },
+  {
+    "fecha": "2025-01-13",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 13,
+    "diaSemana": 1,
+    "ventasTotal": 259850,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-01-14",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 14,
+    "diaSemana": 2,
+    "ventasTotal": 233200,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-01-15",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 15,
+    "diaSemana": 3,
+    "ventasTotal": 261965,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-01-16",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 16,
+    "diaSemana": 4,
+    "ventasTotal": 318435,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-01-17",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 17,
+    "diaSemana": 5,
+    "ventasTotal": 307458,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-01-18",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 18,
+    "diaSemana": 6,
+    "ventasTotal": 415953,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-01-19",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 19,
+    "diaSemana": 0,
+    "ventasTotal": 155254,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2025-01-20",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 20,
+    "diaSemana": 1,
+    "ventasTotal": 247744,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2025-01-21",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 21,
+    "diaSemana": 2,
+    "ventasTotal": 268473,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-01-22",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 22,
+    "diaSemana": 3,
+    "ventasTotal": 282706,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-01-23",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 23,
+    "diaSemana": 4,
+    "ventasTotal": 316859,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-01-24",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 24,
+    "diaSemana": 5,
+    "ventasTotal": 296820,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-01-25",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 25,
+    "diaSemana": 6,
+    "ventasTotal": 433565,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-01-26",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 26,
+    "diaSemana": 0,
+    "ventasTotal": 112686,
+    "cantidadPedidos": 9
+  },
+  {
+    "fecha": "2025-01-27",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 27,
+    "diaSemana": 1,
+    "ventasTotal": 316524,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-01-28",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 28,
+    "diaSemana": 2,
+    "ventasTotal": 272361,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-01-29",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 29,
+    "diaSemana": 3,
+    "ventasTotal": 223528,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2025-01-30",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 30,
+    "diaSemana": 4,
+    "ventasTotal": 288724,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-01-31",
+    "mes": "2025-01",
+    "anio": 2025,
+    "mesNum": 1,
+    "dia": 31,
+    "diaSemana": 5,
+    "ventasTotal": 349917,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-02-01",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 1,
+    "diaSemana": 6,
+    "ventasTotal": 359340,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-02-02",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 2,
+    "diaSemana": 0,
+    "ventasTotal": 185260,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2025-02-03",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 3,
+    "diaSemana": 1,
+    "ventasTotal": 292054,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-02-04",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 4,
+    "diaSemana": 2,
+    "ventasTotal": 412319,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-02-05",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 5,
+    "diaSemana": 3,
+    "ventasTotal": 311952,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-02-06",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 6,
+    "diaSemana": 4,
+    "ventasTotal": 331511,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-02-07",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 7,
+    "diaSemana": 5,
+    "ventasTotal": 387510,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-02-08",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 8,
+    "diaSemana": 6,
+    "ventasTotal": 409891,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-02-09",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 9,
+    "diaSemana": 0,
+    "ventasTotal": 149004,
+    "cantidadPedidos": 10
+  },
+  {
+    "fecha": "2025-02-10",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 10,
+    "diaSemana": 1,
+    "ventasTotal": 360554,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-02-11",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 11,
+    "diaSemana": 2,
+    "ventasTotal": 301305,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-02-12",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 12,
+    "diaSemana": 3,
+    "ventasTotal": 380822,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-02-13",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 13,
+    "diaSemana": 4,
+    "ventasTotal": 311028,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-02-14",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 14,
+    "diaSemana": 5,
+    "ventasTotal": 430655,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-02-15",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 15,
+    "diaSemana": 6,
+    "ventasTotal": 411498,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-02-16",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 16,
+    "diaSemana": 0,
+    "ventasTotal": 168674,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-02-17",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 17,
+    "diaSemana": 1,
+    "ventasTotal": 344419,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-02-18",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 18,
+    "diaSemana": 2,
+    "ventasTotal": 316307,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-02-19",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 19,
+    "diaSemana": 3,
+    "ventasTotal": 351320,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-02-20",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 20,
+    "diaSemana": 4,
+    "ventasTotal": 281943,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-02-21",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 21,
+    "diaSemana": 5,
+    "ventasTotal": 351533,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-02-22",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 22,
+    "diaSemana": 6,
+    "ventasTotal": 542332,
+    "cantidadPedidos": 40
+  },
+  {
+    "fecha": "2025-02-23",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 23,
+    "diaSemana": 0,
+    "ventasTotal": 151731,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2025-02-24",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 24,
+    "diaSemana": 1,
+    "ventasTotal": 303947,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-02-25",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 25,
+    "diaSemana": 2,
+    "ventasTotal": 351188,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-02-26",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 26,
+    "diaSemana": 3,
+    "ventasTotal": 368577,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-02-27",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 27,
+    "diaSemana": 4,
+    "ventasTotal": 272636,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-02-28",
+    "mes": "2025-02",
+    "anio": 2025,
+    "mesNum": 2,
+    "dia": 28,
+    "diaSemana": 5,
+    "ventasTotal": 420391,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-03-01",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 1,
+    "diaSemana": 6,
+    "ventasTotal": 419159,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-03-02",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 2,
+    "diaSemana": 0,
+    "ventasTotal": 180799,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2025-03-03",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 3,
+    "diaSemana": 1,
+    "ventasTotal": 350451,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-03-04",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 4,
+    "diaSemana": 2,
+    "ventasTotal": 313310,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-03-05",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 5,
+    "diaSemana": 3,
+    "ventasTotal": 352101,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-03-06",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 6,
+    "diaSemana": 4,
+    "ventasTotal": 311952,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-03-07",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 7,
+    "diaSemana": 5,
+    "ventasTotal": 399685,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-03-08",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 8,
+    "diaSemana": 6,
+    "ventasTotal": 470606,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-03-09",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 9,
+    "diaSemana": 0,
+    "ventasTotal": 199664,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-03-10",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 10,
+    "diaSemana": 1,
+    "ventasTotal": 353257,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-03-11",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 11,
+    "diaSemana": 2,
+    "ventasTotal": 289332,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-03-12",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 12,
+    "diaSemana": 3,
+    "ventasTotal": 340254,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-03-13",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 13,
+    "diaSemana": 4,
+    "ventasTotal": 316604,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-03-14",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 14,
+    "diaSemana": 5,
+    "ventasTotal": 425425,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-03-15",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 15,
+    "diaSemana": 6,
+    "ventasTotal": 447889,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-03-16",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 16,
+    "diaSemana": 0,
+    "ventasTotal": 168814,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-03-17",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 17,
+    "diaSemana": 1,
+    "ventasTotal": 375446,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-03-18",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 18,
+    "diaSemana": 2,
+    "ventasTotal": 332368,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-03-19",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 19,
+    "diaSemana": 3,
+    "ventasTotal": 348668,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-03-20",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 20,
+    "diaSemana": 4,
+    "ventasTotal": 303384,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-03-21",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 21,
+    "diaSemana": 5,
+    "ventasTotal": 344664,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-03-22",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 22,
+    "diaSemana": 6,
+    "ventasTotal": 485556,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-03-23",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 23,
+    "diaSemana": 0,
+    "ventasTotal": 204079,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-03-24",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 24,
+    "diaSemana": 1,
+    "ventasTotal": 350620,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-03-25",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 25,
+    "diaSemana": 2,
+    "ventasTotal": 365128,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-03-26",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 26,
+    "diaSemana": 3,
+    "ventasTotal": 356597,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-03-27",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 27,
+    "diaSemana": 4,
+    "ventasTotal": 337829,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-03-28",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 28,
+    "diaSemana": 5,
+    "ventasTotal": 366866,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-03-29",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 29,
+    "diaSemana": 6,
+    "ventasTotal": 454120,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-03-30",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 30,
+    "diaSemana": 0,
+    "ventasTotal": 198198,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2025-03-31",
+    "mes": "2025-03",
+    "anio": 2025,
+    "mesNum": 3,
+    "dia": 31,
+    "diaSemana": 1,
+    "ventasTotal": 324481,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-04-01",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 1,
+    "diaSemana": 2,
+    "ventasTotal": 365325,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-04-02",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 2,
+    "diaSemana": 3,
+    "ventasTotal": 364071,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-04-03",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 3,
+    "diaSemana": 4,
+    "ventasTotal": 356410,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-04-04",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 4,
+    "diaSemana": 5,
+    "ventasTotal": 370478,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-04-05",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 5,
+    "diaSemana": 6,
+    "ventasTotal": 443341,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-04-06",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 6,
+    "diaSemana": 0,
+    "ventasTotal": 180355,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2025-04-07",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 7,
+    "diaSemana": 1,
+    "ventasTotal": 402343,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-04-08",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 8,
+    "diaSemana": 2,
+    "ventasTotal": 345295,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-04-09",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 9,
+    "diaSemana": 3,
+    "ventasTotal": 308129,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-04-10",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 10,
+    "diaSemana": 4,
+    "ventasTotal": 314607,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-04-11",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 11,
+    "diaSemana": 5,
+    "ventasTotal": 371963,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-04-12",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 12,
+    "diaSemana": 6,
+    "ventasTotal": 435185,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-04-13",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 13,
+    "diaSemana": 0,
+    "ventasTotal": 145831,
+    "cantidadPedidos": 11
+  },
+  {
+    "fecha": "2025-04-14",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 14,
+    "diaSemana": 1,
+    "ventasTotal": 367812,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-04-15",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 15,
+    "diaSemana": 2,
+    "ventasTotal": 328269,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-04-16",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 16,
+    "diaSemana": 3,
+    "ventasTotal": 300764,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-04-17",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 17,
+    "diaSemana": 4,
+    "ventasTotal": 316333,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-04-18",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 18,
+    "diaSemana": 5,
+    "ventasTotal": 354167,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-04-19",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 19,
+    "diaSemana": 6,
+    "ventasTotal": 485585,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-04-20",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 20,
+    "diaSemana": 0,
+    "ventasTotal": 180711,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2025-04-21",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 21,
+    "diaSemana": 1,
+    "ventasTotal": 404474,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-04-22",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 22,
+    "diaSemana": 2,
+    "ventasTotal": 397457,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-04-23",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 23,
+    "diaSemana": 3,
+    "ventasTotal": 309779,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-04-24",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 24,
+    "diaSemana": 4,
+    "ventasTotal": 297725,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-04-25",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 25,
+    "diaSemana": 5,
+    "ventasTotal": 421976,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-04-26",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 26,
+    "diaSemana": 6,
+    "ventasTotal": 392238,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-04-27",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 27,
+    "diaSemana": 0,
+    "ventasTotal": 199513,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-04-28",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 28,
+    "diaSemana": 1,
+    "ventasTotal": 280198,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-04-29",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 29,
+    "diaSemana": 2,
+    "ventasTotal": 344687,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-04-30",
+    "mes": "2025-04",
+    "anio": 2025,
+    "mesNum": 4,
+    "dia": 30,
+    "diaSemana": 3,
+    "ventasTotal": 266417,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-05-01",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 1,
+    "diaSemana": 4,
+    "ventasTotal": 397322,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-05-02",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 2,
+    "diaSemana": 5,
+    "ventasTotal": 452674,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-05-03",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 3,
+    "diaSemana": 6,
+    "ventasTotal": 412498,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-05-04",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 4,
+    "diaSemana": 0,
+    "ventasTotal": 184042,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2025-05-05",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 5,
+    "diaSemana": 1,
+    "ventasTotal": 388136,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-05-06",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 6,
+    "diaSemana": 2,
+    "ventasTotal": 347300,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-05-07",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 7,
+    "diaSemana": 3,
+    "ventasTotal": 341152,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-05-08",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 8,
+    "diaSemana": 4,
+    "ventasTotal": 371861,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-05-09",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 9,
+    "diaSemana": 5,
+    "ventasTotal": 443951,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-05-10",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 10,
+    "diaSemana": 6,
+    "ventasTotal": 579804,
+    "cantidadPedidos": 43
+  },
+  {
+    "fecha": "2025-05-11",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 11,
+    "diaSemana": 0,
+    "ventasTotal": 216292,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-05-12",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 12,
+    "diaSemana": 1,
+    "ventasTotal": 345541,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-05-13",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 13,
+    "diaSemana": 2,
+    "ventasTotal": 403607,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-05-14",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 14,
+    "diaSemana": 3,
+    "ventasTotal": 327087,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-05-15",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 15,
+    "diaSemana": 4,
+    "ventasTotal": 397406,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-05-16",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 16,
+    "diaSemana": 5,
+    "ventasTotal": 496387,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-05-17",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 17,
+    "diaSemana": 6,
+    "ventasTotal": 517029,
+    "cantidadPedidos": 39
+  },
+  {
+    "fecha": "2025-05-18",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 18,
+    "diaSemana": 0,
+    "ventasTotal": 224682,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-05-19",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 19,
+    "diaSemana": 1,
+    "ventasTotal": 376048,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-05-20",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 20,
+    "diaSemana": 2,
+    "ventasTotal": 402600,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-05-21",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 21,
+    "diaSemana": 3,
+    "ventasTotal": 427167,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-05-22",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 22,
+    "diaSemana": 4,
+    "ventasTotal": 361053,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-05-23",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 23,
+    "diaSemana": 5,
+    "ventasTotal": 459737,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-05-24",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 24,
+    "diaSemana": 6,
+    "ventasTotal": 514454,
+    "cantidadPedidos": 38
+  },
+  {
+    "fecha": "2025-05-25",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 25,
+    "diaSemana": 0,
+    "ventasTotal": 229522,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-05-26",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 26,
+    "diaSemana": 1,
+    "ventasTotal": 335680,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-05-27",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 27,
+    "diaSemana": 2,
+    "ventasTotal": 321637,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-05-28",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 28,
+    "diaSemana": 3,
+    "ventasTotal": 310522,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-05-29",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 29,
+    "diaSemana": 4,
+    "ventasTotal": 262811,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-05-30",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 30,
+    "diaSemana": 5,
+    "ventasTotal": 450965,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-05-31",
+    "mes": "2025-05",
+    "anio": 2025,
+    "mesNum": 5,
+    "dia": 31,
+    "diaSemana": 6,
+    "ventasTotal": 637633,
+    "cantidadPedidos": 48
+  },
+  {
+    "fecha": "2025-06-01",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 1,
+    "diaSemana": 0,
+    "ventasTotal": 212137,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-06-02",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 2,
+    "diaSemana": 1,
+    "ventasTotal": 410797,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-06-03",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 3,
+    "diaSemana": 2,
+    "ventasTotal": 397215,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-06-04",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 4,
+    "diaSemana": 3,
+    "ventasTotal": 414646,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-06-05",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 5,
+    "diaSemana": 4,
+    "ventasTotal": 331267,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-06-06",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 6,
+    "diaSemana": 5,
+    "ventasTotal": 547353,
+    "cantidadPedidos": 42
+  },
+  {
+    "fecha": "2025-06-07",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 7,
+    "diaSemana": 6,
+    "ventasTotal": 548415,
+    "cantidadPedidos": 41
+  },
+  {
+    "fecha": "2025-06-08",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 8,
+    "diaSemana": 0,
+    "ventasTotal": 212268,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-06-09",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 9,
+    "diaSemana": 1,
+    "ventasTotal": 379408,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-06-10",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 10,
+    "diaSemana": 2,
+    "ventasTotal": 313775,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-06-11",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 11,
+    "diaSemana": 3,
+    "ventasTotal": 388822,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-06-12",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 12,
+    "diaSemana": 4,
+    "ventasTotal": 473406,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-06-13",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 13,
+    "diaSemana": 5,
+    "ventasTotal": 419221,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-06-14",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 14,
+    "diaSemana": 6,
+    "ventasTotal": 594983,
+    "cantidadPedidos": 43
+  },
+  {
+    "fecha": "2025-06-15",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 15,
+    "diaSemana": 0,
+    "ventasTotal": 183809,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2025-06-16",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 16,
+    "diaSemana": 1,
+    "ventasTotal": 372647,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-06-17",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 17,
+    "diaSemana": 2,
+    "ventasTotal": 413644,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-06-18",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 18,
+    "diaSemana": 3,
+    "ventasTotal": 402364,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-06-19",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 19,
+    "diaSemana": 4,
+    "ventasTotal": 371023,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-06-20",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 20,
+    "diaSemana": 5,
+    "ventasTotal": 531803,
+    "cantidadPedidos": 41
+  },
+  {
+    "fecha": "2025-06-21",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 21,
+    "diaSemana": 6,
+    "ventasTotal": 478643,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-06-22",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 22,
+    "diaSemana": 0,
+    "ventasTotal": 189253,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2025-06-23",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 23,
+    "diaSemana": 1,
+    "ventasTotal": 366154,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-06-24",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 24,
+    "diaSemana": 2,
+    "ventasTotal": 350235,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-06-25",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 25,
+    "diaSemana": 3,
+    "ventasTotal": 434595,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-06-26",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 26,
+    "diaSemana": 4,
+    "ventasTotal": 485009,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-06-27",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 27,
+    "diaSemana": 5,
+    "ventasTotal": 435572,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-06-28",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 28,
+    "diaSemana": 6,
+    "ventasTotal": 509579,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2025-06-29",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 29,
+    "diaSemana": 0,
+    "ventasTotal": 209816,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2025-06-30",
+    "mes": "2025-06",
+    "anio": 2025,
+    "mesNum": 6,
+    "dia": 30,
+    "diaSemana": 1,
+    "ventasTotal": 423809,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-07-01",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 1,
+    "diaSemana": 2,
+    "ventasTotal": 326185,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-07-02",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 2,
+    "diaSemana": 3,
+    "ventasTotal": 349925,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-07-03",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 3,
+    "diaSemana": 4,
+    "ventasTotal": 429711,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-07-04",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 4,
+    "diaSemana": 5,
+    "ventasTotal": 397696,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-07-05",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 5,
+    "diaSemana": 6,
+    "ventasTotal": 572334,
+    "cantidadPedidos": 39
+  },
+  {
+    "fecha": "2025-07-06",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 6,
+    "diaSemana": 0,
+    "ventasTotal": 236253,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-07-07",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 7,
+    "diaSemana": 1,
+    "ventasTotal": 357588,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-07-08",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 8,
+    "diaSemana": 2,
+    "ventasTotal": 330400,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-07-09",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 9,
+    "diaSemana": 3,
+    "ventasTotal": 301541,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-07-10",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 10,
+    "diaSemana": 4,
+    "ventasTotal": 356734,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-07-11",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 11,
+    "diaSemana": 5,
+    "ventasTotal": 361517,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-07-12",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 12,
+    "diaSemana": 6,
+    "ventasTotal": 444500,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-07-13",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 13,
+    "diaSemana": 0,
+    "ventasTotal": 207932,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-07-14",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 14,
+    "diaSemana": 1,
+    "ventasTotal": 382232,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-07-15",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 15,
+    "diaSemana": 2,
+    "ventasTotal": 371693,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-07-16",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 16,
+    "diaSemana": 3,
+    "ventasTotal": 453581,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-07-17",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 17,
+    "diaSemana": 4,
+    "ventasTotal": 331302,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-07-18",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 18,
+    "diaSemana": 5,
+    "ventasTotal": 374068,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-07-19",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 19,
+    "diaSemana": 6,
+    "ventasTotal": 418577,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-07-20",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 20,
+    "diaSemana": 0,
+    "ventasTotal": 215212,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-07-21",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 21,
+    "diaSemana": 1,
+    "ventasTotal": 460421,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-07-22",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 22,
+    "diaSemana": 2,
+    "ventasTotal": 374454,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-07-23",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 23,
+    "diaSemana": 3,
+    "ventasTotal": 491983,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-07-24",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 24,
+    "diaSemana": 4,
+    "ventasTotal": 314925,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-07-25",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 25,
+    "diaSemana": 5,
+    "ventasTotal": 439453,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-07-26",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 26,
+    "diaSemana": 6,
+    "ventasTotal": 503286,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-07-27",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 27,
+    "diaSemana": 0,
+    "ventasTotal": 204369,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-07-28",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 28,
+    "diaSemana": 1,
+    "ventasTotal": 368113,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-07-29",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 29,
+    "diaSemana": 2,
+    "ventasTotal": 402220,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-07-30",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 30,
+    "diaSemana": 3,
+    "ventasTotal": 359253,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-07-31",
+    "mes": "2025-07",
+    "anio": 2025,
+    "mesNum": 7,
+    "dia": 31,
+    "diaSemana": 4,
+    "ventasTotal": 376771,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-08-01",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 1,
+    "diaSemana": 5,
+    "ventasTotal": 511465,
+    "cantidadPedidos": 38
+  },
+  {
+    "fecha": "2025-08-02",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 2,
+    "diaSemana": 6,
+    "ventasTotal": 522972,
+    "cantidadPedidos": 41
+  },
+  {
+    "fecha": "2025-08-03",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 3,
+    "diaSemana": 0,
+    "ventasTotal": 214359,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-08-04",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 4,
+    "diaSemana": 1,
+    "ventasTotal": 454295,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-08-05",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 5,
+    "diaSemana": 2,
+    "ventasTotal": 473083,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2025-08-06",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 6,
+    "diaSemana": 3,
+    "ventasTotal": 422656,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-08-07",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 7,
+    "diaSemana": 4,
+    "ventasTotal": 388977,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-08-08",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 8,
+    "diaSemana": 5,
+    "ventasTotal": 453726,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-08-09",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 9,
+    "diaSemana": 6,
+    "ventasTotal": 560905,
+    "cantidadPedidos": 41
+  },
+  {
+    "fecha": "2025-08-10",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 10,
+    "diaSemana": 0,
+    "ventasTotal": 262680,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-08-11",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 11,
+    "diaSemana": 1,
+    "ventasTotal": 444071,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-08-12",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 12,
+    "diaSemana": 2,
+    "ventasTotal": 467557,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-08-13",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 13,
+    "diaSemana": 3,
+    "ventasTotal": 470604,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-08-14",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 14,
+    "diaSemana": 4,
+    "ventasTotal": 490788,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-08-15",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 15,
+    "diaSemana": 5,
+    "ventasTotal": 474735,
+    "cantidadPedidos": 37
+  },
+  {
+    "fecha": "2025-08-16",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 16,
+    "diaSemana": 6,
+    "ventasTotal": 485282,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-08-17",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 17,
+    "diaSemana": 0,
+    "ventasTotal": 210751,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-08-18",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 18,
+    "diaSemana": 1,
+    "ventasTotal": 374473,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-08-19",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 19,
+    "diaSemana": 2,
+    "ventasTotal": 353928,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-08-20",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 20,
+    "diaSemana": 3,
+    "ventasTotal": 388516,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-08-21",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 21,
+    "diaSemana": 4,
+    "ventasTotal": 398065,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-08-22",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 22,
+    "diaSemana": 5,
+    "ventasTotal": 493835,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-08-23",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 23,
+    "diaSemana": 6,
+    "ventasTotal": 485969,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-08-24",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 24,
+    "diaSemana": 0,
+    "ventasTotal": 256683,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-08-25",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 25,
+    "diaSemana": 1,
+    "ventasTotal": 349242,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-08-26",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 26,
+    "diaSemana": 2,
+    "ventasTotal": 427616,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-08-27",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 27,
+    "diaSemana": 3,
+    "ventasTotal": 434206,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-08-28",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 28,
+    "diaSemana": 4,
+    "ventasTotal": 397489,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-08-29",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 29,
+    "diaSemana": 5,
+    "ventasTotal": 522882,
+    "cantidadPedidos": 38
+  },
+  {
+    "fecha": "2025-08-30",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 30,
+    "diaSemana": 6,
+    "ventasTotal": 586344,
+    "cantidadPedidos": 46
+  },
+  {
+    "fecha": "2025-08-31",
+    "mes": "2025-08",
+    "anio": 2025,
+    "mesNum": 8,
+    "dia": 31,
+    "diaSemana": 0,
+    "ventasTotal": 252602,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-09-01",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 1,
+    "diaSemana": 1,
+    "ventasTotal": 369783,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-09-02",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 2,
+    "diaSemana": 2,
+    "ventasTotal": 355021,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-09-03",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 3,
+    "diaSemana": 3,
+    "ventasTotal": 449885,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-09-04",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 4,
+    "diaSemana": 4,
+    "ventasTotal": 315566,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-09-05",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 5,
+    "diaSemana": 5,
+    "ventasTotal": 380713,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-09-06",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 6,
+    "diaSemana": 6,
+    "ventasTotal": 527068,
+    "cantidadPedidos": 38
+  },
+  {
+    "fecha": "2025-09-07",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 7,
+    "diaSemana": 0,
+    "ventasTotal": 227966,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-09-08",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 8,
+    "diaSemana": 1,
+    "ventasTotal": 370191,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-09-09",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 9,
+    "diaSemana": 2,
+    "ventasTotal": 416032,
+    "cantidadPedidos": 31
+  },
+  {
+    "fecha": "2025-09-10",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 10,
+    "diaSemana": 3,
+    "ventasTotal": 378272,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-09-11",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 11,
+    "diaSemana": 4,
+    "ventasTotal": 349896,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-09-12",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 12,
+    "diaSemana": 5,
+    "ventasTotal": 442203,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-09-13",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 13,
+    "diaSemana": 6,
+    "ventasTotal": 590232,
+    "cantidadPedidos": 44
+  },
+  {
+    "fecha": "2025-09-14",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 14,
+    "diaSemana": 0,
+    "ventasTotal": 228896,
+    "cantidadPedidos": 16
+  },
+  {
+    "fecha": "2025-09-15",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 15,
+    "diaSemana": 1,
+    "ventasTotal": 361451,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-09-16",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 16,
+    "diaSemana": 2,
+    "ventasTotal": 327850,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-09-17",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 17,
+    "diaSemana": 3,
+    "ventasTotal": 403927,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-09-18",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 18,
+    "diaSemana": 4,
+    "ventasTotal": 385125,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-09-19",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 19,
+    "diaSemana": 5,
+    "ventasTotal": 390905,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-09-20",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 20,
+    "diaSemana": 6,
+    "ventasTotal": 555158,
+    "cantidadPedidos": 42
+  },
+  {
+    "fecha": "2025-09-21",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 21,
+    "diaSemana": 0,
+    "ventasTotal": 247270,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2025-09-22",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 22,
+    "diaSemana": 1,
+    "ventasTotal": 438875,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-09-23",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 23,
+    "diaSemana": 2,
+    "ventasTotal": 427840,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-09-24",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 24,
+    "diaSemana": 3,
+    "ventasTotal": 385155,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-09-25",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 25,
+    "diaSemana": 4,
+    "ventasTotal": 376150,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-09-26",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 26,
+    "diaSemana": 5,
+    "ventasTotal": 351211,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-09-27",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 27,
+    "diaSemana": 6,
+    "ventasTotal": 562196,
+    "cantidadPedidos": 41
+  },
+  {
+    "fecha": "2025-09-28",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 28,
+    "diaSemana": 0,
+    "ventasTotal": 165756,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-09-29",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 29,
+    "diaSemana": 1,
+    "ventasTotal": 443635,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-09-30",
+    "mes": "2025-09",
+    "anio": 2025,
+    "mesNum": 9,
+    "dia": 30,
+    "diaSemana": 2,
+    "ventasTotal": 334234,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-10-01",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 1,
+    "diaSemana": 3,
+    "ventasTotal": 377660,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-10-02",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 2,
+    "diaSemana": 4,
+    "ventasTotal": 333133,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-10-03",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 3,
+    "diaSemana": 5,
+    "ventasTotal": 429041,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-10-04",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 4,
+    "diaSemana": 6,
+    "ventasTotal": 590486,
+    "cantidadPedidos": 43
+  },
+  {
+    "fecha": "2025-10-05",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 5,
+    "diaSemana": 0,
+    "ventasTotal": 158238,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-10-06",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 6,
+    "diaSemana": 1,
+    "ventasTotal": 338996,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-10-07",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 7,
+    "diaSemana": 2,
+    "ventasTotal": 358648,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-10-08",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 8,
+    "diaSemana": 3,
+    "ventasTotal": 366260,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-10-09",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 9,
+    "diaSemana": 4,
+    "ventasTotal": 368212,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-10-10",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 10,
+    "diaSemana": 5,
+    "ventasTotal": 349919,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-10-11",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 11,
+    "diaSemana": 6,
+    "ventasTotal": 458176,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-10-12",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 12,
+    "diaSemana": 0,
+    "ventasTotal": 191277,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2025-10-13",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 13,
+    "diaSemana": 1,
+    "ventasTotal": 344306,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-10-14",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 14,
+    "diaSemana": 2,
+    "ventasTotal": 287543,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-10-15",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 15,
+    "diaSemana": 3,
+    "ventasTotal": 316109,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-10-16",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 16,
+    "diaSemana": 4,
+    "ventasTotal": 365405,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-10-17",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 17,
+    "diaSemana": 5,
+    "ventasTotal": 423062,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-10-18",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 18,
+    "diaSemana": 6,
+    "ventasTotal": 446444,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-10-19",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 19,
+    "diaSemana": 0,
+    "ventasTotal": 162269,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-10-20",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 20,
+    "diaSemana": 1,
+    "ventasTotal": 343766,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-10-21",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 21,
+    "diaSemana": 2,
+    "ventasTotal": 362513,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-10-22",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 22,
+    "diaSemana": 3,
+    "ventasTotal": 386075,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-10-23",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 23,
+    "diaSemana": 4,
+    "ventasTotal": 354357,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-10-24",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 24,
+    "diaSemana": 5,
+    "ventasTotal": 328279,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-10-25",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 25,
+    "diaSemana": 6,
+    "ventasTotal": 516432,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-10-26",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 26,
+    "diaSemana": 0,
+    "ventasTotal": 197172,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-10-27",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 27,
+    "diaSemana": 1,
+    "ventasTotal": 289118,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-10-28",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 28,
+    "diaSemana": 2,
+    "ventasTotal": 397681,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-10-29",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 29,
+    "diaSemana": 3,
+    "ventasTotal": 371470,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-10-30",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 30,
+    "diaSemana": 4,
+    "ventasTotal": 378814,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-10-31",
+    "mes": "2025-10",
+    "anio": 2025,
+    "mesNum": 10,
+    "dia": 31,
+    "diaSemana": 5,
+    "ventasTotal": 400454,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-11-01",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 1,
+    "diaSemana": 6,
+    "ventasTotal": 450030,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-11-02",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 2,
+    "diaSemana": 0,
+    "ventasTotal": 168281,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-11-03",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 3,
+    "diaSemana": 1,
+    "ventasTotal": 295348,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-11-04",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 4,
+    "diaSemana": 2,
+    "ventasTotal": 270362,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-11-05",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 5,
+    "diaSemana": 3,
+    "ventasTotal": 354928,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-11-06",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 6,
+    "diaSemana": 4,
+    "ventasTotal": 417173,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-11-07",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 7,
+    "diaSemana": 5,
+    "ventasTotal": 399360,
+    "cantidadPedidos": 30
+  },
+  {
+    "fecha": "2025-11-08",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 8,
+    "diaSemana": 6,
+    "ventasTotal": 465111,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-11-09",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 9,
+    "diaSemana": 0,
+    "ventasTotal": 225818,
+    "cantidadPedidos": 17
+  },
+  {
+    "fecha": "2025-11-10",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 10,
+    "diaSemana": 1,
+    "ventasTotal": 382748,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-11-11",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 11,
+    "diaSemana": 2,
+    "ventasTotal": 300206,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-11-12",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 12,
+    "diaSemana": 3,
+    "ventasTotal": 378859,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-11-13",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 13,
+    "diaSemana": 4,
+    "ventasTotal": 377994,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-11-14",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 14,
+    "diaSemana": 5,
+    "ventasTotal": 437707,
+    "cantidadPedidos": 33
+  },
+  {
+    "fecha": "2025-11-15",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 15,
+    "diaSemana": 6,
+    "ventasTotal": 463511,
+    "cantidadPedidos": 34
+  },
+  {
+    "fecha": "2025-11-16",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 16,
+    "diaSemana": 0,
+    "ventasTotal": 167560,
+    "cantidadPedidos": 13
+  },
+  {
+    "fecha": "2025-11-17",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 17,
+    "diaSemana": 1,
+    "ventasTotal": 369007,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-11-18",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 18,
+    "diaSemana": 2,
+    "ventasTotal": 316476,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-11-19",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 19,
+    "diaSemana": 3,
+    "ventasTotal": 336183,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-11-20",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 20,
+    "diaSemana": 4,
+    "ventasTotal": 366624,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-11-21",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 21,
+    "diaSemana": 5,
+    "ventasTotal": 352903,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-11-22",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 22,
+    "diaSemana": 6,
+    "ventasTotal": 480195,
+    "cantidadPedidos": 36
+  },
+  {
+    "fecha": "2025-11-23",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 23,
+    "diaSemana": 0,
+    "ventasTotal": 192169,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-11-24",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 24,
+    "diaSemana": 1,
+    "ventasTotal": 401285,
+    "cantidadPedidos": 29
+  },
+  {
+    "fecha": "2025-11-25",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 25,
+    "diaSemana": 2,
+    "ventasTotal": 309498,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-11-26",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 26,
+    "diaSemana": 3,
+    "ventasTotal": 247569,
+    "cantidadPedidos": 18
+  },
+  {
+    "fecha": "2025-11-27",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 27,
+    "diaSemana": 4,
+    "ventasTotal": 345923,
+    "cantidadPedidos": 25
+  },
+  {
+    "fecha": "2025-11-28",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 28,
+    "diaSemana": 5,
+    "ventasTotal": 361450,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-11-29",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 29,
+    "diaSemana": 6,
+    "ventasTotal": 568473,
+    "cantidadPedidos": 42
+  },
+  {
+    "fecha": "2025-11-30",
+    "mes": "2025-11",
+    "anio": 2025,
+    "mesNum": 11,
+    "dia": 30,
+    "diaSemana": 0,
+    "ventasTotal": 210813,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-12-01",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 1,
+    "diaSemana": 1,
+    "ventasTotal": 289559,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-12-02",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 2,
+    "diaSemana": 2,
+    "ventasTotal": 327719,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-12-03",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 3,
+    "diaSemana": 3,
+    "ventasTotal": 355610,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-12-04",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 4,
+    "diaSemana": 4,
+    "ventasTotal": 172618,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-12-05",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 5,
+    "diaSemana": 5,
+    "ventasTotal": 372856,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-12-06",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 6,
+    "diaSemana": 6,
+    "ventasTotal": 399875,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-12-07",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 7,
+    "diaSemana": 0,
+    "ventasTotal": 211949,
+    "cantidadPedidos": 15
+  },
+  {
+    "fecha": "2025-12-08",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 8,
+    "diaSemana": 1,
+    "ventasTotal": 283032,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-12-09",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 9,
+    "diaSemana": 2,
+    "ventasTotal": 322091,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-12-10",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 10,
+    "diaSemana": 3,
+    "ventasTotal": 302679,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-12-11",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 11,
+    "diaSemana": 4,
+    "ventasTotal": 279315,
+    "cantidadPedidos": 20
+  },
+  {
+    "fecha": "2025-12-12",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 12,
+    "diaSemana": 5,
+    "ventasTotal": 374959,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-12-13",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 13,
+    "diaSemana": 6,
+    "ventasTotal": 482057,
+    "cantidadPedidos": 35
+  },
+  {
+    "fecha": "2025-12-14",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 14,
+    "diaSemana": 0,
+    "ventasTotal": 191881,
+    "cantidadPedidos": 14
+  },
+  {
+    "fecha": "2025-12-15",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 15,
+    "diaSemana": 1,
+    "ventasTotal": 282389,
+    "cantidadPedidos": 19
+  },
+  {
+    "fecha": "2025-12-16",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 16,
+    "diaSemana": 2,
+    "ventasTotal": 386037,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-12-17",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 17,
+    "diaSemana": 3,
+    "ventasTotal": 383116,
+    "cantidadPedidos": 28
+  },
+  {
+    "fecha": "2025-12-18",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 18,
+    "diaSemana": 4,
+    "ventasTotal": 314016,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-12-19",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 19,
+    "diaSemana": 5,
+    "ventasTotal": 345908,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-12-20",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 20,
+    "diaSemana": 6,
+    "ventasTotal": 463806,
+    "cantidadPedidos": 32
+  },
+  {
+    "fecha": "2025-12-21",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 21,
+    "diaSemana": 0,
+    "ventasTotal": 180911,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-12-22",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 22,
+    "diaSemana": 1,
+    "ventasTotal": 363764,
+    "cantidadPedidos": 26
+  },
+  {
+    "fecha": "2025-12-23",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 23,
+    "diaSemana": 2,
+    "ventasTotal": 331198,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-12-24",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 24,
+    "diaSemana": 3,
+    "ventasTotal": 299159,
+    "cantidadPedidos": 22
+  },
+  {
+    "fecha": "2025-12-25",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 25,
+    "diaSemana": 4,
+    "ventasTotal": 380040,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-12-26",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 26,
+    "diaSemana": 5,
+    "ventasTotal": 296957,
+    "cantidadPedidos": 21
+  },
+  {
+    "fecha": "2025-12-27",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 27,
+    "diaSemana": 6,
+    "ventasTotal": 377976,
+    "cantidadPedidos": 27
+  },
+  {
+    "fecha": "2025-12-28",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 28,
+    "diaSemana": 0,
+    "ventasTotal": 181383,
+    "cantidadPedidos": 12
+  },
+  {
+    "fecha": "2025-12-29",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 29,
+    "diaSemana": 1,
+    "ventasTotal": 335981,
+    "cantidadPedidos": 24
+  },
+  {
+    "fecha": "2025-12-30",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 30,
+    "diaSemana": 2,
+    "ventasTotal": 320688,
+    "cantidadPedidos": 23
+  },
+  {
+    "fecha": "2025-12-31",
+    "mes": "2025-12",
+    "anio": 2025,
+    "mesNum": 12,
+    "dia": 31,
+    "diaSemana": 3,
+    "ventasTotal": 310872,
+    "cantidadPedidos": 22
+  }
+]

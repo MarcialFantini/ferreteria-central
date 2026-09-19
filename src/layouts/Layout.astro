@@ -1,57 +1,31 @@
 ---
 import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 
-/**
- * Layout base del dashboard.
- *
- * - SEO mínimo (title, description, OG) — las páginas pueden sobreescribirlo.
- * - Bunny Fonts (mirror de Google Fonts sin tracking) cargado con
- *   `display=swap` para no bloquear el LCP.
- * - Skip link al `<main>` antes del header (T10.17).
- * - Color-scheme dark coherente con la paleta.
- */
-
-export interface Props {
+interface Props {
   title: string;
   description: string;
-  ogImage?: string;
 }
 
-const {
-  title,
-  description,
-  ogImage = '/favicon.svg',
-} = Astro.props;
-
-const siteUrl = Astro.site?.toString() ?? 'http://localhost:4321/';
-const canonicalURL = new URL(Astro.url.pathname, siteUrl).toString();
-const ogImageURL = new URL(ogImage, siteUrl).toString();
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321').toString();
+const ogImageURL = new URL('/favicon.svg', Astro.url).toString();
 ---
-
 <!doctype html>
-<html lang="es-AR" class="dark">
+<html lang="es-AR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0F1419" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B1220" />
     <link rel="canonical" href={canonicalURL} />
-
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    {/* Bunny Fonts — mirror de Google Fonts sin tracking.
-         No bloquea el render: `display=swap` muestra fallback primero. */}
+    {/* Bunny Fonts — Inter + JetBrains Mono */}
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.bunny.net/css?family=inter:400,500,600,700|jetbrains-mono:500,600&display=swap"
     />
 
-    {/* SEO */}
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta property="og:type" content="website" />
@@ -67,20 +41,14 @@ const ogImageURL = new URL(ogImage, siteUrl).toString();
   </head>
 
   <body class="min-h-dvh bg-dash-surface text-dash-ink">
-    {/* Skip link — visible solo al recibir foco por teclado (T10.17) */}
+    {/* Skip link — visible solo al recibir foco por teclado */}
     <a
-      href="#dashboard"
-      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-dash-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-dash-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
     >
-      Saltar al dashboard
+      Saltar al contenido principal
     </a>
 
-    <Header />
-
-    <main id="dashboard" class="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
-      <slot />
-    </main>
-
-    <Footer />
+    <slot />
   </body>
 </html>

@@ -1,86 +1,674 @@
 [
   {
-    "mes": "2025-01",
-    "ventasTotal": 4250000,
-    "cantidadPedidos": 312,
-    "ticketPromedio": 13622,
+    "mes": "2018-01",
+    "ventasTotal": 3222922,
+    "cantidadPedidos": 231,
+    "ticketPromedio": 13952,
     "variacion": 0
   },
   {
+    "mes": "2018-02",
+    "ventasTotal": 4685711,
+    "cantidadPedidos": 336,
+    "ticketPromedio": 13946,
+    "variacion": 45.4
+  },
+  {
+    "mes": "2018-03",
+    "ventasTotal": 4048422,
+    "cantidadPedidos": 300,
+    "ticketPromedio": 13495,
+    "variacion": -13.6
+  },
+  {
+    "mes": "2018-04",
+    "ventasTotal": 3824848,
+    "cantidadPedidos": 267,
+    "ticketPromedio": 14325,
+    "variacion": -5.5
+  },
+  {
+    "mes": "2018-05",
+    "ventasTotal": 4171348,
+    "cantidadPedidos": 296,
+    "ticketPromedio": 14092,
+    "variacion": 9.1
+  },
+  {
+    "mes": "2018-06",
+    "ventasTotal": 5418880,
+    "cantidadPedidos": 390,
+    "ticketPromedio": 13895,
+    "variacion": 29.9
+  },
+  {
+    "mes": "2018-07",
+    "ventasTotal": 4898617,
+    "cantidadPedidos": 352,
+    "ticketPromedio": 13917,
+    "variacion": -9.6
+  },
+  {
+    "mes": "2018-08",
+    "ventasTotal": 4807344,
+    "cantidadPedidos": 342,
+    "ticketPromedio": 14057,
+    "variacion": -1.9
+  },
+  {
+    "mes": "2018-09",
+    "ventasTotal": 3578657,
+    "cantidadPedidos": 268,
+    "ticketPromedio": 13353,
+    "variacion": -25.6
+  },
+  {
+    "mes": "2018-10",
+    "ventasTotal": 4432538,
+    "cantidadPedidos": 332,
+    "ticketPromedio": 13351,
+    "variacion": 23.9
+  },
+  {
+    "mes": "2018-11",
+    "ventasTotal": 4258080,
+    "cantidadPedidos": 300,
+    "ticketPromedio": 14194,
+    "variacion": -3.9
+  },
+  {
+    "mes": "2018-12",
+    "ventasTotal": 3366854,
+    "cantidadPedidos": 238,
+    "ticketPromedio": 14146,
+    "variacion": -20.9
+  },
+  {
+    "mes": "2019-01",
+    "ventasTotal": 4335488,
+    "cantidadPedidos": 325,
+    "ticketPromedio": 13340,
+    "variacion": 28.8
+  },
+  {
+    "mes": "2019-02",
+    "ventasTotal": 4416997,
+    "cantidadPedidos": 324,
+    "ticketPromedio": 13633,
+    "variacion": 1.9
+  },
+  {
+    "mes": "2019-03",
+    "ventasTotal": 3887029,
+    "cantidadPedidos": 286,
+    "ticketPromedio": 13591,
+    "variacion": -12
+  },
+  {
+    "mes": "2019-04",
+    "ventasTotal": 4968531,
+    "cantidadPedidos": 348,
+    "ticketPromedio": 14277,
+    "variacion": 27.8
+  },
+  {
+    "mes": "2019-05",
+    "ventasTotal": 6274809,
+    "cantidadPedidos": 452,
+    "ticketPromedio": 13882,
+    "variacion": 26.3
+  },
+  {
+    "mes": "2019-06",
+    "ventasTotal": 5290535,
+    "cantidadPedidos": 392,
+    "ticketPromedio": 13496,
+    "variacion": -15.7
+  },
+  {
+    "mes": "2019-07",
+    "ventasTotal": 5626411,
+    "cantidadPedidos": 414,
+    "ticketPromedio": 13590,
+    "variacion": 6.3
+  },
+  {
+    "mes": "2019-08",
+    "ventasTotal": 5639319,
+    "cantidadPedidos": 413,
+    "ticketPromedio": 13655,
+    "variacion": 0.2
+  },
+  {
+    "mes": "2019-09",
+    "ventasTotal": 5589195,
+    "cantidadPedidos": 391,
+    "ticketPromedio": 14295,
+    "variacion": -0.9
+  },
+  {
+    "mes": "2019-10",
+    "ventasTotal": 5104549,
+    "cantidadPedidos": 361,
+    "ticketPromedio": 14140,
+    "variacion": -8.7
+  },
+  {
+    "mes": "2019-11",
+    "ventasTotal": 5270523,
+    "cantidadPedidos": 369,
+    "ticketPromedio": 14283,
+    "variacion": 3.3
+  },
+  {
+    "mes": "2019-12",
+    "ventasTotal": 4617853,
+    "cantidadPedidos": 344,
+    "ticketPromedio": 13424,
+    "variacion": -12.4
+  },
+  {
+    "mes": "2020-01",
+    "ventasTotal": 4257218,
+    "cantidadPedidos": 299,
+    "ticketPromedio": 14238,
+    "variacion": -7.8
+  },
+  {
+    "mes": "2020-02",
+    "ventasTotal": 5255954,
+    "cantidadPedidos": 385,
+    "ticketPromedio": 13652,
+    "variacion": 23.5
+  },
+  {
+    "mes": "2020-03",
+    "ventasTotal": 4752913,
+    "cantidadPedidos": 347,
+    "ticketPromedio": 13697,
+    "variacion": -9.6
+  },
+  {
+    "mes": "2020-04",
+    "ventasTotal": 5169282,
+    "cantidadPedidos": 382,
+    "ticketPromedio": 13532,
+    "variacion": 8.8
+  },
+  {
+    "mes": "2020-05",
+    "ventasTotal": 5701572,
+    "cantidadPedidos": 421,
+    "ticketPromedio": 13543,
+    "variacion": 10.3
+  },
+  {
+    "mes": "2020-06",
+    "ventasTotal": 5695636,
+    "cantidadPedidos": 412,
+    "ticketPromedio": 13824,
+    "variacion": -0.1
+  },
+  {
+    "mes": "2020-07",
+    "ventasTotal": 5425043,
+    "cantidadPedidos": 391,
+    "ticketPromedio": 13875,
+    "variacion": -4.8
+  },
+  {
+    "mes": "2020-08",
+    "ventasTotal": 7062605,
+    "cantidadPedidos": 522,
+    "ticketPromedio": 13530,
+    "variacion": 30.2
+  },
+  {
+    "mes": "2020-09",
+    "ventasTotal": 6435001,
+    "cantidadPedidos": 461,
+    "ticketPromedio": 13959,
+    "variacion": -8.9
+  },
+  {
+    "mes": "2020-10",
+    "ventasTotal": 5845964,
+    "cantidadPedidos": 423,
+    "ticketPromedio": 13820,
+    "variacion": -9.2
+  },
+  {
+    "mes": "2020-11",
+    "ventasTotal": 5766485,
+    "cantidadPedidos": 430,
+    "ticketPromedio": 13410,
+    "variacion": -1.4
+  },
+  {
+    "mes": "2020-12",
+    "ventasTotal": 4746709,
+    "cantidadPedidos": 356,
+    "ticketPromedio": 13333,
+    "variacion": -17.7
+  },
+  {
+    "mes": "2021-01",
+    "ventasTotal": 4167382,
+    "cantidadPedidos": 305,
+    "ticketPromedio": 13664,
+    "variacion": -12.2
+  },
+  {
+    "mes": "2021-02",
+    "ventasTotal": 5449126,
+    "cantidadPedidos": 409,
+    "ticketPromedio": 13323,
+    "variacion": 30.8
+  },
+  {
+    "mes": "2021-03",
+    "ventasTotal": 5580200,
+    "cantidadPedidos": 404,
+    "ticketPromedio": 13812,
+    "variacion": 2.4
+  },
+  {
+    "mes": "2021-04",
+    "ventasTotal": 5328421,
+    "cantidadPedidos": 380,
+    "ticketPromedio": 14022,
+    "variacion": -4.5
+  },
+  {
+    "mes": "2021-05",
+    "ventasTotal": 7069173,
+    "cantidadPedidos": 506,
+    "ticketPromedio": 13971,
+    "variacion": 32.7
+  },
+  {
+    "mes": "2021-06",
+    "ventasTotal": 7686368,
+    "cantidadPedidos": 556,
+    "ticketPromedio": 13824,
+    "variacion": 8.7
+  },
+  {
+    "mes": "2021-07",
+    "ventasTotal": 6962720,
+    "cantidadPedidos": 518,
+    "ticketPromedio": 13442,
+    "variacion": -9.4
+  },
+  {
+    "mes": "2021-08",
+    "ventasTotal": 7781865,
+    "cantidadPedidos": 573,
+    "ticketPromedio": 13581,
+    "variacion": 11.8
+  },
+  {
+    "mes": "2021-09",
+    "ventasTotal": 6205986,
+    "cantidadPedidos": 441,
+    "ticketPromedio": 14073,
+    "variacion": -20.3
+  },
+  {
+    "mes": "2021-10",
+    "ventasTotal": 6497284,
+    "cantidadPedidos": 460,
+    "ticketPromedio": 14125,
+    "variacion": 4.7
+  },
+  {
+    "mes": "2021-11",
+    "ventasTotal": 5772759,
+    "cantidadPedidos": 433,
+    "ticketPromedio": 13332,
+    "variacion": -11.2
+  },
+  {
+    "mes": "2021-12",
+    "ventasTotal": 5688441,
+    "cantidadPedidos": 396,
+    "ticketPromedio": 14365,
+    "variacion": -1.5
+  },
+  {
+    "mes": "2022-01",
+    "ventasTotal": 5623628,
+    "cantidadPedidos": 412,
+    "ticketPromedio": 13650,
+    "variacion": -1.1
+  },
+  {
+    "mes": "2022-02",
+    "ventasTotal": 6218550,
+    "cantidadPedidos": 451,
+    "ticketPromedio": 13788,
+    "variacion": 10.6
+  },
+  {
+    "mes": "2022-03",
+    "ventasTotal": 6454440,
+    "cantidadPedidos": 463,
+    "ticketPromedio": 13940,
+    "variacion": 3.8
+  },
+  {
+    "mes": "2022-04",
+    "ventasTotal": 6930595,
+    "cantidadPedidos": 507,
+    "ticketPromedio": 13670,
+    "variacion": 7.4
+  },
+  {
+    "mes": "2022-05",
+    "ventasTotal": 7297920,
+    "cantidadPedidos": 542,
+    "ticketPromedio": 13465,
+    "variacion": 5.3
+  },
+  {
+    "mes": "2022-06",
+    "ventasTotal": 7196796,
+    "cantidadPedidos": 534,
+    "ticketPromedio": 13477,
+    "variacion": -1.4
+  },
+  {
+    "mes": "2022-07",
+    "ventasTotal": 8621960,
+    "cantidadPedidos": 623,
+    "ticketPromedio": 13839,
+    "variacion": 19.8
+  },
+  {
+    "mes": "2022-08",
+    "ventasTotal": 7760992,
+    "cantidadPedidos": 543,
+    "ticketPromedio": 14293,
+    "variacion": -10
+  },
+  {
+    "mes": "2022-09",
+    "ventasTotal": 7388212,
+    "cantidadPedidos": 517,
+    "ticketPromedio": 14291,
+    "variacion": -4.8
+  },
+  {
+    "mes": "2022-10",
+    "ventasTotal": 7592428,
+    "cantidadPedidos": 569,
+    "ticketPromedio": 13343,
+    "variacion": 2.8
+  },
+  {
+    "mes": "2022-11",
+    "ventasTotal": 7309515,
+    "cantidadPedidos": 518,
+    "ticketPromedio": 14111,
+    "variacion": -3.7
+  },
+  {
+    "mes": "2022-12",
+    "ventasTotal": 7540586,
+    "cantidadPedidos": 564,
+    "ticketPromedio": 13370,
+    "variacion": 3.2
+  },
+  {
+    "mes": "2023-01",
+    "ventasTotal": 6323108,
+    "cantidadPedidos": 469,
+    "ticketPromedio": 13482,
+    "variacion": -16.1
+  },
+  {
+    "mes": "2023-02",
+    "ventasTotal": 6879959,
+    "cantidadPedidos": 504,
+    "ticketPromedio": 13651,
+    "variacion": 8.8
+  },
+  {
+    "mes": "2023-03",
+    "ventasTotal": 8116285,
+    "cantidadPedidos": 600,
+    "ticketPromedio": 13527,
+    "variacion": 18
+  },
+  {
+    "mes": "2023-04",
+    "ventasTotal": 6606116,
+    "cantidadPedidos": 466,
+    "ticketPromedio": 14176,
+    "variacion": -18.6
+  },
+  {
+    "mes": "2023-05",
+    "ventasTotal": 8427373,
+    "cantidadPedidos": 590,
+    "ticketPromedio": 14284,
+    "variacion": 27.6
+  },
+  {
+    "mes": "2023-06",
+    "ventasTotal": 9065151,
+    "cantidadPedidos": 682,
+    "ticketPromedio": 13292,
+    "variacion": 7.6
+  },
+  {
+    "mes": "2023-07",
+    "ventasTotal": 9452501,
+    "cantidadPedidos": 674,
+    "ticketPromedio": 14024,
+    "variacion": 4.3
+  },
+  {
+    "mes": "2023-08",
+    "ventasTotal": 9627568,
+    "cantidadPedidos": 704,
+    "ticketPromedio": 13676,
+    "variacion": 1.9
+  },
+  {
+    "mes": "2023-09",
+    "ventasTotal": 9761017,
+    "cantidadPedidos": 702,
+    "ticketPromedio": 13905,
+    "variacion": 1.4
+  },
+  {
+    "mes": "2023-10",
+    "ventasTotal": 9102073,
+    "cantidadPedidos": 636,
+    "ticketPromedio": 14311,
+    "variacion": -6.8
+  },
+  {
+    "mes": "2023-11",
+    "ventasTotal": 7187075,
+    "cantidadPedidos": 516,
+    "ticketPromedio": 13928,
+    "variacion": -21
+  },
+  {
+    "mes": "2023-12",
+    "ventasTotal": 7738074,
+    "cantidadPedidos": 555,
+    "ticketPromedio": 13942,
+    "variacion": 7.7
+  },
+  {
+    "mes": "2024-01",
+    "ventasTotal": 8914843,
+    "cantidadPedidos": 655,
+    "ticketPromedio": 13610,
+    "variacion": 15.2
+  },
+  {
+    "mes": "2024-02",
+    "ventasTotal": 8393037,
+    "cantidadPedidos": 588,
+    "ticketPromedio": 14274,
+    "variacion": -5.9
+  },
+  {
+    "mes": "2024-03",
+    "ventasTotal": 8024177,
+    "cantidadPedidos": 576,
+    "ticketPromedio": 13931,
+    "variacion": -4.4
+  },
+  {
+    "mes": "2024-04",
+    "ventasTotal": 9191863,
+    "cantidadPedidos": 665,
+    "ticketPromedio": 13822,
+    "variacion": 14.6
+  },
+  {
+    "mes": "2024-05",
+    "ventasTotal": 9787112,
+    "cantidadPedidos": 693,
+    "ticketPromedio": 14123,
+    "variacion": 6.5
+  },
+  {
+    "mes": "2024-06",
+    "ventasTotal": 9703301,
+    "cantidadPedidos": 685,
+    "ticketPromedio": 14165,
+    "variacion": -0.9
+  },
+  {
+    "mes": "2024-07",
+    "ventasTotal": 10594216,
+    "cantidadPedidos": 740,
+    "ticketPromedio": 14317,
+    "variacion": 9.2
+  },
+  {
+    "mes": "2024-08",
+    "ventasTotal": 10044682,
+    "cantidadPedidos": 718,
+    "ticketPromedio": 13990,
+    "variacion": -5.2
+  },
+  {
+    "mes": "2024-09",
+    "ventasTotal": 9973219,
+    "cantidadPedidos": 751,
+    "ticketPromedio": 13280,
+    "variacion": -0.7
+  },
+  {
+    "mes": "2024-10",
+    "ventasTotal": 11130198,
+    "cantidadPedidos": 799,
+    "ticketPromedio": 13930,
+    "variacion": 11.6
+  },
+  {
+    "mes": "2024-11",
+    "ventasTotal": 9408613,
+    "cantidadPedidos": 664,
+    "ticketPromedio": 14170,
+    "variacion": -15.5
+  },
+  {
+    "mes": "2024-12",
+    "ventasTotal": 9436991,
+    "cantidadPedidos": 706,
+    "ticketPromedio": 13367,
+    "variacion": 0.3
+  },
+  {
+    "mes": "2025-01",
+    "ventasTotal": 8283226,
+    "cantidadPedidos": 614,
+    "ticketPromedio": 13491,
+    "variacion": -12.2
+  },
+  {
     "mes": "2025-02",
-    "ventasTotal": 3980000,
-    "cantidadPedidos": 298,
-    "ticketPromedio": 13356,
-    "variacion": -6.4
+    "ventasTotal": 9353414,
+    "cantidadPedidos": 667,
+    "ticketPromedio": 14023,
+    "variacion": 12.9
   },
   {
     "mes": "2025-03",
-    "ventasTotal": 4540000,
-    "cantidadPedidos": 325,
-    "ticketPromedio": 13969,
-    "variacion": 14.1
+    "ventasTotal": 10296662,
+    "cantidadPedidos": 759,
+    "ticketPromedio": 13566,
+    "variacion": 10.1
   },
   {
     "mes": "2025-04",
-    "ventasTotal": 4720000,
-    "cantidadPedidos": 341,
-    "ticketPromedio": 13842,
-    "variacion": 4.0
+    "ventasTotal": 9756813,
+    "cantidadPedidos": 728,
+    "ticketPromedio": 13402,
+    "variacion": -5.2
   },
   {
     "mes": "2025-05",
-    "ventasTotal": 5180000,
-    "cantidadPedidos": 358,
-    "ticketPromedio": 14469,
-    "variacion": 9.7
+    "ventasTotal": 11369727,
+    "cantidadPedidos": 846,
+    "ticketPromedio": 13439,
+    "variacion": 16.5
   },
   {
     "mes": "2025-06",
-    "ventasTotal": 4890000,
-    "cantidadPedidos": 339,
-    "ticketPromedio": 14425,
-    "variacion": -5.6
+    "ventasTotal": 12049106,
+    "cantidadPedidos": 887,
+    "ticketPromedio": 13584,
+    "variacion": 6
   },
   {
     "mes": "2025-07",
-    "ventasTotal": 5420000,
-    "cantidadPedidos": 371,
-    "ticketPromedio": 14610,
-    "variacion": 10.8
+    "ventasTotal": 11595856,
+    "cantidadPedidos": 828,
+    "ticketPromedio": 14005,
+    "variacion": -3.8
   },
   {
     "mes": "2025-08",
-    "ventasTotal": 5650000,
-    "cantidadPedidos": 382,
-    "ticketPromedio": 14791,
-    "variacion": 4.2
+    "ventasTotal": 12780586,
+    "cantidadPedidos": 960,
+    "ticketPromedio": 13313,
+    "variacion": 10.2
   },
   {
     "mes": "2025-09",
-    "ventasTotal": 5310000,
-    "cantidadPedidos": 362,
-    "ticketPromedio": 14669,
-    "variacion": -6.0
+    "ventasTotal": 10971059,
+    "cantidadPedidos": 813,
+    "ticketPromedio": 13495,
+    "variacion": -14.2
   },
   {
     "mes": "2025-10",
-    "ventasTotal": 5780000,
-    "cantidadPedidos": 388,
-    "ticketPromedio": 14897,
-    "variacion": 8.9
+    "ventasTotal": 11043814,
+    "cantidadPedidos": 792,
+    "ticketPromedio": 13944,
+    "variacion": 0.7
   },
   {
     "mes": "2025-11",
-    "ventasTotal": 6120000,
-    "cantidadPedidos": 401,
-    "ticketPromedio": 15262,
-    "variacion": 5.9
+    "ventasTotal": 10071621,
+    "cantidadPedidos": 745,
+    "ticketPromedio": 13519,
+    "variacion": -8.8
   },
   {
     "mes": "2025-12",
-    "ventasTotal": 6890000,
-    "cantidadPedidos": 432,
-    "ticketPromedio": 15949,
-    "variacion": 12.6
+    "ventasTotal": 9669664,
+    "cantidadPedidos": 690,
+    "ticketPromedio": 14014,
+    "variacion": -4
   }
 ]

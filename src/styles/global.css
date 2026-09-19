@@ -2,67 +2,63 @@
 
 /* ============================================================
    Theme tokens — Ferretería Central (Dashboard dark)
-   Mood: técnico, denso, dark-mode, funcional.
-   Referencia: Linear / Vercel / Stripe Dashboard.
-   Palette tuned for an at-a-glance data dashboard.
-   Background dark so the accent line/bar colors carry the signal.
+   Mood: técnico, denso, dark-mode slate-900.
+   Acentos: emerald (success/ingresos), amber (warning/highlights),
+            blue (info/primary series), crimson (danger).
    ============================================================ */
 @theme {
-  /* Surfaces — jerarquía de elevación */
-  --color-surface: #0F1419;        /* page background — dark canvas */
-  --color-panel:   #1A2028;        /* card / panel background */
-  --color-panel-2: #232B35;        /* hovered / nested panel */
-  --color-panel-3: #2A3340;        /* active / pressed panel */
-  --color-line:    #2D3742;        /* hairline borders */
-  --color-line-2:  #1F2730;        /* borde interior sutil (inset) */
+  /* Surfaces — jerarquía slate-900 hacia más claros en el primer plano */
+  --color-surface: #0F1419;
+  --color-panel:   #1A2028;
+  --color-panel-2: #1F2937;
+  --color-panel-3: #374151;
+  --color-line:    #2D3742;
+  --color-line-2:  #0F172A;
 
-  /* Ink (text) — AAA sobre surface */
-  --color-ink:     #E8ECEF;        /* primary text on dark — 15.8:1 */
-  --color-ink-2:   #9BA5B0;        /* secondary text — 7.07:1 */
-  --color-ink-3:   #6B7785;        /* tertiary / labels — 4.62:1 */
+  /* Ink */
+  --color-ink:     #E8ECEF;
+  --color-ink-2:   #94A3B8;
+  --color-ink-3:   #64748B;
 
-  /* Signal colors — KPIs y chart series */
-  --color-accent:  #3B82F6;        /* info / primary series */
-  --color-success: #10B981;        /* positive delta / bars */
-  --color-warning: #F59E0B;        /* warning / mid-tier */
-  --color-danger:  #EF4444;        /* negative delta / errors */
+  /* Signal */
+  --color-accent:    #3B82F6;
+  --color-success:   #10B981;
+  --color-warning:   #F59E0B;
+  --color-danger:    #EF4444;
+  --color-highlight: #F59E0B;
 
-  /* Category palette (BarChart color-by-category) */
+  /* Categorías */
   --color-cat-1: #3B82F6;
   --color-cat-2: #10B981;
   --color-cat-3: #F59E0B;
   --color-cat-4: #EF4444;
   --color-cat-5: #8B5CF6;
   --color-cat-6: #14B8A6;
-  --color-cat-7: #F472B6;
+  --color-cat-7: #EC4899;
   --color-cat-8: #94A3B8;
 
-  /* Fonts — Inter (UI) + JetBrains Mono (números/IDs/timestamps) */
+  /* Fonts */
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
-  /* ============================================================
-     `dash-` aliases — utility-first naming for components.
-     Generan automáticamente utilidades Tailwind v4:
-       bg-dash-surface, text-dash-ink, border-dash-line, etc.
-     Las primitivas `--color-*` arriba siguen siendo la fuente
-     de verdad (los alias consumen los mismos hex).
-     ============================================================ */
-  --color-dash-surface: var(--color-surface);
-  --color-dash-panel:   var(--color-panel);
-  --color-dash-panel-2: var(--color-panel-2);
-  --color-dash-ink:     var(--color-ink);
-  --color-dash-ink-2:   var(--color-ink-2);
-  --color-dash-ink-3:   var(--color-ink-3);
-  --color-dash-accent:  var(--color-accent);
-  --color-dash-success: var(--color-success);
-  --color-dash-warning: var(--color-warning);
-  --color-dash-danger:  var(--color-danger);
-  --color-dash-line:    var(--color-line);
+  /* Aliases dash-* */
+  --color-dash-surface:   var(--color-surface);
+  --color-dash-panel:     var(--color-panel);
+  --color-dash-panel-2:   var(--color-panel-2);
+  --color-dash-panel-3:   var(--color-panel-3);
+  --color-dash-ink:       var(--color-ink);
+  --color-dash-ink-2:     var(--color-ink-2);
+  --color-dash-ink-3:     var(--color-ink-3);
+  --color-dash-accent:    var(--color-accent);
+  --color-dash-success:   var(--color-success);
+  --color-dash-warning:   var(--color-warning);
+  --color-dash-danger:    var(--color-danger);
+  --color-dash-highlight: var(--color-highlight);
+  --color-dash-line:      var(--color-line);
 }
 
 /* ============================================================
-   Base reset — fondo dark explícito, color-scheme coherente
+   Base reset
    ============================================================ */
 html {
   background-color: var(--color-surface);
@@ -71,59 +67,50 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  /* Scrollbar dark — Firefox */
+  color-scheme: dark;
   scrollbar-color: var(--color-line) transparent;
   scrollbar-width: thin;
 }
-
 body {
   background-color: var(--color-surface);
   color: var(--color-ink);
   min-height: 100dvh;
 }
-
-/* Scrollbar dark — Chromium / WebKit */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-line);
   border-radius: 999px;
   border: 2px solid var(--color-surface);
 }
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-ink-3);
-}
+::-webkit-scrollbar-thumb:hover { background-color: var(--color-ink-3); }
 
 /* ============================================================
    Utilidades
    ============================================================ */
-
-/* Tabular numerals — KPI values, axis labels, table totals */
 .tabular {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
 }
 
-/* Card surface — panel + línea sutil + inset superior
-   (Linear/Vercel style: borde 1px + highlight interno de 1px) */
 .surface-card {
   background-color: var(--color-panel);
   border: 1px solid var(--color-line);
-  border-radius: 10px;
-  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 0.02);
-  transition: border-color 150ms ease, background-color 150ms ease;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 0.03);
+  transition: border-color 150ms ease, background-color 150ms ease, transform 150ms ease;
 }
-.surface-card:hover {
+.surface-card-hover:hover {
   border-color: var(--color-panel-3);
+  background-color: var(--color-panel-2);
+}
+.surface-card-interactive { cursor: pointer; }
+.surface-card-interactive:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
 }
 
-/* High-contrast focus ring (a11y — visible sobre dark) */
 *:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
@@ -131,7 +118,7 @@ body {
 }
 
 /* ============================================================
-   Recharts — pintar ejes, grid y tooltip con la paleta
+   Recharts
    ============================================================ */
 .recharts-cartesian-axis-tick-value {
   fill: var(--color-ink-2);
@@ -140,19 +127,32 @@ body {
   font-variant-numeric: tabular-nums;
 }
 .recharts-cartesian-axis-line,
-.recharts-cartesian-axis-tick-line {
-  stroke: var(--color-line);
-}
-.recharts-cartesian-grid line {
-  stroke: var(--color-line);
-}
-.recharts-tooltip-wrapper {
-  outline: none;
-}
+.recharts-cartesian-axis-tick-line { stroke: var(--color-line); }
+.recharts-cartesian-grid line { stroke: var(--color-line); }
+.recharts-tooltip-wrapper { outline: none; }
+.recharts-default-tooltip { background: transparent !important; border: none !important; }
+.recharts-tooltip-cursor { stroke: var(--color-accent); stroke-opacity: 0.35; }
 
 /* ============================================================
-   Reduced motion — kill all transitions/animations
+   Animaciones
    ============================================================ */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.anim-fade-up { animation: fade-in-up 320ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-delay-1 { animation-delay: 60ms; }
+.anim-delay-2 { animation-delay: 120ms; }
+.anim-delay-3 { animation-delay: 180ms; }
+.anim-delay-4 { animation-delay: 240ms; }
+.anim-delay-5 { animation-delay: 300ms; }
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+.anim-pulse-soft { animation: pulse-soft 2.4s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -161,9 +161,6 @@ body {
   }
 }
 
-/* ============================================================
-   Print — keep dashboard legible si el dueño imprime un reporte
-   ============================================================ */
 @media print {
   body { background: #fff; color: #000; }
   .no-print { display: none !important; }

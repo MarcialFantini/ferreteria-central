@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Page from '../components/Page';
+import VistaTendencias from '../components/vistas/VistaTendencias';
+
+const title = 'Tendencias — Ferretería Central';
+const description = 'Heatmap anual, waterfall de variaciones mensuales, scatter pedidos-vs-facturación y radar de estacionalidad. Análisis temporal profundo.';
+---
+<Layout title={title} description={description}>
+  <Page
+    activeKey="tendencias"
+    title="Tendencias"
+    description="Heatmap anual, waterfall de variaciones mensuales, scatter de dispersión y radar de estacionalidad para entender el pulso del negocio."
+  >
+    <VistaTendencias />
+  </Page>
+</Layout>

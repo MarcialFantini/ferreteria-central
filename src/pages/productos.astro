@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Page from '../components/Page';
+import VistaProductos from '../components/vistas/VistaProductos';
+
+const title = 'Productos — Ferretería Central';
+const description = 'Catálogo completo de SKUs: ranking por ingreso, mix por categoría, margen y participación sobre el total facturado.';
+---
+<Layout title={title} description={description}>
+  <Page
+    activeKey="productos"
+    title="Productos"
+    description="Top productos por ingreso, mix por categoría y catálogo completo con margen y participación."
+  >
+    <VistaProductos />
+  </Page>
+</Layout>
