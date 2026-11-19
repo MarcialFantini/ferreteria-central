@@ -1,0 +1,167 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import PageHead from '../components/PageHead.astro';
+import Icon from '../components/Icon.astro';
+import { SELLERS } from '../data/catalog';
+import { PROVINCES } from '../data/dataset';
+import { METRIC_LABEL } from '../scripts/state-labels';
+
+const provinces = [...PROVINCES].sort((a, b) => a.name.localeCompare(b.name, 'es'));
+---
+
+<AppLayout title="Alertas" view="alertas">
+  <div class="page">
+    <PageHead title="Alertas" sub="Reglas que vigilan el flujo de pedidos en vivo. Cuando se cumplen, aparecen en el centro de notificaciones y como aviso.">
+      <button type="button" class="btn" data-test-alerts><Icon name="vivo" size={18} /> Simular 1 hora a 10x</button>
+    </PageHead>
+
+    <div class="grid-2 alerts-grid">
+      <section class="panel">
+        <h2 class="panel-title">Reglas activas</h2>
+        <ul class="rules" data-rules></ul>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">Nueva regla</h2>
+        <form class="rule-form" data-rule-form>
+          <label class="field">
+            <span>Nombre</span>
+            <input name="name" required maxlength="40" placeholder="Ej.: Pedido de Rosario grande" />
+          </label>
+          <label class="field select">
+            <span>Condición</span>
+            <select name="metric">
+              {Object.entries(METRIC_LABEL).map(([k, v]) => <option value={k}>{v}</option>)}
+            </select>
+          </label>
+          <label class="field">
+            <span data-threshold-label>Umbral (ARS)</span>
+            <input name="threshold" type="number" min="1" required value="300000" inputmode="numeric" />
+          </label>
+          <div class="form-grid">
+            <label class="field select">
+              <span>Vendedor</span>
+              <select name="seller">
+                <option value="all">Cualquiera</option>
+                {SELLERS.map((s) => <option value={s.id}>{s.name}</option>)}
+              </select>
+            </label>
+            <label class="field select">
+              <span>Provincia</span>
+              <select name="province">
+                <option value="all">Cualquiera</option>
+                {provinces.map((p) => <option value={p.id}>{p.name}</option>)}
+              </select>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--accent"><Icon name="plus" size={18} /> Crear regla</button>
+          <p class="muted small">Las reglas de facturación, provincia y objetivo se disparan una vez por día; la de pedido individual, en cada pedido que la cumpla.</p>
+        </form>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2 class="panel-title">Historial de disparos</h2>
+      <ol class="fired" data-fired></ol>
+    </section>
+  </div>
+</AppLayout>
+
+<style>
+  .rules {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rules :global(li) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 4px 14px;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .rules :global(.r-name) {
+    font: 700 20px var(--font-display);
+  }
+
+  .rules :global(.r-desc) {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .rules :global(.r-meta) {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .rules :global(.r-del) {
+    border: 0;
+    background: none;
+    color: var(--muted);
+    cursor: pointer;
+    min-height: 32px;
+  }
+
+  .rules :global(.r-del:hover) {
+    color: var(--ink);
+  }
+
+  .rules :global(li.is-fired) {
+    animation: fired 1.2s var(--ease);
+  }
+
+  @keyframes fired {
+    0% {
+      background: color-mix(in srgb, var(--accent) 25%, transparent);
+    }
+  }
+
+  .rule-form {
+    display: grid;
+    gap: 12px;
+  }
+
+  .rule-form .field select {
+    max-width: none;
+    width: 100%;
+  }
+
+  .small {
+    font-size: 13px;
+  }
+
+  .fired {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 360px;
+    overflow-y: auto;
+  }
+
+  .fired :global(li) {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 2px 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .fired :global(li.muted) {
+    display: block;
+  }
+
+  .fired :global(.f-time) {
+    font: 700 16px var(--font-display);
+    color: var(--accent);
+  }
+
+  .fired :global(.f-body) {
+    grid-column: 2;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>

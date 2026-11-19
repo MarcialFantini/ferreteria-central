@@ -1,28 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Page from '../components/Page';
-import VistaInicio from '../components/vistas/VistaInicio';
-import type { TourStep } from '../components/GuidedTour';
-
-const title = 'Ferretería Central — Dashboard de ventas';
-const description = 'Dashboard dark-mode premium de Ferretería Central: KPIs, top productos, categorías y comparativa de períodos sobre 8 años de ventas simuladas.';
-
-const tourSteps: TourStep[] = [
-  { target: 'kpis-grid', title: 'Tus KPIs', body: 'Estas tarjetas resumen el período activo. Hacé click en cualquiera para abrir el desglose mensual.', placement: 'bottom' },
-  { target: 'ventas-chart', title: 'Visualizaciones', body: 'Cada gráfico se puede filtrar por período. La línea azul es la facturación por mes.', placement: 'right' },
-  { target: 'comparacion-chart', title: 'Comparar con el previo', body: 'Acá ves el período actual superpuesto con el anterior — ideal para detectar estacionalidad.', placement: 'left' },
-  { target: undefined, title: 'Más vistas', body: 'Desde el sidebar podés navegar a /ventas (listado), /productos (catálogo), /clientes (RFM) y /tendencias (heatmap, radar, waterfall).', placement: 'center' },
-];
+import AppLayout from '../layouts/AppLayout.astro';
+import SceneHero from '../components/SceneHero.astro';
+import SceneMap from '../components/SceneMap.astro';
+import SceneYoy from '../components/SceneYoy.astro';
+import SceneRace from '../components/SceneRace.astro';
+import SceneCohort from '../components/SceneCohort.astro';
 ---
-<Layout title={title} description={description}>
-  <Page
-    activeKey="inicio"
-    title="Dashboard de ventas"
-    description="Visualizá el desempeño de Ferretería Central mes a mes: facturación, ticket promedio, variación anual y los productos que más ingresos generan."
-    showTour={true}
-    tourSteps={tourSteps}
-    badges={{ ventas: 'Nuevo', tendencias: 'Pro' }}
-  >
-    <VistaInicio />
-  </Page>
-</Layout>
+
+<AppLayout title="Resumen" view="resumen">
+  <SceneHero />
+  <SceneMap />
+  <SceneYoy />
+  <SceneRace />
+  <SceneCohort />
+</AppLayout>

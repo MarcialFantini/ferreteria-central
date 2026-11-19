@@ -1,0 +1,238 @@
+---
+import { DEFAULT_FILTERS, yoyData } from '../data/selectors';
+import { yoyChart } from '../render/yoy';
+import { formatCompact, formatMoney, formatSignedPercent } from '../lib/format';
+
+const data = yoyData(DEFAULT_FILTERS);
+const chart = yoyChart(data, 1200, 520);
+const last = data.labels.length - 1;
+const diff = (i: number) => (data.current[i] ?? 0) / (data.previous[i] || 1) - 1;
+---
+
+<section class="scene scene-yoy" id="escena-3" data-scene="yoy" aria-labelledby="yoy-title">
+  <header class="scene-head">
+    <span class="scene-index" aria-hidden="true">03</span>
+    <h2 class="scene-title" id="yoy-title">Este año contra el anterior</h2>
+    <p class="scene-sub">Las dos curvas se dibujan mientras bajás. También podés recorrer los meses con el control deslizante.</p>
+  </header>
+
+  <div class="scene-body yoy-layout">
+    <div class="yoy-readout" aria-live="polite">
+      <p class="eyebrow"><span data-yoy-month>{data.labels[last]}</span> · este año</p>
+      <p class="yoy-current num" data-yoy-current>{formatCompact(data.current[last] ?? 0)}</p>
+      <p class="yoy-prev">
+        Año anterior <b class="num" data-yoy-previous>{formatCompact(data.previous[last] ?? 0)}</b>
+      </p>
+      <p class="yoy-delta num" data-yoy-delta data-positive={diff(last) >= 0 ? 'true' : 'false'}>{formatSignedPercent(diff(last))}</p>
+    </div>
+
+    <figure class="yoy-figure" data-yoy-figure>
+      <div class="yoy-chart" data-yoy-chart set:html={chart.svg} />
+      <label class="yoy-slider">
+        <span class="sr-only">Mes</span>
+        <input type="range" min="0" max={last} step="1" value={last} data-yoy-slider aria-valuetext={data.labels[last]} />
+      </label>
+    </figure>
+  </div>
+
+  <details class="data-alt">
+    <summary>Ver datos en tabla</summary>
+    <div class="table-wrap">
+      <table class="data-table" data-yoy-table>
+        <caption>Facturación mensual: últimos 12 meses y los 12 anteriores</caption>
+        <thead><tr><th scope="col">Mes</th><th scope="col">Este año</th><th scope="col">Año anterior</th><th scope="col">Variación</th></tr></thead>
+        <tbody>
+          {
+            data.labels.map((l, i) => (
+              <tr>
+                <th scope="row">{l}</th>
+                <td>{formatMoney(data.current[i] ?? 0)}</td>
+                <td>{formatMoney(data.previous[i] ?? 0)}</td>
+                <td>{formatSignedPercent(diff(i))}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<style>
+  .yoy-layout {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(0, 3.4fr);
+    gap: clamp(20px, 3vw, 48px);
+    align-items: end;
+  }
+
+  .yoy-readout {
+    display: grid;
+    gap: 4px;
+    padding-bottom: 60px;
+  }
+
+  .yoy-readout .eyebrow {
+    font-size: 18px;
+  }
+
+  .yoy-current {
+    font-weight: 700;
+    font-size: clamp(56px, 5.4vw, 92px);
+    line-height: 0.9;
+    white-space: nowrap;
+    color: var(--accent);
+  }
+
+  .yoy-prev {
+    color: var(--muted);
+    font-size: 17px;
+  }
+
+  .yoy-prev b {
+    color: var(--ink);
+    font-size: 24px;
+    margin-left: 6px;
+  }
+
+  .yoy-delta {
+    font-weight: 700;
+    font-size: clamp(32px, 3.4vw, 48px);
+    line-height: 1;
+    margin-top: 8px;
+  }
+
+  .yoy-delta[data-positive='false'] {
+    color: var(--muted);
+  }
+
+  .yoy-figure {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .yoy-chart {
+    height: min(56svh, 560px);
+    min-height: 300px;
+  }
+
+  .yoy-chart :global(svg) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .yoy-chart :global(.yoy-tick line) {
+    stroke: var(--line);
+  }
+
+  .yoy-chart :global(.yoy-tick text) {
+    fill: var(--muted);
+    font: 500 14px var(--font-text);
+  }
+
+  .yoy-chart :global(.yoy-line) {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .yoy-chart :global(.yoy-line--current) {
+    stroke: var(--accent);
+    stroke-width: 4;
+  }
+
+  .yoy-chart :global(.yoy-line--previous) {
+    stroke: var(--muted);
+    stroke-width: 2.5;
+    stroke-dasharray: 2 7;
+  }
+
+  .yoy-chart :global(.yoy-month) {
+    fill: var(--muted);
+    font: 700 22px var(--font-display);
+    transition: fill 0.2s;
+  }
+
+  .yoy-chart :global(.yoy-month.is-active) {
+    fill: var(--ink);
+  }
+
+  .yoy-chart :global(.yoy-end) {
+    font: 700 22px var(--font-display);
+  }
+
+  .yoy-chart :global(.yoy-end--current) {
+    fill: var(--accent);
+  }
+
+  .yoy-chart :global(.yoy-end--previous) {
+    fill: var(--muted);
+  }
+
+  .yoy-chart :global(.yoy-cross circle) {
+    fill: var(--bg);
+    stroke: var(--ink);
+    stroke-width: 2;
+  }
+
+  .yoy-chart :global(.yoy-cross text) {
+    paint-order: stroke;
+    stroke: var(--bg);
+    stroke-width: 4px;
+    fill: var(--ink);
+    font: 600 14px var(--font-text);
+  }
+
+  .yoy-chart :global(.yoy-cursor line) {
+    stroke: var(--ink);
+    stroke-width: 1;
+  }
+
+  .yoy-chart :global(.yoy-dot--current) {
+    fill: var(--accent);
+    stroke: var(--bg);
+    stroke-width: 3;
+  }
+
+  .yoy-chart :global(.yoy-dot--previous) {
+    fill: var(--bg);
+    stroke: var(--muted);
+    stroke-width: 2.5;
+  }
+
+  .yoy-slider {
+    display: block;
+    margin-top: 12px;
+  }
+
+  .yoy-slider input {
+    width: 100%;
+    height: 44px;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+
+  @media (max-width: 860px) {
+    .yoy-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .yoy-readout {
+      padding-bottom: 0;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+    }
+
+    .yoy-readout .eyebrow,
+    .yoy-current {
+      grid-column: 1 / -1;
+    }
+
+    .yoy-chart {
+      height: 44svh;
+      min-height: 260px;
+    }
+  }
+</style>

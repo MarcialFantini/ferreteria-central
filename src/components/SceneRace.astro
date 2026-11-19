@@ -1,0 +1,160 @@
+---
+import { DEFAULT_FILTERS, productRace } from '../data/selectors';
+import { PRODUCTS } from '../data/dataset';
+import { raceBox, raceSVG } from '../render/race';
+import { formatMoney } from '../lib/format';
+
+const frames = productRace(DEFAULT_FILTERS);
+const lastFrame = frames[frames.length - 1];
+const totals = lastFrame?.totals ?? [];
+const ranking = totals
+  .map((v, i) => ({ v, p: PRODUCTS[i] }))
+  .sort((a, b) => b.v - a.v)
+  .slice(0, 10);
+---
+
+<section class="scene scene-race" id="escena-4" data-scene="race" aria-labelledby="race-title">
+  <header class="scene-head">
+    <span class="scene-index" aria-hidden="true">04</span>
+    <h2 class="scene-title" id="race-title">La carrera de productos</h2>
+    <p class="scene-sub">Facturación acumulada, semana a semana. Diez productos pelean el podio.</p>
+  </header>
+
+  <div class="scene-body race-layout">
+    <div class="race-controls">
+      <p class="race-week num" data-race-week aria-live="off">{lastFrame?.label}</p>
+      <div class="race-buttons">
+        <button type="button" class="btn btn--accent" data-race-toggle aria-pressed="false">
+          <span class="race-icon" data-icon-play
+            ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="currentColor"></path></svg></span
+          >
+          <span class="race-icon" data-icon-pause hidden
+            ><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"></path></svg></span
+          >
+          <span data-race-label>Reproducir</span>
+        </button>
+        <button type="button" class="btn" data-race-restart>Desde el inicio</button>
+      </div>
+      <div class="race-progress" aria-hidden="true"><span data-race-progress></span></div>
+    </div>
+    <figure class="race-figure">
+      <div class="race-chart" data-race-chart set:html={raceSVG(totals, raceBox(1100, 560))} />
+    </figure>
+  </div>
+
+  <details class="data-alt">
+    <summary>Ver datos en tabla</summary>
+    <div class="table-wrap">
+      <table class="data-table" data-race-table>
+        <caption>Diez productos con mayor facturación acumulada en el período</caption>
+        <thead><tr><th scope="col">Producto</th><th scope="col">Categoría</th><th scope="col">Facturación</th></tr></thead>
+        <tbody>
+          {
+            ranking.map((r) => (
+              <tr>
+                <th scope="row">{r.p?.name}</th>
+                <td>{r.p?.category}</td>
+                <td>{formatMoney(r.v)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<style>
+  .race-layout {
+    display: grid;
+    gap: 16px;
+  }
+
+  .race-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 24px;
+  }
+
+  .race-week {
+    font-weight: 700;
+    font-size: clamp(32px, 3.6vw, 52px);
+    line-height: 1;
+    color: var(--accent);
+    min-width: 8ch;
+  }
+
+  .race-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  .race-buttons .btn {
+    min-height: 44px;
+  }
+
+  .race-progress {
+    flex-basis: 100%;
+    height: 3px;
+    background: var(--line);
+  }
+
+  .race-progress span {
+    display: block;
+    height: 100%;
+    background: var(--ink);
+    transform-origin: left;
+  }
+
+  .race-figure {
+    margin: 0;
+  }
+
+  .race-chart {
+    height: min(58svh, 600px);
+    min-height: 380px;
+  }
+
+  .race-chart :global(svg) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .race-chart :global(rect) {
+    fill: var(--surface-2);
+  }
+
+  .race-chart :global(.is-leader rect) {
+    fill: var(--accent);
+  }
+
+  .race-chart :global(.race-name) {
+    fill: var(--ink);
+    font: 500 18px var(--font-text);
+  }
+
+  .race-chart :global(.race-value) {
+    fill: var(--ink);
+    font: 700 24px var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (max-width: 640px) {
+    .race-chart {
+      height: 62svh;
+      min-height: 420px;
+    }
+
+    .race-chart :global(.race-name) {
+      font-size: 15px;
+    }
+
+    .race-chart :global(.race-value) {
+      font-size: 18px;
+    }
+  }
+</style>

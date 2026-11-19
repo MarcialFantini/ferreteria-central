@@ -1,0 +1,394 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import PageHead from '../components/PageHead.astro';
+import { MAP_HEIGHT, MAP_WIDTH, PROVINCE_SHAPES } from '../data/argentina-map';
+
+const skeletonRows = Array.from({ length: 7 });
+---
+
+<AppLayout title="En vivo" view="en-vivo">
+  <div class="page live-page">
+    <PageHead title="En vivo" sub="Pedidos entrando en tiempo real. La simulación corre en tu navegador: pausala o acelerala cuando quieras.">
+      <div class="live-controls" role="group" aria-label="Control de la simulación">
+        <button type="button" class="btn" data-live-pause><span data-live-pause-label>Pausar</span></button>
+        <div class="segmented" role="radiogroup" aria-label="Velocidad">
+          {
+            [1, 4, 10].map((s) => (
+              <button type="button" role="radio" class="seg" data-live-speed={s} aria-checked="false">
+                {s}x
+              </button>
+            ))
+          }
+        </div>
+      </div>
+    </PageHead>
+
+    <section class="live-hero" aria-label="Facturación de hoy">
+      <div>
+        <p class="eyebrow"><span class="live-pill"><span class="live-dot" aria-hidden="true"></span>Facturación de hoy</span> · <span data-live-day></span> · <span class="num" data-live-clock></span></p>
+        <p class="live-total num" data-live-total aria-live="off">$ 0</p>
+      </div>
+      <dl class="live-kpis">
+        <div><dt>vs. ayer a esta hora</dt><dd class="num" data-live-vs>—</dd></div>
+        <div><dt>Pedidos</dt><dd class="num" data-live-orders>0</dd></div>
+        <div><dt>Ticket promedio</dt><dd class="num" data-live-ticket>—</dd></div>
+        <div><dt>Clientes que compraron</dt><dd class="num" data-live-clients>0</dd></div>
+      </dl>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel">
+        <h2 class="panel-title">Hoy contra ayer</h2>
+        <div class="live-curve" data-live-curve><span class="skeleton" style="height:100%"></span></div>
+      </section>
+      <section class="panel live-map-panel">
+        <h2 class="panel-title">Pedidos de hoy por provincia</h2>
+        <svg class="live-map" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} data-live-map role="img" aria-label="Mapa con los pedidos de hoy" data-export="Pedidos de hoy por provincia">
+          <g>{PROVINCE_SHAPES.map((p) => <path d={p.d} data-prov={p.id} class="lm-prov" fill-opacity="0.06" />)}</g>
+          <g data-live-drops></g>
+        </svg>
+      </section>
+    </div>
+
+    <div class="grid-2">
+      <section class="panel">
+        <div class="feed-head">
+          <h2 class="panel-title">Pedidos entrantes</h2>
+          <span class="muted" data-feed-count></span>
+        </div>
+        <ol class="feed" data-feed aria-live="polite" aria-relevant="additions">
+          {
+            skeletonRows.map(() => (
+              <li class="feed-item is-skeleton">
+                <span class="skeleton" style="width:44px" />
+                <span class="skeleton" style="width:70%" />
+                <span class="skeleton" style="width:80px" />
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+      <div class="live-side">
+        <section class="panel">
+          <h2 class="panel-title">Productos más pedidos hoy</h2>
+          <ol class="bar-list" data-live-products></ol>
+        </section>
+        <section class="panel">
+          <h2 class="panel-title">Vendedores hoy</h2>
+          <ol class="bar-list" data-live-sellers></ol>
+        </section>
+      </div>
+    </div>
+  </div>
+</AppLayout>
+
+<style>
+  .live-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .live-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: end;
+    padding: 8px 0 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+  }
+
+  .live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .live-total {
+    font-weight: 700;
+    font-size: clamp(56px, 8.4vw, 148px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .live-kpis {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 24px;
+    margin: 0;
+  }
+
+  .live-kpis dt {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .live-kpis dd {
+    margin: 0;
+    font-weight: 700;
+    font-size: clamp(28px, 2.8vw, 40px);
+    line-height: 1.05;
+  }
+
+  .live-kpis dd.is-up {
+    color: var(--accent);
+  }
+
+  .live-curve {
+    height: 340px;
+  }
+
+  .live-curve :global(svg) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .live-curve :global(.lc-grid) {
+    stroke: var(--line);
+  }
+
+  .live-curve :global(.lc-tick),
+  .live-curve :global(.lc-hour) {
+    fill: var(--muted);
+    font: 500 13px var(--font-text);
+  }
+
+  .live-curve :global(.lc-hour) {
+    font: 700 16px var(--font-display);
+  }
+
+  .live-curve :global(.lc-line) {
+    fill: none;
+    stroke-linecap: round;
+  }
+
+  .live-curve :global(.lc-line--y) {
+    stroke: var(--muted);
+    stroke-width: 2.5;
+    stroke-dasharray: 2 7;
+  }
+
+  .live-curve :global(.lc-line--t) {
+    stroke: var(--accent);
+    stroke-width: 4;
+  }
+
+  .live-curve :global(.lc-now) {
+    stroke: var(--line);
+    stroke-dasharray: 3 4;
+  }
+
+  .live-curve :global(.lc-head) {
+    fill: var(--accent);
+    stroke: var(--bg);
+    stroke-width: 3;
+  }
+
+  .live-curve :global(.lc-head-ring) {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    opacity: 0.6;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: head-pulse 1.6s ease-out infinite;
+  }
+
+  :global(.is-paused) .live-curve :global(.lc-head-ring) {
+    animation: none;
+    opacity: 0;
+  }
+
+  @keyframes head-pulse {
+    from {
+      transform: scale(0.5);
+      opacity: 0.8;
+    }
+    to {
+      transform: scale(1.6);
+      opacity: 0;
+    }
+  }
+
+  .live-curve :global(.lc-same) {
+    fill: var(--bg);
+    stroke: var(--muted);
+    stroke-width: 2;
+  }
+
+  .live-curve :global(.lc-end) {
+    font: 700 20px var(--font-display);
+  }
+
+  .live-curve :global(.lc-end--t) {
+    fill: var(--accent);
+  }
+
+  .live-curve :global(.lc-end--y) {
+    fill: var(--muted);
+  }
+
+  .live-map-panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .live-map {
+    width: 100%;
+    height: 340px;
+    display: block;
+  }
+
+  .live-map :global(.lm-prov) {
+    fill: var(--accent);
+    stroke: var(--bg);
+    stroke-width: 0.8;
+    transition: fill-opacity 0.6s var(--ease);
+  }
+
+  .feed-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .feed {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 520px;
+    overflow: hidden;
+  }
+
+  .feed :global(.feed-item) {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .feed :global(.feed-time) {
+    font: 700 16px var(--font-display);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .feed :global(.feed-who) {
+    min-width: 0;
+  }
+
+  .feed :global(.feed-who a) {
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .feed :global(.feed-who a:hover) {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+  }
+
+  .feed :global(.feed-meta) {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .feed :global(.feed-total) {
+    font: 700 22px var(--font-display);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  .feed :global(.feed-item.is-big .feed-total) {
+    color: var(--accent);
+  }
+
+  .feed :global(.feed-item.is-new) {
+    animation: feed-in 0.6s var(--ease);
+  }
+
+  @keyframes feed-in {
+    from {
+      transform: translateY(-14px);
+      opacity: 0;
+    }
+  }
+
+  .live-side {
+    display: grid;
+    gap: 20px;
+    align-content: start;
+  }
+
+  .bar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+
+  .bar-list :global(li) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 12px;
+  }
+
+  .bar-list :global(.bl-name) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bar-list :global(.bl-value) {
+    font: 700 18px var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar-list :global(.bl-bar) {
+    grid-column: 1 / -1;
+    height: 6px;
+    background: var(--line);
+  }
+
+  .bar-list :global(.bl-bar span) {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    transform-origin: left;
+    transition: transform 0.6s var(--ease);
+  }
+
+  .bar-list :global(li:not(:first-child) .bl-bar span) {
+    background: var(--ink);
+    opacity: 0.55;
+  }
+
+  @media (max-width: 900px) {
+    .live-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .live-curve,
+    .live-map {
+      height: 260px;
+    }
+
+    .live-controls {
+      width: 100%;
+    }
+  }
+</style>

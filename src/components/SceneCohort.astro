@@ -1,0 +1,170 @@
+---
+import { cohortData, DEFAULT_FILTERS } from '../data/selectors';
+import { cohortSVG } from '../render/cohort';
+import { formatPercent } from '../lib/format';
+
+const rows = cohortData(DEFAULT_FILTERS);
+const ages = Array.from({ length: 12 }, (_, i) => i);
+---
+
+<section class="scene scene-cohort" id="escena-5" data-scene="cohort" aria-labelledby="cohort-title">
+  <header class="scene-head">
+    <span class="scene-index" aria-hidden="true">05</span>
+    <h2 class="scene-title" id="cohort-title">Cohortes de clientes</h2>
+    <p class="scene-sub">
+      Cada fila agrupa a los clientes por su mes de alta. Cada celda muestra cuánto facturan, mes a mes, contra su primer mes (100 %).
+    </p>
+  </header>
+
+  <div class="scene-body cohort-layout">
+    <figure class="cohort-figure">
+      <div class="cohort-chart" data-cohort-chart set:html={cohortSVG(rows, 1000, 620)} />
+    </figure>
+    <aside class="cohort-legend" aria-hidden="true">
+      <p class="eyebrow">Retención de facturación</p>
+      <div class="legend-scale">
+        <span style="--o:0.08"></span><span style="--o:0.3"></span><span style="--o:0.55"></span><span style="--o:0.8"></span><span style="--o:1"></span>
+      </div>
+      <div class="legend-labels"><span>≤ 20 %</span><span>≥ 105 %</span></div>
+      <p class="cohort-note">Pasá el mouse o tocá una celda para ver el detalle.</p>
+    </aside>
+  </div>
+
+  <details class="data-alt">
+    <summary>Ver datos en tabla</summary>
+    <div class="table-wrap">
+      <table class="data-table" data-cohort-table>
+        <caption>Retención de facturación por cohorte (mes de alta) y meses desde el alta</caption>
+        <thead>
+          <tr>
+            <th scope="col">Cohorte</th>
+            <th scope="col">Clientes</th>
+            {ages.map((a) => <th scope="col">{a === 0 ? 'Mes 0' : `+${a}`}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {
+            rows.map((r) => (
+              <tr>
+                <th scope="row">{r.label}</th>
+                <td>{r.size}</td>
+                {ages.map((a) => {
+                  const c = r.cells[a];
+                  return <td>{c && c.retention !== null ? formatPercent(c.retention) : '—'}</td>;
+                })}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<style>
+  .cohort-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: clamp(24px, 4vw, 64px);
+    align-items: end;
+  }
+
+  .cohort-figure {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .cohort-chart {
+    height: min(66svh, 680px);
+    min-height: 360px;
+  }
+
+  .cohort-chart :global(svg) {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .cohort-chart :global(rect) {
+    fill: var(--accent);
+    stroke: var(--line);
+    stroke-width: 1;
+    cursor: pointer;
+  }
+
+  .cohort-chart :global(.coh-cell:hover rect) {
+    stroke: var(--ink);
+    stroke-width: 2;
+  }
+
+  .cohort-chart :global(.is-empty rect) {
+    fill: none;
+    stroke-dasharray: 3 4;
+    cursor: default;
+  }
+
+  .cohort-chart :global(.coh-val) {
+    fill: var(--ink);
+    font: 700 18px var(--font-display);
+    pointer-events: none;
+  }
+
+  .cohort-chart :global(.coh-val.is-on) {
+    fill: var(--accent-ink);
+  }
+
+  .cohort-chart :global(.coh-row),
+  .cohort-chart :global(.coh-col) {
+    fill: var(--muted);
+    font: 700 18px var(--font-display);
+  }
+
+  .legend-scale {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    margin: 10px 0 6px;
+  }
+
+  .legend-scale span {
+    height: 22px;
+    background: color-mix(in srgb, var(--accent) calc(var(--o) * 100%), transparent);
+    border: 1px solid var(--line);
+  }
+
+  .legend-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .cohort-note {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  @media (max-width: 860px) {
+    .cohort-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .cohort-chart {
+      height: auto;
+      aspect-ratio: 1 / 1.75;
+      min-height: 0;
+    }
+
+    .cohort-chart :global(svg) {
+      width: 100%;
+      height: 100%;
+    }
+
+    .cohort-chart :global(.coh-row),
+    .cohort-chart :global(.coh-col) {
+      font-size: 15px;
+    }
+  }
+</style>

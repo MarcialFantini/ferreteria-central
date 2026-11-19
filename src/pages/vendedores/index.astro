@@ -1,0 +1,177 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import PageHead from '../../components/PageHead.astro';
+import { SELLERS } from '../../data/catalog';
+---
+
+<AppLayout title="Vendedores" view="vendedores">
+  <div class="page">
+    <PageHead title="Vendedores" sub="Ranking del período según los filtros, y el avance en vivo de cada uno contra su objetivo de noviembre.">
+      <a class="btn" href="/objetivos">Editar objetivos</a>
+    </PageHead>
+
+    <ol class="leaderboard" data-leaderboard>
+      {
+        SELLERS.map(() => (
+          <li class="lb-card is-skeleton">
+            <span class="skeleton" style="width:44px;height:44px;border-radius:50%" />
+            <span class="skeleton" style="width:60%" />
+            <span class="skeleton" style="width:110px;height:110px;border-radius:50%" />
+          </li>
+        ))
+      }
+    </ol>
+
+    <section class="panel" style="margin-top:20px">
+      <h2 class="panel-title">Comparativa del período</h2>
+      <div data-seller-bars></div>
+    </section>
+  </div>
+</AppLayout>
+
+<style>
+  .leaderboard {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+
+  .leaderboard :global(.lb-card) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: border-color 0.2s, transform 0.2s var(--ease);
+  }
+
+  .leaderboard :global(.lb-card:hover) {
+    border-color: var(--ink);
+    transform: translateY(-2px);
+  }
+
+  .leaderboard :global(.lb-card.is-first) {
+    border-color: var(--accent);
+  }
+
+  .leaderboard :global(.lb-top) {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .leaderboard :global(.lb-rank) {
+    font: 700 30px var(--font-display);
+    color: var(--muted);
+    width: 34px;
+  }
+
+  .leaderboard :global(.lb-name) {
+    font: 700 24px var(--font-display);
+    line-height: 1;
+    white-space: nowrap;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .leaderboard :global(.lb-name::after) {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  .leaderboard :global(.lb-region) {
+    display: block;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .leaderboard :global(.lb-stats) {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 16px;
+    margin: 0;
+  }
+
+  .leaderboard :global(.lb-stats dt) {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .leaderboard :global(.lb-stats dd) {
+    margin: 0;
+    font: 700 24px var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .leaderboard :global(.lb-ring) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    text-align: center;
+  }
+
+  .leaderboard :global(.lb-ring small) {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  [data-seller-bars] :global(.sb-row) {
+    display: grid;
+    grid-template-columns: 160px 1fr 110px;
+    gap: 12px;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  [data-seller-bars] :global(.sb-track) {
+    position: relative;
+    height: 28px;
+    background: var(--surface);
+  }
+
+  [data-seller-bars] :global(.sb-fill) {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 100%;
+    background: var(--surface-2);
+    transform-origin: left;
+    transition: transform 0.7s var(--ease);
+  }
+
+  [data-seller-bars] :global(.sb-row:first-of-type .sb-fill) {
+    background: var(--accent);
+  }
+
+  [data-seller-bars] :global(.sb-prev) {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 2px;
+    background: var(--ink);
+  }
+
+  [data-seller-bars] :global(.sb-value) {
+    font: 700 22px var(--font-display);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (max-width: 600px) {
+    [data-seller-bars] :global(.sb-row) {
+      grid-template-columns: 1fr auto;
+    }
+
+    [data-seller-bars] :global(.sb-track) {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+  }
+</style>

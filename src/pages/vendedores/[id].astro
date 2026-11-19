@@ -1,0 +1,204 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import PageHead from '../../components/PageHead.astro';
+import { SELLERS } from '../../data/catalog';
+import { MONTHS, PROVINCES } from '../../data/dataset';
+import { MAP_HEIGHT, MAP_WIDTH, PROVINCE_SHAPES } from '../../data/argentina-map';
+import { monthlyRevenue } from '../../data/selectors';
+import { sellerTopClients, initials } from '../../data/sellers';
+import { formatCompact, formatMoney } from '../../lib/format';
+
+export function getStaticPaths() {
+  return SELLERS.map((s) => ({ params: { id: s.id } }));
+}
+
+const seller = SELLERS.find((s) => s.id === Astro.params.id)!;
+const series = monthlyRevenue({ seller: seller.id, province: 'all' });
+const max = Math.max(1, ...series);
+const last12 = series.slice(-12).reduce((s, v) => s + v, 0);
+const prev12 = series.slice(0, 12).reduce((s, v) => s + v, 0);
+const top = sellerTopClients(seller.id, 8);
+const territory = new Set(top.length ? sellerTopClients(seller.id, 200).map((t) => t.client.provinceId) : []);
+const provinceNames = [...territory].map((id) => PROVINCES.find((p) => p.id === id)?.name).filter(Boolean);
+---
+
+<AppLayout title={seller.name} view="vendedor">
+  <div class="page" data-seller-id={seller.id}>
+    <PageHead title={seller.name} sub={`${seller.region} · ${provinceNames.length} provincias: ${provinceNames.join(', ')}`} crumbs={[{ href: '/vendedores', label: 'Vendedores' }]}>
+      <a class="btn" href={`/clientes`} data-filter-seller={seller.id}>Ver sus clientes</a>
+    </PageHead>
+
+    <section class="kpis" aria-label="Indicadores del vendedor">
+      <div class="kpi-card"><span class="k-label">Últimos 12 meses</span><span class="k-value">{formatCompact(last12)}</span><span class="k-note">{`${last12 >= prev12 ? '+' : '−'}${Math.abs(Math.round((last12 / prev12 - 1) * 100))} % interanual`}</span></div>
+      <div class="kpi-card"><span class="k-label">Último mes cerrado</span><span class="k-value">{formatCompact(series[series.length - 1] ?? 0)}</span><span class="k-note">{MONTHS[MONTHS.length - 1]?.label}</span></div>
+      <div class="kpi-card"><span class="k-label">Hoy en vivo</span><span class="k-value k-up" data-today>$ 0</span><span class="k-note" data-today-note></span></div>
+      <div class="kpi-card"><span class="k-label">Noviembre a la fecha</span><span class="k-value" data-mtd>—</span><span class="k-note" data-projection></span></div>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel goal-panel">
+        <h2 class="panel-title">Objetivo de noviembre</h2>
+        <div class="goal-body">
+          <div class="ring-wrap" data-ring><span class="ring-pct" data-pct>0 %</span></div>
+          <form class="goal-form" data-goal-form>
+            <label class="field">
+              <span>Objetivo mensual (ARS)</span>
+              <input type="number" min="0" step="500000" inputmode="numeric" data-goal-input />
+            </label>
+            <button type="submit" class="btn btn--accent">Guardar objetivo</button>
+            <p class="muted" data-goal-status></p>
+          </form>
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">Territorio</h2>
+        <svg class="terr-map" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} role="img" aria-label={`Provincias de ${seller.name}`}>
+          {PROVINCE_SHAPES.map((p) => <path d={p.d} class={territory.has(p.id) ? 'is-on' : ''} />)}
+          <g data-live-drops></g>
+        </svg>
+      </section>
+    </div>
+
+    <div class="grid-2">
+      <section class="panel">
+        <h2 class="panel-title">Facturación mensual · 24 meses</h2>
+        <div class="bars" role="img" aria-label={`Facturación mensual de ${seller.name}`}>
+          {
+            series.map((v, i) => (
+              <div class={`bar${i >= 12 ? ' is-current' : ''}`} style={`--h:${((v / max) * 100).toFixed(1)}%`} title={`${MONTHS[i]?.label}: ${formatMoney(v)}`}>
+                <span class="bar-fill" />
+                <span class="bar-label">{i % 3 === 0 ? MONTHS[i]?.short : ''}</span>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">Mejores clientes · 12 meses</h2>
+        <ol class="top-clients">
+          {
+            top.map((t) => (
+              <li>
+                <span class="avatar">{initials(t.client.name)}</span>
+                <span>
+                  <a class="row-link" href={`/clientes/${t.client.id}`}>{t.client.name}</a>
+                  <span class="c-sub">{t.client.city}, {t.province}</span>
+                </span>
+                <b class="num">{formatCompact(t.revenue)}</b>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+    </div>
+  </div>
+</AppLayout>
+
+<style>
+  .goal-body {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .goal-body .ring-pct {
+    font-size: 40px;
+  }
+
+  .goal-form {
+    display: grid;
+    gap: 10px;
+    flex: 1;
+    min-width: 220px;
+  }
+
+  .terr-map {
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+
+  .terr-map path {
+    fill: var(--map-base);
+    stroke: var(--bg);
+    stroke-width: 0.8;
+  }
+
+  .terr-map path.is-on {
+    fill: var(--accent);
+  }
+
+  .bars {
+    height: 220px;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 4px;
+    align-items: end;
+    padding-bottom: 22px;
+  }
+
+  .bar {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: end;
+  }
+
+  .bar-fill {
+    display: block;
+    width: 100%;
+    height: var(--h);
+    background: var(--surface-2);
+    transform-origin: bottom;
+    animation: grow 0.7s var(--ease) both;
+  }
+
+  .bar.is-current .bar-fill {
+    background: var(--accent);
+  }
+
+  .bar-label {
+    position: absolute;
+    bottom: -22px;
+    font: 700 14px var(--font-display);
+    color: var(--muted);
+  }
+
+  @keyframes grow {
+    from {
+      transform: scaleY(0);
+    }
+  }
+
+  .top-clients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+
+  .top-clients li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .top-clients b {
+    font: 700 20px var(--font-display);
+  }
+
+  .c-sub {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bar-fill {
+      animation: none;
+    }
+  }
+</style>

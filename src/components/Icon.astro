@@ -1,0 +1,37 @@
+---
+// Minimal stroke icon set (24px grid, currentColor).
+const PATHS = {
+  resumen: 'M4 13h6V4H4zM14 20h6V11h-6zM4 20h6v-3H4zM14 7h6V4h-6z',
+  vivo: 'M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0M7.8 7.8a6 6 0 0 0 0 8.4M16.2 16.2a6 6 0 0 0 0-8.4M5 5a10 10 0 0 0 0 14M19 19a10 10 0 0 0 0-14',
+  clientes: 'M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1M17 3.5a4 4 0 0 1 0 7.5M22 21v-1a6 6 0 0 0-4-5.6',
+  productos: 'M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10',
+  vendedores: 'M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3',
+  pedidos: 'M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6M9 16h3',
+  objetivos: 'M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0',
+  alertas: 'M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10.3 21a1.9 1.9 0 0 0 3.4 0',
+  search: 'M11 11m-7 0a7 7 0 1 0 14 0a7 7 0 1 0-14 0M21 21l-5-5',
+  bell: 'M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10.3 21a1.9 1.9 0 0 0 3.4 0',
+  theme: 'M12 12m-8 0a8 8 0 1 0 16 0a8 8 0 1 0-16 0M12 4v16',
+  export: 'M12 3v12m0 0-5-5m5 5 5-5M4 20h16',
+  present: 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5',
+  menu: 'M4 7h16M4 12h16M4 17h16',
+  pause: 'M7 5h3v14H7zM14 5h3v14h-3z',
+  play: 'M7 4l13 8-13 8z',
+  reset: 'M4 4v6h6M20 20v-6h-6M5.5 15a7.5 7.5 0 0 0 13 2.5M18.5 9A7.5 7.5 0 0 0 5.5 6.5',
+  plus: 'M12 5v14M5 12h14',
+  filter: 'M4 5h16l-6 8v6l-4-2v-4z',
+  close: 'M6 6l12 12M18 6 6 18',
+  more: 'M5 12h.01M12 12h.01M19 12h.01',
+  bookmark: 'M6 3h12v18l-6-4-6 4z',
+  download: 'M12 3v12m0 0-5-5m5 5 5-5M4 20h16',
+  keyboard: 'M3 6h18v12H3zM7 10h.01M11 10h.01M15 10h.01M7 14h10',
+} as const;
+
+interface Props {
+  name: keyof typeof PATHS;
+  size?: number;
+}
+const { name, size = 20 } = Astro.props;
+---
+
+<svg class="icon" viewBox="0 0 24 24" width={size} height={size} aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d={PATHS[name]}></path></svg>

@@ -1,0 +1,284 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import PageHead from '../../components/PageHead.astro';
+import { CLIENTS, CLIENT_MONTH_REVENUE, MONTHS, PROVINCES } from '../../data/dataset';
+import { SELLERS } from '../../data/catalog';
+import { churnRisk, clientHistory, clientTopProducts, lastOrderOf } from '../../data/clients';
+import { orderDate } from '../../data/history';
+import { formatCompact, formatInt, formatMoney } from '../../lib/format';
+
+export function getStaticPaths() {
+  return CLIENTS.map((c) => ({ params: { id: String(c.id) } }));
+}
+
+const id = Number(Astro.params.id);
+const index = CLIENTS.findIndex((c) => c.id === id);
+const client = CLIENTS[index]!;
+const series = CLIENT_MONTH_REVENUE[index] ?? [];
+const province = PROVINCES.find((p) => p.id === client.provinceId)?.name ?? '';
+const seller = SELLERS.find((s) => s.id === client.sellerId);
+const { risk, reason } = churnRisk(index);
+const history = clientHistory(index, 12);
+const last12 = series.slice(-12).reduce((s, v) => s + v, 0);
+const prev12 = series.slice(0, 12).reduce((s, v) => s + v, 0);
+const lastOrder = lastOrderOf(index);
+const top = clientTopProducts(index, 6);
+const topMax = Math.max(1, ...top.map((t) => t.revenue));
+const max = Math.max(1, ...series);
+const recent = [...history].reverse().slice(0, 10);
+const since = client.cohort < 0 ? 'antes de noviembre 2024' : MONTHS[client.cohort]?.label;
+const riskClass = risk === 'Alto' ? 'tag tag--solid' : risk === 'Medio' ? 'tag tag--hot' : 'tag';
+---
+
+<AppLayout title={client.name} view="cliente">
+  <div class="page" data-client-index={index}>
+    <PageHead title={client.name} sub={`${client.city}, ${province} · Vendedor: ${seller?.name ?? ''} · Cliente desde ${since}`} crumbs={[{ href: '/clientes', label: 'Clientes' }]}>
+      <a class="btn" href={`/pedidos?cliente=${client.id}`}>Ver pedidos</a>
+      <a class="btn" href={`/vendedores/${client.sellerId}`}>Ver vendedor</a>
+    </PageHead>
+
+    <section class={`risk-banner risk-${risk.toLowerCase()}`} aria-label="Riesgo de abandono">
+      <span class={riskClass}>{risk === 'Nuevo' || risk === 'Perdido' ? risk : `Riesgo ${risk.toLowerCase()}`}</span>
+      <p>{reason}</p>
+    </section>
+
+    <section class="kpis" aria-label="Indicadores del cliente">
+      <div class="kpi-card"><span class="k-label">Facturación últimos 12 meses</span><span class="k-value">{formatCompact(last12)}</span><span class="k-note">{prev12 > 0 ? `${last12 >= prev12 ? '+' : '−'}${Math.abs(Math.round((last12 / prev12 - 1) * 100))} % vs. 12 meses anteriores` : 'Cliente nuevo en el período'}</span></div>
+      <div class="kpi-card"><span class="k-label">Pedidos (12 meses)</span><span class="k-value">{formatInt(history.length)}</span></div>
+      <div class="kpi-card"><span class="k-label">Ticket promedio</span><span class="k-value">{history.length ? formatCompact(last12 / history.length) : '—'}</span></div>
+      <div class="kpi-card"><span class="k-label">Última compra</span><span class="k-value">{lastOrder ? orderDate(lastOrder) : '—'}</span><span class="k-note" data-live-note></span></div>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel">
+        <h2 class="panel-title">Historial de compras · 24 meses</h2>
+        <div class="bars" role="img" aria-label={`Facturación mensual de ${client.name}`}>
+          {
+            series.map((v, i) => (
+              <div class={`bar${i >= 12 ? ' is-current' : ''}`} style={`--h:${((v / max) * 100).toFixed(1)}%`} title={`${MONTHS[i]?.label}: ${formatMoney(v)}`}>
+                <span class="bar-fill" />
+                <span class="bar-label">{i % 3 === 0 ? `${MONTHS[i]?.short}` : ''}</span>
+              </div>
+            ))
+          }
+        </div>
+        <p class="legend"><span class="sw sw--muted"></span>12 meses anteriores <span class="sw"></span>Últimos 12 meses</p>
+        <details class="data-alt">
+          <summary>Ver datos en tabla</summary>
+          <div class="table-wrap">
+            <table class="data-table">
+              <caption>Facturación mensual del cliente</caption>
+              <thead><tr><th scope="col">Mes</th><th scope="col">Facturación</th></tr></thead>
+              <tbody>{series.map((v, i) => <tr><th scope="row">{MONTHS[i]?.label}</th><td>{formatMoney(v)}</td></tr>)}</tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">Productos que más compra</h2>
+        {top.length === 0 && <p class="muted">Sin compras en los últimos 12 meses.</p>}
+        <ol class="bar-list">
+          {
+            top.map((t, i) => (
+              <li>
+                <span class="bl-name">
+                  <a class="row-link" href={`/productos?p=${t.product + 1}`}>{t.name}</a>
+                  <span class="c-sub">{t.category} · {formatInt(t.units)} bultos</span>
+                </span>
+                <span class="bl-value">{formatCompact(t.revenue)}</span>
+                <span class="bl-bar">
+                  <span class={i === 0 ? 'is-lead' : ''} style={`transform:scaleX(${(t.revenue / topMax).toFixed(3)})`} />
+                </span>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2 class="panel-title">Pedidos recientes</h2>
+      <ol class="live-today" data-live-today hidden></ol>
+      <div class="table-scroll">
+        <table class="grid-table">
+          <caption class="sr-only">Últimos pedidos del cliente</caption>
+          <thead><tr><th scope="col">Pedido</th><th scope="col">Fecha</th><th scope="col">Estado</th><th scope="col" class="num">Líneas</th><th scope="col" class="num">Total</th></tr></thead>
+          <tbody data-recent>
+            {
+              recent.map((o) => (
+                <tr>
+                  <th scope="row">N.º {o.id}</th>
+                  <td>{orderDate(o)}</td>
+                  <td><span class={o.status === 'Entregado' ? 'tag tag--muted' : 'tag tag--hot'}>{o.status}</span></td>
+                  <td class="num">{o.lines}</td>
+                  <td class="num">{formatMoney(o.total)}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</AppLayout>
+
+<style>
+  .risk-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+  }
+
+  .risk-alto {
+    border-left-color: var(--accent);
+  }
+
+  .bars {
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 4px;
+    align-items: end;
+    padding-bottom: 22px;
+  }
+
+  .bar {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: end;
+  }
+
+  .bar-fill {
+    display: block;
+    width: 100%;
+    height: var(--h);
+    min-height: 2px;
+    background: var(--surface-2);
+    transform-origin: bottom;
+    animation: grow 0.7s var(--ease) both;
+  }
+
+  .bar.is-current .bar-fill {
+    background: var(--accent);
+  }
+
+  .bar:hover .bar-fill {
+    background: var(--ink);
+  }
+
+  .bar-label {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    font: 700 14px var(--font-display);
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  @keyframes grow {
+    from {
+      transform: scaleY(0);
+    }
+  }
+
+  .legend {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  .sw {
+    width: 12px;
+    height: 12px;
+    background: var(--accent);
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  .sw--muted {
+    background: var(--surface-2);
+    margin-left: 0;
+  }
+
+  .bar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+
+  .bar-list li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 12px;
+  }
+
+  .c-sub {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .bl-value {
+    font: 700 20px var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bl-bar {
+    grid-column: 1 / -1;
+    height: 6px;
+    background: var(--line);
+  }
+
+  .bl-bar span {
+    display: block;
+    height: 100%;
+    background: var(--ink);
+    opacity: 0.55;
+    transform-origin: left;
+  }
+
+  .bl-bar span.is-lead {
+    background: var(--accent);
+    opacity: 1;
+  }
+
+  .live-today {
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 0;
+  }
+
+  .live-today :global(li) {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    margin-bottom: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bar-fill {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .bars {
+      gap: 2px;
+    }
+  }
+</style>

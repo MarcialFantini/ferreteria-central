@@ -1,0 +1,276 @@
+---
+import { DEFAULT_FILTERS, heroData, periodTitle, segmentLabel } from '../data/selectors';
+import { buildReels, odometerHTML, odometerWidth } from '../render/odometer';
+import { sparkGeometry, SPARK_W, SPARK_H } from '../render/sparkline';
+import { formatCompact, formatInt, formatMoney, formatSignedPercent } from '../lib/format';
+
+const hero = heroData(DEFAULT_FILTERS);
+const geo = sparkGeometry(hero.series);
+const peak = geo.points[hero.peakIndex] ?? { x: 0, y: 0 };
+const last = geo.points[geo.points.length - 1] ?? { x: 0, y: 0 };
+const reels = buildReels(hero.total, null);
+const odoWidth = odometerWidth(reels);
+---
+
+<section class="scene scene-hero" id="escena-1" data-scene="hero" aria-labelledby="hero-title">
+  <div class="hero">
+    <p class="eyebrow hero-context">
+      <span data-hero-kicker>Facturación del mes</span>{' · '}<span data-hero-period>{periodTitle(DEFAULT_FILTERS.period)}</span>{' · '}<span data-hero-seller>{segmentLabel(DEFAULT_FILTERS)}</span>
+    </p>
+    <h1 id="hero-title" class="sr-only">
+      Facturación: <span data-hero-sr>{formatMoney(hero.total)}</span>
+    </h1>
+
+    <div class="odo num" aria-hidden="true" data-odometer data-value={hero.total} style={`--w:${odoWidth}`}>
+      <span class="odo-cur">$</span><span class="odo-reels" data-reels set:html={odometerHTML(reels)} />
+    </div>
+
+    <div class="hero-kpis">
+      <p class="kpi">
+        <span class="kpi-value num" data-kpi="yoy" data-positive={hero.yoy >= 0 ? 'true' : 'false'}>{formatSignedPercent(hero.yoy)}</span>
+        <span class="kpi-label">vs. mismo período del año anterior</span>
+      </p>
+      <p class="kpi">
+        <span class="kpi-value num" data-kpi="orders">{formatInt(hero.orders)}</span>
+        <span class="kpi-label">pedidos</span>
+      </p>
+      <p class="kpi">
+        <span class="kpi-value num" data-kpi="clients">{hero.activeClients}</span>
+        <span class="kpi-label">clientes activos</span>
+      </p>
+    </div>
+
+    <figure class="spark" data-spark aria-label="Evolución de la facturación del período">
+      <svg viewBox={`0 0 ${SPARK_W} ${SPARK_H}`} preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" x2={SPARK_W} y1={SPARK_H - 1} y2={SPARK_H - 1} class="spark-base"></line>
+        <path d={geo.d} class="spark-line" data-spark-path></path>
+      </svg>
+      <span class="spark-cover" data-spark-cover aria-hidden="true"></span>
+      <span class="spark-dot" data-spark-peak style={`left:${peak.x}%;top:${peak.y}%`}></span>
+      <span class="spark-label spark-label--peak num" data-spark-peak-label style={`left:${peak.x}%;top:${peak.y}%`}>
+        <small data-spark-peak-day>Pico · {hero.seriesLabels[hero.peakIndex]}</small>
+        <span data-spark-peak-value>{formatCompact(hero.series[hero.peakIndex] ?? 0)}</span>
+      </span>
+      <span class="spark-dot spark-dot--end" data-spark-end style={`left:${last.x}%;top:${last.y}%`}></span>
+      <figcaption class="spark-caption">
+        <span data-spark-start>{hero.seriesLabels[0]}</span>
+        <span>Facturación <span data-spark-unit>{hero.seriesUnit}</span></span>
+        <span data-spark-end-label>{hero.seriesLabels[hero.seriesLabels.length - 1]}</span>
+      </figcaption>
+    </figure>
+  </div>
+  <a class="hero-next" href="#escena-2">Ver el mapa de ventas <span aria-hidden="true">↓</span></a>
+</section>
+
+<style>
+  .scene-hero {
+    align-content: end;
+    padding-bottom: clamp(40px, 8vh, 96px);
+  }
+
+  .hero {
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  .hero-context {
+    font-size: clamp(16px, 1.6vw, 22px);
+    margin-bottom: clamp(4px, 1vh, 12px);
+  }
+
+  .odo {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: min(252px, calc((100vw - var(--side-w) - 2 * var(--gutter)) / var(--w, 5.6)));
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-left: -0.04em;
+  }
+
+  .odo-cur {
+    font-size: 0.42em;
+    line-height: 1;
+    margin: 0.12em 0.08em 0 0;
+    color: var(--accent);
+  }
+
+  .odo-reels {
+    display: flex;
+  }
+
+  .odo-reels :global(.odo-digit) {
+    display: inline-block;
+    height: 1em;
+    overflow: hidden;
+    width: 0.52em;
+    text-align: center;
+  }
+
+  .odo-reels :global(.odo-reel) {
+    display: flex;
+    flex-direction: column;
+    will-change: transform;
+  }
+
+  .odo-reels :global(.odo-reel > span) {
+    height: 1em;
+    line-height: 1em;
+  }
+
+  .odo-reels :global(.odo-sep) {
+    width: 0.2em;
+    line-height: 1em;
+    color: var(--muted);
+  }
+
+  .hero-kpis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px clamp(24px, 4vw, 64px);
+    margin: clamp(12px, 2vh, 24px) 0 clamp(24px, 5vh, 56px);
+  }
+
+  .kpi {
+    display: grid;
+  }
+
+  .kpi-value {
+    font-weight: 700;
+    font-size: clamp(30px, 3.6vw, 52px);
+    line-height: 1;
+  }
+
+  .kpi-value[data-positive='true'] {
+    color: var(--accent);
+  }
+
+  .kpi-label {
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .spark {
+    position: relative;
+    margin: 64px 0 0;
+    height: clamp(110px, 18vh, 200px);
+  }
+
+  .spark svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+  }
+
+  .spark-base {
+    stroke: var(--line);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .spark-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .spark-cover {
+    position: absolute;
+    inset: -12px -12px -2px -12px;
+    background: var(--bg);
+    transform-origin: right center;
+    transform: scaleX(0);
+    pointer-events: none;
+  }
+
+  .spark-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px var(--bg);
+  }
+
+  .spark-dot--end {
+    background: var(--ink);
+  }
+
+  .spark-label {
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 14px));
+    display: grid;
+    justify-items: center;
+    font-weight: 700;
+    font-size: clamp(22px, 2.4vw, 34px);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .spark-label small {
+    font-size: 14px;
+    font-family: var(--font-text);
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .spark-caption {
+    position: absolute;
+    inset: auto 0 -30px 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .hero-next {
+    position: absolute;
+    right: var(--gutter);
+    top: calc(var(--bar-h) + 28px);
+    color: var(--muted);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .hero-next:hover {
+    color: var(--ink);
+  }
+
+  @media (max-width: 760px) {
+    .scene-hero {
+      align-content: center;
+    }
+
+    /* Reserve two lines: the fallback font wraps differently until Barlow arrives (no layout shift). */
+    .hero-context {
+      min-height: 3em;
+    }
+
+    .odo-reels :global(.odo-sep) {
+      width: 0.16em;
+    }
+
+    .hero-kpis {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-kpis .kpi:first-child {
+      grid-column: span 2;
+    }
+
+    .hero-next {
+      display: none;
+    }
+
+  }
+</style>

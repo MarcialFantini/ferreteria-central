@@ -1,0 +1,146 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import PageHead from '../components/PageHead.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<AppLayout title="Objetivos" view="objetivos">
+  <div class="page">
+    <PageHead title="Objetivos de noviembre" sub="Editá el objetivo de cada vendedor: el avance, la proyección y las alertas se recalculan al instante en todas las vistas.">
+      <button type="button" class="btn" data-reset-goals><Icon name="reset" size={18} /> Volver a los sugeridos</button>
+    </PageHead>
+
+    <section class="goal-hero">
+      <div class="ring-wrap" data-company-ring><span class="ring-pct" data-company-pct>0 %</span></div>
+      <dl class="goal-kpis">
+        <div><dt>Objetivo del equipo</dt><dd class="num" data-k="goal">—</dd></div>
+        <div><dt>Facturado a la fecha</dt><dd class="num k-up" data-k="mtd">—</dd></div>
+        <div><dt>Proyección de cierre</dt><dd class="num" data-k="proj">—</dd></div>
+        <div><dt>Avance del mes (días hábiles)</dt><dd class="num" data-k="progress">—</dd></div>
+      </dl>
+    </section>
+
+    <div class="table-scroll">
+      <table class="grid-table goals-table">
+        <caption class="sr-only">Objetivos por vendedor, avance y proyección</caption>
+        <thead>
+          <tr>
+            <th scope="col">Vendedor</th>
+            <th scope="col">Objetivo (ARS)</th>
+            <th scope="col">Avance</th>
+            <th scope="col" class="num">A la fecha</th>
+            <th scope="col" class="num">Proyección</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody data-goal-rows>
+          {Array.from({ length: 6 }).map(() => <tr>{Array.from({ length: 6 }).map(() => <td><span class="skeleton" /></td>)}</tr>)}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AppLayout>
+
+<style>
+  .goal-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  .goal-hero .ring-pct {
+    font-size: 52px;
+  }
+
+  .goal-kpis {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px 28px;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .goal-hero {
+      gap: 16px;
+    }
+
+    .goal-hero .ring-pct {
+      font-size: 36px;
+    }
+
+    .goal-kpis {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .goal-kpis :global(dd) {
+      font-size: 26px !important;
+    }
+  }
+
+  .goal-kpis dt {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .goal-kpis dd {
+    margin: 0;
+    font: 700 clamp(30px, 3.2vw, 46px) var(--font-display);
+    line-height: 1.05;
+  }
+
+  .goals-table :global(input) {
+    width: 150px;
+    min-height: 40px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg);
+    font: 600 16px var(--font-display);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .goals-table :global(.stepper) {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .goals-table :global(.step) {
+    width: 36px;
+    height: 40px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .goals-table :global(.progress) {
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background: var(--line);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .goals-table :global(.progress i) {
+    position: absolute;
+    inset: 0;
+    background: var(--accent);
+    transform-origin: left;
+    transition: transform 0.6s var(--ease);
+  }
+
+  .goals-table :global(.progress b) {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 2px;
+    background: var(--ink);
+  }
+</style>

@@ -1,0 +1,78 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import PageHead from '../../components/PageHead.astro';
+import Icon from '../../components/Icon.astro';
+---
+
+<AppLayout title="Clientes" view="clientes">
+  <div class="page">
+    <PageHead title="Clientes" sub="200 comercios en 24 provincias. Buscá, ordená y entrá al detalle de cada uno.">
+      <button type="button" class="btn" data-export-csv><Icon name="download" size={18} /> Exportar CSV</button>
+    </PageHead>
+
+    <section class="kpis" aria-label="Indicadores de clientes" data-client-kpis>
+      <div class="kpi-card"><span class="k-label">Clientes en el filtro</span><span class="k-value" data-k="count"><span class="skeleton" style="width:60px;height:36px"></span></span></div>
+      <div class="kpi-card"><span class="k-label">Facturación del período</span><span class="k-value" data-k="revenue"><span class="skeleton" style="width:140px;height:36px"></span></span></div>
+      <div class="kpi-card"><span class="k-label">Riesgo alto de abandono</span><span class="k-value k-up" data-k="risk"><span class="skeleton" style="width:50px;height:36px"></span></span><span class="k-note">no compraron o cayeron fuerte</span></div>
+      <div class="kpi-card"><span class="k-label">Nuevos (últimos 3 meses)</span><span class="k-value" data-k="new"><span class="skeleton" style="width:50px;height:36px"></span></span></div>
+    </section>
+
+    <div class="toolbar" role="search">
+      <label class="grow">
+        <span class="sr-only">Buscar cliente</span>
+        <input class="search-input" type="search" placeholder="Buscar por nombre o ciudad   ( / )" data-search autocomplete="off" />
+      </label>
+      <label class="field select">
+        <span class="sr-only">Riesgo</span>
+        <select data-risk>
+          <option value="all">Todos los riesgos</option>
+          <option value="Alto">Riesgo alto</option>
+          <option value="Medio">Riesgo medio</option>
+          <option value="Bajo">Riesgo bajo</option>
+          <option value="Nuevo">Nuevos</option>
+          <option value="Perdido">Perdidos</option>
+        </select>
+      </label>
+    </div>
+
+    <div data-client-table>
+      <div class="table-scroll">
+        <table class="grid-table">
+          <thead><tr>{['Cliente', 'Provincia', 'Vendedor', 'Facturación', 'Variación', 'Últimos 12 meses', 'Riesgo'].map((h) => <th scope="col">{h}</th>)}</tr></thead>
+          <tbody>
+            {
+              Array.from({ length: 12 }).map(() => (
+                <tr style="height:63px">
+                  {Array.from({ length: 7 }).map(() => (
+                    <td>
+                      <span class="skeleton" />
+                    </td>
+                  ))}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</AppLayout>
+
+<style>
+  [data-client-table] :global(.c-sub) {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  [data-client-table] :global(.mini-spark) {
+    width: 96px;
+    height: 28px;
+  }
+
+  @media (max-width: 900px) {
+    [data-client-table] :global(.wide) {
+      display: none;
+    }
+  }
+</style>
